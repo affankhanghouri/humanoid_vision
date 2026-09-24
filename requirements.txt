@@ -1,0 +1,12 @@
+# Versions verified in the existing Python 3.12 Linux environment.
+# Direct dependencies only; this is not a complete transitive lockfile.
+# Use GUI-enabled opencv-python, not opencv-python-headless.
+numpy==2.5.3
+opencv-python==5.0.0.93
+scipy==1.18.1
+ultralytics==8.4.143
+openvino==2026.4.0
+torch==2.14.0
+torchvision==0.29.0
+onnx==1.23.0
+onnxruntime==1.30.0

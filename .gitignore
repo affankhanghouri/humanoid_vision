@@ -1,0 +1,56 @@
+# Python environments and caches
+myenv/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Packaging, coverage and test artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local assets: retain instructions, not weights, exports or source videos
+/models/*
+!/models/README.md
+/test_data/*
+!/test_data/README.md
+
+# Generated runtime and benchmark artifacts
+/validation/*
+!/validation/README.md
+/runs/
+/outputs/
+/pipeline_measurement.json
+*.
+/test_data
+REFACTOR_REPORT.md
+/tests
+/validation
+/models
