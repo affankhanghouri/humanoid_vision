@@ -3,13 +3,14 @@ myenv/
 .venv/
 venv/
 env/
+REFACTOR_REPORT.md
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .cache/
-
+CONSISTENCY_REPORT.md
 # Packaging, coverage and test artifacts
 build/
 dist/
@@ -36,21 +37,72 @@ coverage.xml
 .DS_Store
 Thumbs.db
 
-# Local assets: retain instructions, not weights, exports or source videos
+# Model weights and exported inference artifacts, anywhere in the repository
+*.pt
+*.pth
+*.torchscript
+*.jit
+*.onnx
+*.onnx_data
+*.onnx.data
+*.ort
+*.bin
+*.xml
+*.param
+*.safetensors
+*.ckpt
+*.ckpt.*
+*.weights
+*.engine
+*.plan
+*.gguf
+*.ggml
+*.tflite
+*.h5
+*.hdf5
+*.keras
+*.pb
+*.pbtxt
+*.data-*-of-*
+*.index
+*.mlmodel
+*.mlpackage/
+*.caffemodel
+*.prototxt
+*.t7
+*.model
+*.params
+*.pdmodel
+*.pdparams
+*.pdiparams
+*.pdiparams.info
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*_openvino_model/
+*_saved_model/
+saved_model/
+
+# Videos are local inputs/outputs, never repository source
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.m4v
+
+# Local asset directories: include setup instructions, exclude all assets
 /models/*
 !/models/README.md
 /test_data/*
 !/test_data/README.md
 
-# Generated runtime and benchmark artifacts
+# Generated runtime and benchmark artifacts: retain validation instructions
 /validation/*
 !/validation/README.md
 /runs/
 /outputs/
 /pipeline_measurement.json
-*.
-/test_data
-REFACTOR_REPORT.md
-/tests
-/validation
-/models
+*.log

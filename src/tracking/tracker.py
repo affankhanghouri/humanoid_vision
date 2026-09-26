@@ -1,9 +1,11 @@
-"""Original Kalman + Hungarian tracker; tuning lives in VisionConfig."""
+"""Confidence-aware association with bounded, explicit track lifetimes."""
+import math
 import cv2
 import numpy as np
 from scipy.optimize import linear_sum_assignment
 from config import VisionConfig
-from core.types import Detection, RenderTrack
+from core.types import Detection
+from core.perception_state import PerceptionEntity
 
 def calculate_iou(box_a, box_b):
     ax1, ay1, ax2, ay2 = box_a
@@ -51,6 +53,7 @@ class Track:
         self.hits = 1
         self.misses = 0
         self.last_state_time = timestamp
+        self.last_observed_timestamp = timestamp
         x1, y1, x2, y2 = bbox
         self.width = x2 - x1
         self.height = y2 - y1
@@ -89,6 +92,7 @@ class Track:
         self.width = (1 - self.config.track_size_alpha) * self.width + self.config.track_size_alpha * width
         self.height = (1 - self.config.track_size_alpha) * self.height + self.config.track_size_alpha * height
         self.confidence = confidence
+        self.last_observed_timestamp = self.last_state_time
         self.hits += 1
         self.misses = 0
         corrected_x = float(corrected[0, 0])
@@ -98,79 +102,113 @@ class Track:
     def _make_bbox(self, center_x, center_y):
         return (center_x - self.width / 2, center_y - self.height / 2, center_x + self.width / 2, center_y + self.height / 2)
 
-    def snapshot(self):
+    def snapshot(self) -> PerceptionEntity:
         state = self.kalman.statePost
-        return RenderTrack(track_id=self.id, class_name=self.class_name, confidence=self.confidence, center_x=float(state[0, 0]), center_y=float(state[1, 0]), velocity_x=float(state[2, 0]), velocity_y=float(state[3, 0]), width=self.width, height=self.height)
+        return PerceptionEntity(entity_id=self.id, class_name=self.class_name, confidence=self.confidence, center_x=float(state[0, 0]), center_y=float(state[1, 0]), velocity_x=float(state[2, 0]), velocity_y=float(state[3, 0]), width=self.width, height=self.height, last_observed_timestamp=self.last_observed_timestamp, misses=self.misses)
+
+VEHICLE_CLASSES = frozenset(("car", "truck", "bus"))
+
 
 class MultiObjectTracker:
-
     def __init__(self, config: VisionConfig = VisionConfig()):
         self.config = config
         self.tracks = []
+        self.last_timestamp = None
 
     def update(self, detections: list[Detection], timestamp: float) -> None:
+        if not math.isfinite(timestamp):
+            raise ValueError("Tracking timestamp must be finite")
+        # Repeated/out-of-order observations must not confirm or age a track.
+        if self.last_timestamp is not None and timestamp <= self.last_timestamp:
+            return
+        self.last_timestamp = timestamp
+        self.tracks = [t for t in self.tracks
+                       if timestamp - t.last_observed_timestamp <= self.config.max_track_age]
+        candidates = sorted((d for d in detections if self._valid_detection(d)),
+                            key=lambda d: d.confidence, reverse=True)
+        detections = []
+        for candidate in candidates:
+            # End-to-end outputs can contain two subtype labels for one vehicle.
+            duplicate = any(candidate.class_name != other.class_name
+                            and candidate.class_name in VEHICLE_CLASSES
+                            and other.class_name in VEHICLE_CLASSES
+                            and calculate_iou(candidate.bbox, other.bbox) >= .85
+                            for other in detections)
+            if not duplicate:
+                detections.append(candidate)
         for track in self.tracks:
             track.predict_to(timestamp)
-        if not self.tracks:
-            for detection in detections:
-                self._create_track(detection, timestamp)
-            return
-        if not detections:
-            for track in self.tracks:
+
+        high = [d for d in detections if d.confidence >= self.config.confidence]
+        low = [d for d in detections if self.config.track_low_confidence <= d.confidence
+               < self.config.confidence]
+        matched, used = self._associate(list(range(len(self.tracks))), high)
+        # Recovery is deliberately stricter and only available to confirmed IDs.
+        remaining = [i for i, t in enumerate(self.tracks)
+                     if i not in matched and t.hits >= self.config.min_hits]
+        recovered, _ = self._associate(remaining, low, recovery=True)
+        matched.update(recovered)
+        for index, track in enumerate(self.tracks):
+            if index not in matched:
                 track.misses += 1
-            self._remove_dead_tracks()
-            return
-        rows = len(self.tracks)
-        cols = len(detections)
-        INVALID = self.config.invalid_match_cost
-        cost_matrix = np.full((rows, cols), INVALID, dtype=np.float32)
-        for track_index, track in enumerate(self.tracks):
-            for detection_index, detection in enumerate(detections):
-                if track.class_name != detection.class_name:
+        self.tracks = [t for t in self.tracks if t.misses <= self.config.max_misses
+                       and (t.hits >= self.config.min_hits or t.misses == 0)]
+        for index, detection in enumerate(high):
+            if index not in used:
+                self.tracks.append(Track(detection.bbox, detection.class_name,
+                                         detection.confidence, timestamp, self.config))
+
+    @staticmethod
+    def _valid_detection(detection):
+        box = detection.bbox
+        return (len(box) == 4 and all(math.isfinite(v) for v in box)
+                and box[2] > box[0] and box[3] > box[1]
+                and math.isfinite(detection.confidence) and 0 <= detection.confidence <= 1)
+
+    def _associate(self, indices, detections, recovery=False):
+        if not indices or not detections:
+            return set(), set()
+        invalid = self.config.invalid_match_cost
+        costs = np.full((len(indices), len(detections)), invalid, dtype=np.float32)
+        for row, index in enumerate(indices):
+            track = self.tracks[index]
+            for col, detection in enumerate(detections):
+                same_vehicle = (track.class_name in VEHICLE_CLASSES
+                                and detection.class_name in VEHICLE_CLASSES)
+                if track.class_name != detection.class_name and not same_vehicle:
+                    continue
+                width = detection.bbox[2] - detection.bbox[0]
+                height = detection.bbox[3] - detection.bbox[1]
+                ratio = max(width / track.width, track.width / width,
+                            height / track.height, track.height / height)
+                if ratio > self.config.match_max_size_ratio:
                     continue
                 iou = calculate_iou(track.bbox, detection.bbox)
                 distance = normalized_center_distance(track.bbox, detection.bbox)
+                if (recovery or track.class_name != detection.class_name) and iou < self.config.recovery_min_iou:
+                    continue
                 if iou < self.config.match_min_iou and distance > self.config.match_max_distance:
                     continue
-                iou_cost = 1.0 - iou
-                distance_cost = min(distance / self.config.match_max_distance, 1.0)
-                cost = self.config.match_iou_weight * iou_cost + self.config.match_distance_weight * distance_cost
-                cost_matrix[track_index, detection_index] = cost
-        row_ids, detection_ids = linear_sum_assignment(cost_matrix)
-        matched_tracks = set()
-        matched_detections = set()
-        for track_index, detection_index in zip(row_ids, detection_ids):
-            cost = cost_matrix[track_index, detection_index]
-            if cost >= INVALID:
+                cost = (self.config.match_iou_weight * (1.0 - iou)
+                        + self.config.match_distance_weight
+                        * min(distance / self.config.match_max_distance, 1.0))
+                # Gate BEFORE assignment so an invalid pair cannot steal a valid one.
+                if cost <= self.config.match_max_cost:
+                    costs[row, col] = cost
+        rows, cols = linear_sum_assignment(costs)
+        matched, used = set(), set()
+        for row, col in zip(rows, cols):
+            if costs[row, col] >= invalid:
                 continue
-            if cost > self.config.match_max_cost:
-                continue
-            track = self.tracks[track_index]
-            detection = detections[detection_index]
-            track.update(detection.bbox, detection.confidence)
-            matched_tracks.add(track_index)
-            matched_detections.add(detection_index)
-        for index, track in enumerate(self.tracks):
-            if index not in matched_tracks:
-                track.misses += 1
-        for index, detection in enumerate(detections):
-            if index in matched_detections:
-                continue
-            self._create_track(detection, timestamp)
-        self._remove_dead_tracks()
+            index = indices[row]
+            self.tracks[index].update(detections[col].bbox, detections[col].confidence)
+            matched.add(index)
+            used.add(col)
+        return matched, used
 
-    def _create_track(self, detection, timestamp):
-        self.tracks.append(Track(bbox=detection.bbox, class_name=detection.class_name, confidence=detection.confidence, timestamp=timestamp, config=self.config))
-
-    def _remove_dead_tracks(self):
-        self.tracks = [track for track in self.tracks if track.misses <= self.config.max_misses]
-
-    def snapshots(self) -> tuple[RenderTrack, ...]:
-        snapshots = []
-        for track in self.tracks:
-            if track.hits < self.config.min_hits:
-                continue
-            if track.misses > self.config.max_snapshot_misses:
-                continue
-            snapshots.append(track.snapshot())
-        return tuple(snapshots)
+    def snapshots(self) -> tuple[PerceptionEntity, ...]:
+        return tuple(t.snapshot() for t in self.tracks
+                     if t.hits >= self.config.min_hits
+                     and t.misses <= self.config.max_snapshot_misses
+                     and (t.misses == 0 or self.last_timestamp - t.last_observed_timestamp
+                          <= self.config.max_coast_age))

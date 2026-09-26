@@ -6,6 +6,7 @@ import cv2
 from config import VisionConfig
 from core.latest_frame import LatestFrameBuffer
 from core.types import FramePacket
+from tracking.motion import BoxMotionHistory
 
 
 def capture_worker(config: VisionConfig, frame_buffer: LatestFrameBuffer,
@@ -20,13 +21,21 @@ def capture_worker(config: VisionConfig, frame_buffer: LatestFrameBuffer,
         print(f"Source FPS: {source_fps:.2f}")
         frame_period = 1.0 / source_fps
         frame_id = 0
+        motion = BoxMotionHistory(config)
         next_frame_time = time.perf_counter()
         while not stop_event.is_set():
             success, frame = cap.read()
             if not success:
                 break
             frame_id += 1
-            frame_buffer.publish(FramePacket(frame_id, time.perf_counter(), frame))
+            packet = FramePacket(frame_id, time.perf_counter(), frame)
+            packet.motion = motion.snapshot()
+            frame_buffer.publish(packet)
+            # Publish on cadence, then use capture's spare frame budget for flow.
+            # The next packet carries this immutable history; display projects the
+            # remaining short interval instead of waiting for optical flow.
+            if config.motion_enabled:
+                motion.update(FramePacket(packet.frame_id, packet.timestamp, frame))
             next_frame_time += frame_period
             remaining = next_frame_time - time.perf_counter()
             if remaining > 0:

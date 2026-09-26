@@ -7,5 +7,5 @@ def create_detector(config: VisionConfig) -> Detector:
         raise ValueError(f"Unknown detector backend: {config.detector_backend}")
     from detectors.ultralytics_detector import UltralyticsDetector
     return UltralyticsDetector(config.model_path, config.image_size,
-                               config.confidence, config.inference_device,
-                               config.warmup_runs)
+                               min(config.confidence, config.track_low_confidence), config.inference_device,
+                               config.warmup_runs, config.onnx_intra_op_threads)

@@ -1,10 +1,23 @@
-"""Start the humanoid vision application."""
+"""Program entry point."""
+
 from config import VisionConfig
 from pipeline.vision_pipeline import VisionPipeline
 
 
 def main():
-    VisionPipeline(VisionConfig()).run()
+
+    config = VisionConfig()
+
+    print(
+        f"Render mode: "
+        f"{config.render_mode}"
+    )
+
+    pipeline = VisionPipeline(
+        config
+    )
+
+    pipeline.run()
 
 
 if __name__ == "__main__":

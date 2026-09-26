@@ -1,0 +1,4233 @@
+{
+  "sequence": [
+    {
+      "detections": [
+        {
+          "bbox": [
+            20,
+            30,
+            80,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            365,
+            45,
+            425,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            380,
+            60,
+            440,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 1.0,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            24,
+            30,
+            85,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            362,
+            45,
+            423,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            377,
+            60,
+            438,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 1.21,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 54.20986557006836,
+          "center_y": 90.0,
+          "velocity_x": 6.092843055725098,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 392.66119384765625,
+          "center_y": 105.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 407.66119384765625,
+          "center_y": 120.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            28,
+            30,
+            90,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            359,
+            45,
+            421,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            374,
+            60,
+            436,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 1.42,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 58.41301345825195,
+          "center_y": 90.0,
+          "velocity_x": 16.325767517089844,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 390.32611083984375,
+          "center_y": 105.0,
+          "velocity_x": -9.069849967956543,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 405.32611083984375,
+          "center_y": 120.0,
+          "velocity_x": -9.069849967956543,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            32,
+            30,
+            92,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            356,
+            45,
+            416,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            371,
+            60,
+            431,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 1.63,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 61.96486282348633,
+          "center_y": 90.0,
+          "velocity_x": 16.655094146728516,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 386.5365295410156,
+          "center_y": 105.0,
+          "velocity_x": -14.098615646362305,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 401.5365295410156,
+          "center_y": 120.0,
+          "velocity_x": -14.098615646362305,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            36,
+            30,
+            97,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            353,
+            45,
+            414,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            368,
+            60,
+            429,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 1.8399999999999999,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 66.20089721679688,
+          "center_y": 90.0,
+          "velocity_x": 18.29928970336914,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 383.5218505859375,
+          "center_y": 105.0,
+          "velocity_x": -14.218742370605469,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 398.5218505859375,
+          "center_y": 120.0,
+          "velocity_x": -14.218742370605469,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            40,
+            30,
+            102,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            350,
+            45,
+            412,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            365,
+            60,
+            427,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 2.05,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 70.68460083007812,
+          "center_y": 90.0,
+          "velocity_x": 19.63205909729004,
+          "velocity_y": 0.0,
+          "width": 60.9775390625,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 380.846923828125,
+          "center_y": 105.0,
+          "velocity_x": -13.57193374633789,
+          "velocity_y": 0.0,
+          "width": 60.9775390625,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 395.846923828125,
+          "center_y": 120.0,
+          "velocity_x": -13.57193374633789,
+          "velocity_y": 0.0,
+          "width": 60.9775390625,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            44,
+            30,
+            104,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            347,
+            45,
+            407,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            362,
+            60,
+            422,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 2.26,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 74.28121185302734,
+          "center_y": 90.0,
+          "velocity_x": 18.549972534179688,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 377.3471984863281,
+          "center_y": 105.0,
+          "velocity_x": -14.907999038696289,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 392.3471984863281,
+          "center_y": 120.0,
+          "velocity_x": -14.907999038696289,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 2.4699999999999998,
+      "snapshots": [
+        {
+          "track_id": 1,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 78.17670440673828,
+          "center_y": 90.0,
+          "velocity_x": 18.549972534179688,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 2,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 374.2165222167969,
+          "center_y": 105.0,
+          "velocity_x": -14.907999038696289,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 3,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 389.2165222167969,
+          "center_y": 120.0,
+          "velocity_x": -14.907999038696289,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 2.6799999999999997,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 2.8899999999999997,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            60,
+            30,
+            121,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            335,
+            45,
+            396,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            350,
+            60,
+            411,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 3.1,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            64,
+            30,
+            126,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            332,
+            45,
+            394,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            347,
+            60,
+            409,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 3.31,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 94.7098617553711,
+          "center_y": 90.0,
+          "velocity_x": 6.092843055725098,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 363.16119384765625,
+          "center_y": 105.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 378.16119384765625,
+          "center_y": 120.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            68,
+            30,
+            128,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            329,
+            45,
+            389,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            344,
+            60,
+            404,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 3.52,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 97.663818359375,
+          "center_y": 90.0,
+          "velocity_x": 11.953530311584473,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 359.576904296875,
+          "center_y": 105.0,
+          "velocity_x": -13.442097663879395,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 374.576904296875,
+          "center_y": 120.0,
+          "velocity_x": -13.442097663879395,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            72,
+            30,
+            133,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            326,
+            45,
+            387,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            341,
+            60,
+            402,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 3.73,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 101.98463439941406,
+          "center_y": 90.0,
+          "velocity_x": 16.78395652770996,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 356.5563049316406,
+          "center_y": 105.0,
+          "velocity_x": -13.969717025756836,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 371.5563049316406,
+          "center_y": 120.0,
+          "velocity_x": -13.969717025756836,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            76,
+            30,
+            138,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            323,
+            45,
+            385,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            338,
+            60,
+            400,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 3.94,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 106.57025909423828,
+          "center_y": 90.0,
+          "velocity_x": 19.14627456665039,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 353.8912353515625,
+          "center_y": 105.0,
+          "velocity_x": -13.371744155883789,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 368.8912353515625,
+          "center_y": 120.0,
+          "velocity_x": -13.371744155883789,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            80,
+            30,
+            140,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            320,
+            45,
+            380,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            335,
+            60,
+            395,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 4.15,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 110.19491577148438,
+          "center_y": 90.0,
+          "velocity_x": 18.32261085510254,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 350.3572692871094,
+          "center_y": 105.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 365.3572692871094,
+          "center_y": 120.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            84,
+            30,
+            145,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            317,
+            45,
+            378,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            332,
+            60,
+            393,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 4.359999999999999,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 114.3406982421875,
+          "center_y": 90.0,
+          "velocity_x": 18.93558692932129,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 347.4067077636719,
+          "center_y": 105.0,
+          "velocity_x": -14.522421836853027,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 362.4067077636719,
+          "center_y": 120.0,
+          "velocity_x": -14.522421836853027,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            88,
+            30,
+            150,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            314,
+            45,
+            376,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            329,
+            60,
+            391,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 4.57,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 118.75812530517578,
+          "center_y": 90.0,
+          "velocity_x": 19.84539794921875,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 344.772216796875,
+          "center_y": 105.0,
+          "velocity_x": -13.665675163269043,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 359.772216796875,
+          "center_y": 120.0,
+          "velocity_x": -13.665675163269043,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            92,
+            30,
+            152,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            311,
+            45,
+            371,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            326,
+            60,
+            386,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 4.779999999999999,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 122.32902526855469,
+          "center_y": 90.0,
+          "velocity_x": 18.61118507385254,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 341.3207702636719,
+          "center_y": 105.0,
+          "velocity_x": -14.86892318725586,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 356.3207702636719,
+          "center_y": 120.0,
+          "velocity_x": -14.86892318725586,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            96,
+            30,
+            157,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            308,
+            45,
+            369,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            323,
+            60,
+            384,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 4.99,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 126.4066162109375,
+          "center_y": 90.0,
+          "velocity_x": 18.961524963378906,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 338.3927307128906,
+          "center_y": 105.0,
+          "velocity_x": -14.46646499633789,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 353.3927307128906,
+          "center_y": 120.0,
+          "velocity_x": -14.46646499633789,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 5.2,
+      "snapshots": [
+        {
+          "track_id": 4,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 130.38853454589844,
+          "center_y": 90.0,
+          "velocity_x": 18.961524963378906,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 5,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 335.3547668457031,
+          "center_y": 105.0,
+          "velocity_x": -14.46646499633789,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 6,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 350.3547668457031,
+          "center_y": 120.0,
+          "velocity_x": -14.46646499633789,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 5.41,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 5.62,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            112,
+            30,
+            174,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            296,
+            45,
+            358,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            311,
+            60,
+            373,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 5.83,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            116,
+            30,
+            176,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            293,
+            45,
+            353,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            308,
+            60,
+            368,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 6.04,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 145.80657958984375,
+          "center_y": 90.0,
+          "velocity_x": 4.061895370483398,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        },
+        {
+          "track_id": 8,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 323.2579040527344,
+          "center_y": 105.0,
+          "velocity_x": -5.415860652923584,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 338.2579040527344,
+          "center_y": 120.0,
+          "velocity_x": -5.415860652923584,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            120,
+            30,
+            181,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            290,
+            45,
+            351,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            305,
+            60,
+            366,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 6.25,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 149.85787963867188,
+          "center_y": 90.0,
+          "velocity_x": 15.256085395812988,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        },
+        {
+          "track_id": 8,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 320.7709655761719,
+          "center_y": 105.0,
+          "velocity_x": -10.139564514160156,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 335.7709655761719,
+          "center_y": 120.0,
+          "velocity_x": -10.139564514160156,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            124,
+            30,
+            186,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            302,
+            60,
+            364,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 6.46,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 154.57052612304688,
+          "center_y": 90.0,
+          "velocity_x": 19.281551361083984,
+          "velocity_y": 0.0,
+          "width": 61.53125,
+          "height": 120.0
+        },
+        {
+          "track_id": 8,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 318.64166259765625,
+          "center_y": 105.0,
+          "velocity_x": -10.139564514160156,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 333.1421813964844,
+          "center_y": 120.0,
+          "velocity_x": -11.47214412689209,
+          "velocity_y": 0.0,
+          "width": 61.53125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            128,
+            30,
+            188,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            299,
+            60,
+            359,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 6.67,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 158.1786346435547,
+          "center_y": 90.0,
+          "velocity_x": 18.29960060119629,
+          "velocity_y": 0.0,
+          "width": 61.1484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 329.49957275390625,
+          "center_y": 120.0,
+          "velocity_x": -14.218417167663574,
+          "velocity_y": 0.0,
+          "width": 61.1484375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            132,
+            30,
+            193,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            296,
+            60,
+            357,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 6.88,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 162.34219360351562,
+          "center_y": 90.0,
+          "velocity_x": 18.966442108154297,
+          "velocity_y": 0.0,
+          "width": 61.111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 326.5045166015625,
+          "center_y": 120.0,
+          "velocity_x": -14.23751449584961,
+          "velocity_y": 0.0,
+          "width": 61.111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            136,
+            30,
+            198,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            293,
+            60,
+            355,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 7.09,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 166.7649383544922,
+          "center_y": 90.0,
+          "velocity_x": 19.870956420898438,
+          "velocity_y": 0.0,
+          "width": 61.33349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 323.8309326171875,
+          "center_y": 120.0,
+          "velocity_x": -13.58698844909668,
+          "velocity_y": 0.0,
+          "width": 61.33349609375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            140,
+            30,
+            200,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            290,
+            60,
+            350,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 7.3,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 170.3321990966797,
+          "center_y": 90.0,
+          "velocity_x": 18.621376037597656,
+          "velocity_y": 0.0,
+          "width": 61.0001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 320.3463134765625,
+          "center_y": 120.0,
+          "velocity_x": -14.889633178710938,
+          "velocity_y": 0.0,
+          "width": 61.0001220703125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            144,
+            30,
+            205,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            287,
+            60,
+            348,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 7.51,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 174.40853881835938,
+          "center_y": 90.0,
+          "velocity_x": 18.964454650878906,
+          "velocity_y": 0.0,
+          "width": 61.000091552734375,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 317.4002990722656,
+          "center_y": 120.0,
+          "velocity_x": -14.515609741210938,
+          "velocity_y": 0.0,
+          "width": 61.000091552734375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            148,
+            30,
+            210,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            284,
+            60,
+            346,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 7.72,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 178.78347778320312,
+          "center_y": 90.0,
+          "velocity_x": 19.77676010131836,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 314.76959228515625,
+          "center_y": 120.0,
+          "velocity_x": -13.651215553283691,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 7.93,
+      "snapshots": [
+        {
+          "track_id": 7,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 182.9365997314453,
+          "center_y": 90.0,
+          "velocity_x": 19.77676010131836,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 9,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 311.90283203125,
+          "center_y": 120.0,
+          "velocity_x": -13.651215553283691,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 8.14,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 8.35,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            164,
+            30,
+            224,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            272,
+            60,
+            332,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 8.559999999999999,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            168,
+            30,
+            229,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            269,
+            60,
+            330,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 8.77,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 198.20986938476562,
+          "center_y": 90.0,
+          "velocity_x": 6.092843055725098,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 299.66119384765625,
+          "center_y": 120.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            172,
+            30,
+            234,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            266,
+            60,
+            328,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 8.98,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 202.4130096435547,
+          "center_y": 90.0,
+          "velocity_x": 16.325756072998047,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 297.32611083984375,
+          "center_y": 120.0,
+          "velocity_x": -9.069849967956543,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            176,
+            30,
+            236,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            263,
+            60,
+            323,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 9.19,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 205.96485900878906,
+          "center_y": 90.0,
+          "velocity_x": 16.65509796142578,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 293.5365295410156,
+          "center_y": 120.0,
+          "velocity_x": -14.098615646362305,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            180,
+            30,
+            241,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            245,
+            45,
+            306,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            260,
+            60,
+            321,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 9.4,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 210.20089721679688,
+          "center_y": 90.0,
+          "velocity_x": 18.299293518066406,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 290.5218505859375,
+          "center_y": 120.0,
+          "velocity_x": -14.218742370605469,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            184,
+            30,
+            246,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            242,
+            45,
+            304,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            257,
+            60,
+            319,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 9.61,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 214.68460083007812,
+          "center_y": 90.0,
+          "velocity_x": 19.632062911987305,
+          "velocity_y": 0.0,
+          "width": 60.9775390625,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 287.846923828125,
+          "center_y": 120.0,
+          "velocity_x": -13.57193374633789,
+          "velocity_y": 0.0,
+          "width": 60.9775390625,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 273.16119384765625,
+          "center_y": 105.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            188,
+            30,
+            248,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            239,
+            45,
+            299,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            254,
+            60,
+            314,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 9.82,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 218.2812042236328,
+          "center_y": 90.0,
+          "velocity_x": 18.54998779296875,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 284.3471984863281,
+          "center_y": 120.0,
+          "velocity_x": -14.907999038696289,
+          "velocity_y": 0.0,
+          "width": 60.733154296875,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 269.576904296875,
+          "center_y": 105.0,
+          "velocity_x": -13.442097663879395,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            192,
+            30,
+            253,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            236,
+            45,
+            297,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            251,
+            60,
+            312,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 10.03,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 222.38548278808594,
+          "center_y": 90.0,
+          "velocity_x": 18.98076057434082,
+          "velocity_y": 0.0,
+          "width": 60.79986572265625,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 281.39959716796875,
+          "center_y": 120.0,
+          "velocity_x": -14.530290603637695,
+          "velocity_y": 0.0,
+          "width": 60.79986572265625,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 266.5563049316406,
+          "center_y": 105.0,
+          "velocity_x": -13.969717025756836,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            196,
+            30,
+            258,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            233,
+            45,
+            295,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            248,
+            60,
+            310,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 10.24,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 226.77658081054688,
+          "center_y": 90.0,
+          "velocity_x": 19.81883430480957,
+          "velocity_y": 0.0,
+          "width": 61.09989929199219,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 278.7683410644531,
+          "center_y": 120.0,
+          "velocity_x": -13.661271095275879,
+          "velocity_y": 0.0,
+          "width": 61.09989929199219,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 263.8912353515625,
+          "center_y": 105.0,
+          "velocity_x": -13.371744155883789,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            200,
+            30,
+            260,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            230,
+            45,
+            290,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            245,
+            60,
+            305,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 10.45,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 230.33370971679688,
+          "center_y": 90.0,
+          "velocity_x": 18.56684112548828,
+          "velocity_y": 0.0,
+          "width": 60.82492446899414,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 275.31982421875,
+          "center_y": 120.0,
+          "velocity_x": -14.86115550994873,
+          "velocity_y": 0.0,
+          "width": 60.82492446899414,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 260.3572692871094,
+          "center_y": 105.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 10.66,
+      "snapshots": [
+        {
+          "track_id": 10,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 234.2327423095703,
+          "center_y": 90.0,
+          "velocity_x": 18.56684112548828,
+          "velocity_y": 0.0,
+          "width": 60.82492446899414,
+          "height": 120.0
+        },
+        {
+          "track_id": 11,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 272.198974609375,
+          "center_y": 120.0,
+          "velocity_x": -14.86115550994873,
+          "velocity_y": 0.0,
+          "width": 60.82492446899414,
+          "height": 120.0
+        },
+        {
+          "track_id": 12,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 257.232177734375,
+          "center_y": 105.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 10.87,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 11.08,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            216,
+            30,
+            277,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            218,
+            45,
+            279,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            233,
+            60,
+            294,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 11.29,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            220,
+            30,
+            282,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            215,
+            45,
+            277,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            230,
+            60,
+            292,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 11.5,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 250.70986938476562,
+          "center_y": 90.0,
+          "velocity_x": 6.092843055725098,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 246.16119384765625,
+          "center_y": 105.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 261.16119384765625,
+          "center_y": 120.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 61.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            224,
+            30,
+            284,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            212,
+            45,
+            272,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            227,
+            60,
+            287,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 11.709999999999999,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 253.663818359375,
+          "center_y": 90.0,
+          "velocity_x": 11.953507423400879,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 242.576904296875,
+          "center_y": 105.0,
+          "velocity_x": -13.442142486572266,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 257.576904296875,
+          "center_y": 120.0,
+          "velocity_x": -13.442097663879395,
+          "velocity_y": 0.0,
+          "width": 60.9375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            228,
+            30,
+            289,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            209,
+            45,
+            270,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            224,
+            60,
+            285,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 11.92,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 257.984619140625,
+          "center_y": 90.0,
+          "velocity_x": 16.783964157104492,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 239.55628967285156,
+          "center_y": 105.0,
+          "velocity_x": -13.969761848449707,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 254.55628967285156,
+          "center_y": 120.0,
+          "velocity_x": -13.969717025756836,
+          "velocity_y": 0.0,
+          "width": 60.953125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            232,
+            30,
+            294,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            206,
+            45,
+            268,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            221,
+            60,
+            283,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 12.129999999999999,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 262.57025146484375,
+          "center_y": 90.0,
+          "velocity_x": 19.14630699157715,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 236.89122009277344,
+          "center_y": 105.0,
+          "velocity_x": -13.37176513671875,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 251.89122009277344,
+          "center_y": 120.0,
+          "velocity_x": -13.371744155883789,
+          "velocity_y": 0.0,
+          "width": 61.21484375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            236,
+            30,
+            296,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            203,
+            45,
+            263,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            218,
+            60,
+            278,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 12.34,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 266.1949157714844,
+          "center_y": 90.0,
+          "velocity_x": 18.322643280029297,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 233.3572540283203,
+          "center_y": 105.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 248.3572540283203,
+          "center_y": 120.0,
+          "velocity_x": -14.881388664245605,
+          "velocity_y": 0.0,
+          "width": 60.9111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            240,
+            30,
+            301,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            200,
+            45,
+            261,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            215,
+            60,
+            276,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 12.549999999999999,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 270.3406982421875,
+          "center_y": 90.0,
+          "velocity_x": 18.935619354248047,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 230.40670776367188,
+          "center_y": 105.0,
+          "velocity_x": -14.522400856018066,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 245.40670776367188,
+          "center_y": 120.0,
+          "velocity_x": -14.522400856018066,
+          "velocity_y": 0.0,
+          "width": 60.933349609375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            244,
+            30,
+            306,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            197,
+            45,
+            259,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            212,
+            60,
+            274,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 12.76,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 274.75811767578125,
+          "center_y": 90.0,
+          "velocity_x": 19.845430374145508,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 227.77223205566406,
+          "center_y": 105.0,
+          "velocity_x": -13.665674209594727,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 242.77223205566406,
+          "center_y": 120.0,
+          "velocity_x": -13.665674209594727,
+          "velocity_y": 0.0,
+          "width": 61.20001220703125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            248,
+            30,
+            308,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            194,
+            45,
+            254,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            209,
+            60,
+            269,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 12.969999999999999,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 278.32904052734375,
+          "center_y": 90.0,
+          "velocity_x": 18.611217498779297,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 224.32077026367188,
+          "center_y": 105.0,
+          "velocity_x": -14.868922233581543,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 239.32077026367188,
+          "center_y": 120.0,
+          "velocity_x": -14.868922233581543,
+          "velocity_y": 0.0,
+          "width": 60.90000915527344,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            252,
+            30,
+            313,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            191,
+            45,
+            252,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            206,
+            60,
+            267,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 13.18,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 282.4066162109375,
+          "center_y": 90.0,
+          "velocity_x": 18.96152687072754,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 221.39273071289062,
+          "center_y": 105.0,
+          "velocity_x": -14.466464042663574,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 236.39273071289062,
+          "center_y": 120.0,
+          "velocity_x": -14.466464042663574,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 13.389999999999999,
+      "snapshots": [
+        {
+          "track_id": 13,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 286.3885498046875,
+          "center_y": 90.0,
+          "velocity_x": 18.96152687072754,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 14,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 218.35476684570312,
+          "center_y": 105.0,
+          "velocity_x": -14.466464042663574,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        },
+        {
+          "track_id": 15,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 233.35476684570312,
+          "center_y": 120.0,
+          "velocity_x": -14.466464042663574,
+          "velocity_y": 0.0,
+          "width": 60.92500686645508,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 13.6,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 13.809999999999999,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            268,
+            30,
+            330,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            179,
+            45,
+            241,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            194,
+            60,
+            256,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 14.02,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            272,
+            30,
+            332,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            176,
+            45,
+            236,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            191,
+            60,
+            251,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 14.229999999999999,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 301.80657958984375,
+          "center_y": 90.0,
+          "velocity_x": 4.061895370483398,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 206.25790405273438,
+          "center_y": 105.0,
+          "velocity_x": -5.415860652923584,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 221.25790405273438,
+          "center_y": 120.0,
+          "velocity_x": -5.415860652923584,
+          "velocity_y": 0.0,
+          "width": 61.5,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            276,
+            30,
+            337,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            173,
+            45,
+            234,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            188,
+            60,
+            249,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 14.44,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 305.8578796386719,
+          "center_y": 90.0,
+          "velocity_x": 15.256085395812988,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 203.77096557617188,
+          "center_y": 105.0,
+          "velocity_x": -10.139564514160156,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 218.77096557617188,
+          "center_y": 120.0,
+          "velocity_x": -10.139564514160156,
+          "velocity_y": 0.0,
+          "width": 61.375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            280,
+            30,
+            342,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            170,
+            45,
+            232,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            185,
+            60,
+            247,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 14.65,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 310.5705261230469,
+          "center_y": 90.0,
+          "velocity_x": 19.28158187866211,
+          "velocity_y": 0.0,
+          "width": 61.53125,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 201.14218139648438,
+          "center_y": 105.0,
+          "velocity_x": -11.47214412689209,
+          "velocity_y": 0.0,
+          "width": 61.53125,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 216.14218139648438,
+          "center_y": 120.0,
+          "velocity_x": -11.47214412689209,
+          "velocity_y": 0.0,
+          "width": 61.53125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            284,
+            30,
+            344,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            167,
+            45,
+            227,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            182,
+            60,
+            242,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 14.86,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 314.1786193847656,
+          "center_y": 90.0,
+          "velocity_x": 18.299631118774414,
+          "velocity_y": 0.0,
+          "width": 61.1484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 197.4995880126953,
+          "center_y": 105.0,
+          "velocity_x": -14.218417167663574,
+          "velocity_y": 0.0,
+          "width": 61.1484375,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 212.4995880126953,
+          "center_y": 120.0,
+          "velocity_x": -14.218417167663574,
+          "velocity_y": 0.0,
+          "width": 61.1484375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            288,
+            30,
+            349,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            164,
+            45,
+            225,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            179,
+            60,
+            240,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 15.07,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 318.3421936035156,
+          "center_y": 90.0,
+          "velocity_x": 18.966472625732422,
+          "velocity_y": 0.0,
+          "width": 61.111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 194.50453186035156,
+          "center_y": 105.0,
+          "velocity_x": -14.237536430358887,
+          "velocity_y": 0.0,
+          "width": 61.111328125,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 209.50453186035156,
+          "center_y": 120.0,
+          "velocity_x": -14.237536430358887,
+          "velocity_y": 0.0,
+          "width": 61.111328125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            292,
+            30,
+            354,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            161,
+            45,
+            223,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            176,
+            60,
+            238,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 15.28,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 322.76495361328125,
+          "center_y": 90.0,
+          "velocity_x": 19.870967864990234,
+          "velocity_y": 0.0,
+          "width": 61.33349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 191.83094787597656,
+          "center_y": 105.0,
+          "velocity_x": -13.587010383605957,
+          "velocity_y": 0.0,
+          "width": 61.33349609375,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 206.83094787597656,
+          "center_y": 120.0,
+          "velocity_x": -13.587010383605957,
+          "velocity_y": 0.0,
+          "width": 61.33349609375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            296,
+            30,
+            356,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            158,
+            45,
+            218,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            173,
+            60,
+            233,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 15.49,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 326.33221435546875,
+          "center_y": 90.0,
+          "velocity_x": 18.62134552001953,
+          "velocity_y": 0.0,
+          "width": 61.0001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 188.3463134765625,
+          "center_y": 105.0,
+          "velocity_x": -14.889676094055176,
+          "velocity_y": 0.0,
+          "width": 61.0001220703125,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 203.3463134765625,
+          "center_y": 120.0,
+          "velocity_x": -14.889676094055176,
+          "velocity_y": 0.0,
+          "width": 61.0001220703125,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            300,
+            30,
+            361,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            155,
+            45,
+            216,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            170,
+            60,
+            231,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 15.7,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 330.4085388183594,
+          "center_y": 90.0,
+          "velocity_x": 18.96440315246582,
+          "velocity_y": 0.0,
+          "width": 61.000091552734375,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 185.40028381347656,
+          "center_y": 105.0,
+          "velocity_x": -14.515652656555176,
+          "velocity_y": 0.0,
+          "width": 61.000091552734375,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 200.40028381347656,
+          "center_y": 120.0,
+          "velocity_x": -14.515652656555176,
+          "velocity_y": 0.0,
+          "width": 61.000091552734375,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            304,
+            30,
+            366,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            152,
+            45,
+            214,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            167,
+            60,
+            229,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 15.91,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 334.7834777832031,
+          "center_y": 90.0,
+          "velocity_x": 19.776729583740234,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 182.76959228515625,
+          "center_y": 105.0,
+          "velocity_x": -13.651217460632324,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 197.76959228515625,
+          "center_y": 120.0,
+          "velocity_x": -13.651217460632324,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 16.119999999999997,
+      "snapshots": [
+        {
+          "track_id": 16,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 338.93658447265625,
+          "center_y": 90.0,
+          "velocity_x": 19.776729583740234,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 17,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 179.90283203125,
+          "center_y": 105.0,
+          "velocity_x": -13.651217460632324,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        },
+        {
+          "track_id": 18,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 194.90283203125,
+          "center_y": 120.0,
+          "velocity_x": -13.651217460632324,
+          "velocity_y": 0.0,
+          "width": 61.25006866455078,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [],
+      "timestamp": 16.33,
+      "snapshots": []
+    },
+    {
+      "detections": [],
+      "timestamp": 16.54,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            320,
+            30,
+            380,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            140,
+            45,
+            200,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            155,
+            60,
+            215,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 16.75,
+      "snapshots": []
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            324,
+            30,
+            385,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            137,
+            45,
+            198,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            152,
+            60,
+            213,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 16.96,
+      "snapshots": [
+        {
+          "track_id": 19,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 354.2098693847656,
+          "center_y": 90.0,
+          "velocity_x": 6.092843055725098,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 20,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 167.66119384765625,
+          "center_y": 105.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        },
+        {
+          "track_id": 21,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 182.66119384765625,
+          "center_y": 120.0,
+          "velocity_x": -3.3849129676818848,
+          "velocity_y": 0.0,
+          "width": 60.25,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            328,
+            30,
+            390,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            134,
+            45,
+            196,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            149,
+            60,
+            211,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 17.169999999999998,
+      "snapshots": [
+        {
+          "track_id": 19,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 358.41302490234375,
+          "center_y": 90.0,
+          "velocity_x": 16.325712203979492,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        },
+        {
+          "track_id": 20,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 165.32611083984375,
+          "center_y": 105.0,
+          "velocity_x": -9.069893836975098,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        },
+        {
+          "track_id": 21,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 180.32611083984375,
+          "center_y": 120.0,
+          "velocity_x": -9.069893836975098,
+          "velocity_y": 0.0,
+          "width": 60.6875,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            332,
+            30,
+            392,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            131,
+            45,
+            191,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            146,
+            60,
+            206,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 17.38,
+      "snapshots": [
+        {
+          "track_id": 19,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 361.9648742675781,
+          "center_y": 90.0,
+          "velocity_x": 16.6550235748291,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        },
+        {
+          "track_id": 20,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 161.53651428222656,
+          "center_y": 105.0,
+          "velocity_x": -14.098628044128418,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        },
+        {
+          "track_id": 21,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 176.53651428222656,
+          "center_y": 120.0,
+          "velocity_x": -14.098628044128418,
+          "velocity_y": 0.0,
+          "width": 60.515625,
+          "height": 120.0
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "bbox": [
+            336,
+            30,
+            397,
+            150
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            128,
+            45,
+            189,
+            165
+          ],
+          "class_name": "person",
+          "confidence": 0.8
+        },
+        {
+          "bbox": [
+            143,
+            60,
+            204,
+            180
+          ],
+          "class_name": "car",
+          "confidence": 0.8
+        }
+      ],
+      "timestamp": 17.59,
+      "snapshots": [
+        {
+          "track_id": 19,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 366.2008972167969,
+          "center_y": 90.0,
+          "velocity_x": 18.299219131469727,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        },
+        {
+          "track_id": 20,
+          "class_name": "person",
+          "confidence": 0.8,
+          "center_x": 158.5218505859375,
+          "center_y": 105.0,
+          "velocity_x": -14.218754768371582,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        },
+        {
+          "track_id": 21,
+          "class_name": "car",
+          "confidence": 0.8,
+          "center_x": 173.5218505859375,
+          "center_y": 120.0,
+          "velocity_x": -14.218754768371582,
+          "velocity_y": 0.0,
+          "width": 60.63671875,
+          "height": 120.0
+        }
+      ]
+    }
+  ],
+  "boxes": [
+    [
+      0,
+      0,
+      100,
+      100
+    ],
+    [
+      1,
+      1,
+      101,
+      101
+    ],
+    [
+      8,
+      8,
+      110,
+      110
+    ],
+    [
+      30,
+      30,
+      130,
+      130
+    ],
+    [
+      200,
+      200,
+      320,
+      320
+    ]
+  ],
+  "smoothed": [
+    [
+      0.0,
+      0.0,
+      100.0,
+      100.0
+    ],
+    [
+      0.11999893188476562,
+      0.11999893188476562,
+      100.1199951171875,
+      100.1199951171875
+    ],
+    [
+      4.823997497558594,
+      4.823997497558594,
+      105.18399810791016,
+      105.18399810791016
+    ],
+    [
+      18.604198455810547,
+      18.604198455810547,
+      118.89939880371094,
+      118.89939880371094
+    ],
+    [
+      169.82933044433594,
+      169.82933044433594,
+      273.67138671875,
+      273.67138671875
+    ]
+  ]
+}
