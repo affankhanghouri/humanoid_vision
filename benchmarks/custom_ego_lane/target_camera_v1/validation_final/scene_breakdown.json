@@ -1,0 +1,86 @@
+{
+  "clear_normal_lane": {
+    "frames": 97,
+    "valid": 97,
+    "invalid_or_ambiguous": 0,
+    "detected_valid": 40,
+    "missed_valid": 57,
+    "false_lane": 0,
+    "correct_abstain": 0,
+    "valid_lane_detection_rate": 0.41237113402061853,
+    "false_lane_rate": null,
+    "correct_abstain_rate": null
+  },
+  "crosswalk_stop_line": {
+    "frames": 40,
+    "valid": 0,
+    "invalid_or_ambiguous": 40,
+    "detected_valid": 0,
+    "missed_valid": 0,
+    "false_lane": 2,
+    "correct_abstain": 38,
+    "valid_lane_detection_rate": null,
+    "false_lane_rate": 0.05,
+    "correct_abstain_rate": 0.95
+  },
+  "faded_lane": {
+    "frames": 28,
+    "valid": 0,
+    "invalid_or_ambiguous": 28,
+    "detected_valid": 0,
+    "missed_valid": 0,
+    "false_lane": 0,
+    "correct_abstain": 28,
+    "valid_lane_detection_rate": null,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  },
+  "intersection": {
+    "frames": 40,
+    "valid": 0,
+    "invalid_or_ambiguous": 40,
+    "detected_valid": 0,
+    "missed_valid": 0,
+    "false_lane": 2,
+    "correct_abstain": 38,
+    "valid_lane_detection_rate": null,
+    "false_lane_rate": 0.05,
+    "correct_abstain_rate": 0.95
+  },
+  "occlusion": {
+    "frames": 88,
+    "valid": 20,
+    "invalid_or_ambiguous": 68,
+    "detected_valid": 0,
+    "missed_valid": 20,
+    "false_lane": 2,
+    "correct_abstain": 66,
+    "valid_lane_detection_rate": 0.0,
+    "false_lane_rate": 0.029411764705882353,
+    "correct_abstain_rate": 0.9705882352941176
+  },
+  "parked_cars_curb": {
+    "frames": 125,
+    "valid": 97,
+    "invalid_or_ambiguous": 28,
+    "detected_valid": 40,
+    "missed_valid": 57,
+    "false_lane": 0,
+    "correct_abstain": 28,
+    "valid_lane_detection_rate": 0.41237113402061853,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  },
+  "turning_curved_road": {
+    "frames": 59,
+    "valid": 59,
+    "invalid_or_ambiguous": 0,
+    "detected_valid": 25,
+    "missed_valid": 34,
+    "false_lane": 0,
+    "correct_abstain": 0,
+    "valid_lane_detection_rate": 0.423728813559322,
+    "false_lane_rate": null,
+    "correct_abstain_rate": null
+  }
+}

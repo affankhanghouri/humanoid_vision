@@ -1,0 +1,25 @@
+{
+  "checkpoint_sha256": "8453cca101d98e83300659ec8f7e06cb4b9b1ea9111d335ad3b66514c8962ab0",
+  "onnx_sha256": "86ffb85f52716dfe87ebf5b5d8c7a458de90d8c6da9657e0f8a327eaeb12c7ab",
+  "checkpoint_bytes": 143405479,
+  "onnx_bytes": 47700083,
+  "onnx_checker": "passed",
+  "opset": 17,
+  "comparisons": [
+    {
+      "frame_id": 0,
+      "max_abs_error": 9.5367431640625e-06,
+      "mean_abs_error": 6.511433525702159e-07
+    },
+    {
+      "frame_id": 860,
+      "max_abs_error": 8.58306884765625e-06,
+      "mean_abs_error": 5.70964573398669e-07
+    },
+    {
+      "frame_id": 1990,
+      "max_abs_error": 9.059906005859375e-06,
+      "mean_abs_error": 7.67270250889851e-07
+    }
+  ]
+}

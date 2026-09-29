@@ -1,0 +1,65 @@
+{
+  "method": "chronological cached samples from full sequential decode",
+  "train": {
+    "source": {
+      "path": "/home/affan/Desktop/humanoid_vision/training_data/lane/target_camera/train/train_drive.mp4",
+      "sha256": "66ba3789108b60aea7f4597efe21773fa831c49c06f3a80ea552449d93bba718",
+      "clip_id": "target_train",
+      "split": "train",
+      "frames": 848,
+      "sampling_stride_frames": 27,
+      "candidate_slots_considered": 848,
+      "near_duplicate_rejections": 0
+    },
+    "cached_samples": 848,
+    "first_timestamp_s": 0.0,
+    "last_timestamp_s": 762.3,
+    "luminance": {
+      "min": 55.065388454861115,
+      "median": 102.21103678385415,
+      "max": 143.558701171875
+    },
+    "contrast": {
+      "min": 37.08072393483086,
+      "median": 58.738232323297524,
+      "max": 105.06592317011672
+    },
+    "laplacian_variance": {
+      "min": 56.633788612831964,
+      "median": 204.16291813495718,
+      "max": 2484.810423834049
+    },
+    "contact_sheets": 22
+  },
+  "validation": {
+    "source": {
+      "path": "/home/affan/Desktop/humanoid_vision/training_data/lane/target_camera/validation/validation_drive.mp4",
+      "sha256": "d28fd69703561b5b45c32929a3fc531cbee64594abe8d88c2c2b459d91654ecd",
+      "clip_id": "target_validation",
+      "split": "validation",
+      "frames": 168,
+      "sampling_stride_frames": 15,
+      "candidate_slots_considered": 168,
+      "near_duplicate_rejections": 0
+    },
+    "cached_samples": 168,
+    "first_timestamp_s": 0.0,
+    "last_timestamp_s": 83.5835,
+    "luminance": {
+      "min": 87.14447157118056,
+      "median": 119.63985568576389,
+      "max": 130.717587890625
+    },
+    "contrast": {
+      "min": 61.338161024851104,
+      "median": 67.6517037940138,
+      "max": 72.79569016717565
+    },
+    "laplacian_variance": {
+      "min": 384.98882101833084,
+      "median": 665.6926895402955,
+      "max": 989.998312496269
+    },
+    "contact_sheets": 5
+  }
+}

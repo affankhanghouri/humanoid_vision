@@ -1,0 +1,24 @@
+{
+  "records": 100,
+  "review_status": {
+    "complete": 100
+  },
+  "ego_lane_status": {
+    "ambiguous": 17,
+    "valid": 36,
+    "invalid": 47
+  },
+  "left_boundary_status": {
+    "visible": 41,
+    "ambiguous": 6,
+    "not_visible": 53
+  },
+  "right_boundary_status": {
+    "ambiguous": 9,
+    "not_visible": 80,
+    "visible": 11
+  },
+  "schema_errors": [],
+  "suspicious_annotations": [],
+  "passes": true
+}

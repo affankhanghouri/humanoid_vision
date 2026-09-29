@@ -1,8 +1,9 @@
 """Own the complete real-time perception pipeline."""
 
+import logging
 import threading
 import time
-import traceback
+from pathlib import Path
 
 import cv2
 
@@ -66,14 +67,26 @@ from tracking.tracker import (
 )
 
 
+LOGGER = logging.getLogger(__name__)
+
+
 class VisionPipeline:
 
     def __init__(
         self,
         config: VisionConfig,
+        road_estimator=None,
     ):
 
         self.config = config
+        self.road_estimator = road_estimator
+        if self.road_estimator is None and config.road_demo_enabled:
+            model_path = Path(config.road_model_path)
+            if not model_path.is_file():
+                raise FileNotFoundError(f"Road demo model not found: {model_path}")
+            from road.segmentation import RoadSegmenter
+            self.road_estimator = RoadSegmenter(model_path, threads=2)
+            LOGGER.info("Road model loaded | backend=OpenVINO FP32 | path=%s", model_path)
 
     def run(
         self,
@@ -91,9 +104,7 @@ class VisionPipeline:
         # Detection model
         # ==================================================
 
-        print(
-            "Loading detector..."
-        )
+        LOGGER.info("Loading detector: %s", self.config.model_path)
 
         detector = create_detector(
             self.config
@@ -103,23 +114,17 @@ class VisionPipeline:
             self.config.opencv_threads
         )
 
-        print(
-            "Warming up detector..."
-        )
+        LOGGER.info("Warming up detector")
 
         detector.warmup()
 
-        print(
-            "Detector warm-up complete."
-        )
+        LOGGER.info("Detector warm-up complete")
 
         # ==================================================
         # Pose model
         # ==================================================
 
-        print(
-            "Loading pose model..."
-        )
+        LOGGER.info("Loading pose model: %s", self.config.pose_model_path)
 
         pose_estimator = (
             UltralyticsPoseEstimator(
@@ -151,19 +156,11 @@ class VisionPipeline:
             self.config.opencv_threads
         )
 
-        print(
-            "Warming up pose..."
-        )
+        LOGGER.info("Warming up pose")
 
         pose_estimator.warmup()
 
-        print(
-            "Pose warm-up complete."
-        )
-
-        print(
-            "Warm-up complete."
-        )
+        LOGGER.info("Pose warm-up complete")
 
         # ==================================================
         # Shared stores
@@ -230,8 +227,13 @@ class VisionPipeline:
                         .pose_max_input_age
                     ),
                 ),
-            )
+            ) + ((TaskPolicy('road', 80, self.config.road_request_interval, .15),)
+                 if self.road_estimator is not None else ()),
         )
+
+        if self.road_estimator is not None:
+            # Seed measured warmup cost so optional road work never probes blindly.
+            scheduler.seed_cost('road', self.road_estimator.warmup())
 
         # ==================================================
         # Renderer
@@ -239,7 +241,7 @@ class VisionPipeline:
 
         if (
             self.config.render_mode
-            == "demo"
+            in {"demo", "demo_risk"}
         ):
 
             renderer = DemoRenderer(
@@ -252,10 +254,7 @@ class VisionPipeline:
                 self.config
             )
 
-        print(
-            f"Renderer active: "
-            f"{type(renderer).__name__}"
-        )
+        LOGGER.info("Renderer active: %s", type(renderer).__name__)
 
         # ==================================================
         # Failure handling
@@ -280,7 +279,7 @@ class VisionPipeline:
 
             except Exception as exc:
 
-                traceback.print_exc()
+                LOGGER.exception("Worker %s failed", threading.current_thread().name)
 
                 with failure_lock:
 
@@ -346,6 +345,7 @@ class VisionPipeline:
                     tracker,
                     perception_store,
                     stop_event,
+                    self.road_estimator,
                 ),
             )
         )
@@ -371,16 +371,23 @@ class VisionPipeline:
         fps_start = (
             time.perf_counter()
         )
+        video_writer = None
 
         # ==================================================
         # Start
         # ==================================================
 
         try:
-            cv2.namedWindow(
-                self.config.window_title,
-                cv2.WINDOW_NORMAL | cv2.WINDOW_GUI_NORMAL,
-            )
+            try:
+                cv2.namedWindow(
+                    self.config.window_title,
+                    cv2.WINDOW_NORMAL | cv2.WINDOW_GUI_NORMAL,
+                )
+            except cv2.error as exc:
+                raise RuntimeError(
+                    "Could not create the OpenCV window. Run from a desktop "
+                    "session with GUI-enabled opencv-python and a valid display."
+                ) from exc
             cv2.setWindowProperty(
                 self.config.window_title,
                 cv2.WND_PROP_FULLSCREEN,
@@ -518,6 +525,19 @@ class VisionPipeline:
                     display_fps,
                 )
 
+                if self.config.record_output_path:
+                    if video_writer is None:
+                        output_path = Path(self.config.record_output_path)
+                        output_path.parent.mkdir(parents=True, exist_ok=True)
+                        height, width = frame.shape[:2]
+                        video_writer = cv2.VideoWriter(
+                            str(output_path), cv2.VideoWriter_fourcc(*"mp4v"),
+                            self.config.record_fps, (width, height))
+                        if not video_writer.isOpened():
+                            raise RuntimeError(f"Could not open recording: {output_path}")
+                        LOGGER.info("Recording rendered frames to: %s", output_path)
+                    video_writer.write(frame)
+
                 cv2.imshow(
                     self.config
                     .window_title,
@@ -550,6 +570,9 @@ class VisionPipeline:
             ):
 
                 thread.join()
+
+            if video_writer is not None:
+                video_writer.release()
 
             cv2.destroyAllWindows()
 

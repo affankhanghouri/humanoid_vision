@@ -1,0 +1,50 @@
+{
+  "clear_normal_lane": {
+    "frames": 31,
+    "valid": 23,
+    "invalid_or_ambiguous": 8,
+    "detected_valid": 0,
+    "missed_valid": 23,
+    "false_lane": 0,
+    "correct_abstain": 8,
+    "valid_lane_detection_rate": 0.0,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  },
+  "crosswalk_stop_line": {
+    "frames": 137,
+    "valid": 0,
+    "invalid_or_ambiguous": 137,
+    "detected_valid": 0,
+    "missed_valid": 0,
+    "false_lane": 0,
+    "correct_abstain": 137,
+    "valid_lane_detection_rate": null,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  },
+  "intersection": {
+    "frames": 137,
+    "valid": 0,
+    "invalid_or_ambiguous": 137,
+    "detected_valid": 0,
+    "missed_valid": 0,
+    "false_lane": 0,
+    "correct_abstain": 137,
+    "valid_lane_detection_rate": null,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  },
+  "occlusion": {
+    "frames": 168,
+    "valid": 23,
+    "invalid_or_ambiguous": 145,
+    "detected_valid": 0,
+    "missed_valid": 23,
+    "false_lane": 0,
+    "correct_abstain": 145,
+    "valid_lane_detection_rate": 0.0,
+    "false_lane_rate": 0.0,
+    "correct_abstain_rate": 1.0
+  }
+}

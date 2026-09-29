@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "model": {
+    "name": "example_lane_model",
+    "version": "replace-with-checkpoint-id"
+  },
+  "predictions": [
+    {
+      "frame_id": 0,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      }
+    },
+    {
+      "frame_id": 480,
+      "ego_lane_status": "valid",
+      "left_boundary": {
+        "status": "visible",
+        "points": [[438, 697], [501, 560], [543, 455]]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [[887, 701], [760, 552], [690, 452]]
+      }
+    }
+  ]
+}

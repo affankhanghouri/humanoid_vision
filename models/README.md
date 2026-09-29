@@ -1,21 +1,35 @@
 # Local model assets
 
-Model weights and inference exports are excluded from Git, including files placed
-outside this directory. Obtain or copy the assets separately when setting up a
-fresh clone; the setup instructions do not download them.
+Model weights and exported inference artifacts are intentionally excluded from
+Git. Copy compatible assets into this directory; setup does not download models
+and this repository does not provide unofficial download links.
 
-The default application requires these local files:
+## Required for the normal application
 
-```text
-models/
-├── yolo26n.onnx             # Object detector, 512-pixel input
-└── yolo26n-pose-320.onnx    # Pose estimator, 320-pixel input
-```
+| File | Purpose | Runtime | Input | Required |
+|---|---|---|---:|---:|
+| `models/yolo26n.onnx` | object detection | Ultralytics + ONNX Runtime, CPU | 512 px `imgsz` | yes |
+| `models/yolo26n-pose-320.onnx` | human pose | Ultralytics + ONNX Runtime, CPU | 320 px `imgsz` | yes |
 
-Both run on CPU through ONNX Runtime. The authoritative paths, input sizes and
-thresholds are in `src/config.py`.
+The exported models must be compatible with the installed Ultralytics version.
+The authoritative paths, confidence thresholds, warm-up counts, and image sizes
+are in `src/config.py`.
 
-Optional backend/size benchmarks also use local PyTorch `.pt` weights, other pose
-ONNX sizes, and OpenVINO export directories containing `.xml`, `.bin` and metadata
-files. These assets must also remain out of Git. Keep the same exports when
-reproducing measurements: different exports can change detections and performance.
+## Optional demo asset
+
+| File | Purpose | Runtime | Expected tensor shapes |
+|---|---|---|---|
+| `models/road_nano_640.onnx` | TwinLiteNet+ road-only drivable mask | OpenVINO FP32, CPU | input `[1,3,384,640]`, output `[1,2,384,640]` |
+
+The road model is loaded only by `--risk-demo` unless `--no-road-overlay` is
+given. It is not a lane model and its mask is not path geometry.
+
+## Research-only local assets
+
+Retained benchmark scripts may reference additional PyTorch checkpoints, ONNX
+exports, OpenVINO directories, or source trees. Those assets are not required to
+run or test the production pipeline and remain ignored. Consult the relevant
+report under `benchmarks/` for the exact experiment.
+
+Do not commit weights or exports. Different exports can change predictions,
+timing, and backend behavior even when filenames match.

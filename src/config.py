@@ -179,9 +179,20 @@ class VisionConfig:
     # DEMO / RENDER MODE
     # ==================================================
 
-    # "demo" = flashy LinkedIn UI
+    # "demo" = existing LinkedIn UI; "demo_risk" adds the demo-only
+    # perception priority map. Normal defaults remain unchanged.
     # "debug" = old simple renderer
     render_mode: str = "demo"
+    risk_heatmap_enabled: bool = False
+    road_demo_enabled: bool = False
+    road_model_path: str = str(PROJECT_ROOT / "models" / "road_nano_640.onnx")
+    road_request_interval: float = 1.0
+    road_max_age: float = 1.35
+    road_overlay_alpha: float = 0.06
+    risk_heatmap_alpha: float = 0.36
+    risk_heatmap_scale: int = 4
+    record_output_path: str | None = None
+    record_fps: float = 24.0
 
     # ==================================================
     # RUNTIME

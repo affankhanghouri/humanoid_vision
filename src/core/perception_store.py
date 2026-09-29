@@ -1,13 +1,14 @@
-"""Atomically merge independent tracking and pose updates by entity ID."""
+"""Atomically merge independent tracking, pose and road observations."""
 from dataclasses import replace
 from threading import Lock
-from core.perception_state import ObservationMeta, PerceptionState, PoseObservation
+from core.perception_state import ObservationMeta, PerceptionState, PoseObservation, RoadSegObservation
 
 
 class PerceptionStore:
     def __init__(self):
         self._lock = Lock()
         self._state: PerceptionState | None = None
+        self._road: RoadSegObservation | None = None
 
     def publish(self, state: PerceptionState) -> None:
         """Compatibility entry point for tracking publishers."""
@@ -30,7 +31,7 @@ class PerceptionStore:
                     pose_hz=old.pose_hz, pose_average_ms=old.pose_average_ms,
                     pose_p95_ms=old.pose_p95_ms,
                 )
-            self._state = state
+            self._state = replace(state, road=self._road) if state.road is not self._road else state
 
     def publish_pose(self, observations: dict[int, PoseObservation], meta: ObservationMeta,
                      inference_ms: float, pose_hz: float, average_ms: float, p95_ms: float) -> None:
@@ -50,6 +51,19 @@ class PerceptionStore:
                 pose_meta=meta, pose_inference_ms=inference_ms, pose_hz=pose_hz,
                 pose_average_ms=average_ms, pose_p95_ms=p95_ms,
             )
+
+    def publish_road(self, observation: RoadSegObservation) -> None:
+        with self._lock:
+            old = self._road
+            if old is not None and (observation.source_frame_id, observation.produced_timestamp) <= (old.source_frame_id, old.produced_timestamp):
+                return
+            self._road = observation
+            if self._state is not None:
+                self._state = replace(self._state, road=observation)
+
+    def get_road(self) -> RoadSegObservation | None:
+        with self._lock:
+            return self._road
 
     def get_latest(self) -> PerceptionState | None:
         with self._lock:

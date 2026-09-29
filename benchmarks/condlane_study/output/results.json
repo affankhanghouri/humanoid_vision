@@ -1,0 +1,257 @@
+{
+  "model": {
+    "name": "condlanenet_culane_small_conservative",
+    "version": "official-culane-small-threshold-0.5",
+    "backend": "openvino_fp32_2_threads",
+    "adapter": "two-sided center-bracketing; questionable/partial lanes abstain"
+  },
+  "machine": {
+    "processor": "x86_64",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39"
+  },
+  "frames": 100,
+  "warmups_per_backend": 3,
+  "timing_ms": [
+    {
+      "backend": "onnxruntime_fp32_1_thread",
+      "frames": 100,
+      "preprocess_ms": {
+        "mean": 16.716909660000002,
+        "median": 15.575508,
+        "p95": 20.80031175,
+        "p99": 31.181627250000048
+      },
+      "inference_ms": {
+        "mean": 402.8443424100002,
+        "median": 376.847948,
+        "p95": 511.42780005,
+        "p99": 653.2304146900005
+      },
+      "postprocess_ms": {
+        "mean": 3.5324078699999997,
+        "median": 1.573278,
+        "p95": 17.7580289,
+        "p99": 24.30615723000004
+      },
+      "total_ms": {
+        "mean": 423.09365994000007,
+        "median": 395.8324725,
+        "p95": 533.6330871499999,
+        "p99": 673.6697197100005
+      }
+    },
+    {
+      "backend": "onnxruntime_fp32_2_threads",
+      "frames": 100,
+      "preprocess_ms": {
+        "mean": 18.305412690000004,
+        "median": 17.4328875,
+        "p95": 23.188290699999992,
+        "p99": 30.55475599000002
+      },
+      "inference_ms": {
+        "mean": 259.13896371999994,
+        "median": 223.3927455,
+        "p95": 415.46267785,
+        "p99": 460.91194421000006
+      },
+      "postprocess_ms": {
+        "mean": 4.69699196,
+        "median": 1.66531,
+        "p95": 25.3954739,
+        "p99": 43.01594314000018
+      },
+      "total_ms": {
+        "mean": 282.14136837,
+        "median": 244.09453200000002,
+        "p95": 450.41822625000003,
+        "p99": 495.17086134000016
+      }
+    },
+    {
+      "backend": "openvino_fp32_1_thread",
+      "frames": 100,
+      "preprocess_ms": {
+        "mean": 15.01617963,
+        "median": 14.4749445,
+        "p95": 18.942401699999998,
+        "p99": 20.18412959
+      },
+      "inference_ms": {
+        "mean": 412.06669566,
+        "median": 403.982727,
+        "p95": 470.47965754999996,
+        "p99": 615.9225572200004
+      },
+      "postprocess_ms": {
+        "mean": 3.0545268500000002,
+        "median": 1.4743535,
+        "p95": 16.826362149999994,
+        "p99": 20.84928651000001
+      },
+      "total_ms": {
+        "mean": 430.13740213999995,
+        "median": 421.6027715,
+        "p95": 486.9693191999999,
+        "p99": 637.7670476600003
+      }
+    },
+    {
+      "backend": "openvino_fp32_2_threads",
+      "frames": 100,
+      "preprocess_ms": {
+        "mean": 14.840710410000002,
+        "median": 14.6499565,
+        "p95": 17.30524335,
+        "p99": 18.104210330000008
+      },
+      "inference_ms": {
+        "mean": 237.19471312999997,
+        "median": 234.2108705,
+        "p95": 258.90067104999997,
+        "p99": 281.9028916100001
+      },
+      "postprocess_ms": {
+        "mean": 3.2421766300000003,
+        "median": 1.3928159999999998,
+        "p95": 16.7396295,
+        "p99": 27.5628941700001
+      },
+      "total_ms": {
+        "mean": 255.27760016999997,
+        "median": 250.602677,
+        "p95": 286.20510415,
+        "p99": 318.76261303
+      }
+    }
+  ],
+  "acceptance_metrics": {
+    "valid_ego_lane_detection_rate": 0.1388888888888889,
+    "false_ego_lane_rate": 0.015625,
+    "missed_ego_lane_rate": 0.8611111111111112,
+    "abstain_rate": 0.94,
+    "correct_abstain_rate": 0.984375,
+    "safety_weighted_error_rate": 0.14912280701754385,
+    "false_lane_cost_weight": 3.0,
+    "left_boundary_detection_rate": 0.9024390243902439,
+    "left_boundary_error": {
+      "matched_boundaries": 37,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 1850,
+      "pixels": {
+        "mean": 107.95684829527367,
+        "median": 105.94084065888427,
+        "p95": 138.32074968944102,
+        "p99": 323.17435050377566,
+        "max": 440.157125319693
+      },
+      "normalized_by_image_width": {
+        "mean": 0.09371254192298062,
+        "median": 0.09196253529417037,
+        "p95": 0.12007009521652866,
+        "p99": 0.2805332903678608,
+        "max": 0.3820808379511224
+      }
+    },
+    "right_boundary_detection_rate": 0.45454545454545453,
+    "right_boundary_error": {
+      "matched_boundaries": 5,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 250,
+      "pixels": {
+        "mean": 198.67776503168332,
+        "median": 192.29492413032222,
+        "p95": 292.9931175730692,
+        "p99": 328.91321572107086,
+        "max": 340.2792608695652
+      },
+      "normalized_by_image_width": {
+        "mean": 0.172463337701114,
+        "median": 0.16692267719646026,
+        "p95": 0.2543343034488448,
+        "p99": 0.28551494420231843,
+        "max": 0.2953813028381642
+      }
+    }
+  },
+  "acceptance_counts": {
+    "frames": 100,
+    "ground_truth_valid": 36,
+    "ground_truth_no_valid_lane": 64,
+    "valid_lane_detected": 5,
+    "false_lane": 1,
+    "missed_lane": 31,
+    "abstained": 94,
+    "correct_abstain": 63,
+    "missing_predictions": 0
+  },
+  "scene_false_positive_rates": {
+    "intersection": {
+      "eligible_no_valid_lane": 27,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "unmarked_road": {
+      "eligible_no_valid_lane": 22,
+      "false_lane": 1,
+      "false_positive_rate": 0.045454545454545456
+    },
+    "crosswalk_stop_line": {
+      "eligible_no_valid_lane": 16,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "parked_cars_curb": {
+      "eligible_no_valid_lane": 14,
+      "false_lane": 1,
+      "false_positive_rate": 0.07142857142857142
+    }
+  },
+  "failure_visuals": [
+    {
+      "frame_id": 390,
+      "reason": "FALSE EGO LANE",
+      "file": "benchmarks/condlane_study/output/visuals/frame_0390.jpg"
+    },
+    {
+      "frame_id": 1450,
+      "reason": "MISSED VALID LANE",
+      "file": "benchmarks/condlane_study/output/visuals/frame_1450.jpg"
+    },
+    {
+      "frame_id": 1370,
+      "reason": "MISSED VALID LANE",
+      "file": "benchmarks/condlane_study/output/visuals/frame_1370.jpg"
+    },
+    {
+      "frame_id": 1310,
+      "reason": "MISSED VALID LANE",
+      "file": "benchmarks/condlane_study/output/visuals/frame_1310.jpg"
+    },
+    {
+      "frame_id": 1250,
+      "reason": "MISSED VALID LANE",
+      "file": "benchmarks/condlane_study/output/visuals/frame_1250.jpg"
+    },
+    {
+      "frame_id": 630,
+      "reason": "BOUNDARY ERROR 231px",
+      "file": "benchmarks/condlane_study/output/visuals/frame_0630.jpg"
+    },
+    {
+      "frame_id": 500,
+      "reason": "BOUNDARY ERROR 183px",
+      "file": "benchmarks/condlane_study/output/visuals/frame_0500.jpg"
+    },
+    {
+      "frame_id": 640,
+      "reason": "BOUNDARY ERROR 177px",
+      "file": "benchmarks/condlane_study/output/visuals/frame_0640.jpg"
+    },
+    {
+      "frame_id": 550,
+      "reason": "BOUNDARY ERROR 160px",
+      "file": "benchmarks/condlane_study/output/visuals/frame_0550.jpg"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "model": {
+    "name": "custom_ego_lane_mobilenetv3_small_v3",
+    "path": "benchmarks/custom_ego_lane/tiny_ego_lane_trained_v3.onnx"
+  },
+  "dataset": "humanoid_vision_lane_acceptance_v1",
+  "counts": {
+    "frames": 100,
+    "ground_truth_valid": 36,
+    "ground_truth_no_valid_lane": 64,
+    "valid_lane_detected": 0,
+    "false_lane": 0,
+    "missed_lane": 36,
+    "abstained": 100,
+    "correct_abstain": 64,
+    "missing_predictions": 0
+  },
+  "metrics": {
+    "valid_ego_lane_detection_rate": 0.0,
+    "false_ego_lane_rate": 0.0,
+    "missed_ego_lane_rate": 1.0,
+    "abstain_rate": 1.0,
+    "correct_abstain_rate": 1.0,
+    "safety_weighted_error_rate": 0.15789473684210525,
+    "false_lane_cost_weight": 3.0,
+    "left_boundary_detection_rate": 0.0,
+    "left_boundary_error": {
+      "matched_boundaries": 0,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 0,
+      "pixels": null,
+      "normalized_by_image_width": null
+    },
+    "right_boundary_detection_rate": 0.0,
+    "right_boundary_error": {
+      "matched_boundaries": 0,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 0,
+      "pixels": null,
+      "normalized_by_image_width": null
+    }
+  },
+  "scene_false_positive_rates": {
+    "intersection": {
+      "eligible_no_valid_lane": 27,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "unmarked_road": {
+      "eligible_no_valid_lane": 22,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "crosswalk_stop_line": {
+      "eligible_no_valid_lane": 16,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "parked_cars_curb": {
+      "eligible_no_valid_lane": 14,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    }
+  },
+  "extra_prediction_frame_ids": [],
+  "policy": {
+    "ambiguous_ground_truth_requires_abstention": true,
+    "predicted_invalid_or_ambiguous_counts_as_abstention": true,
+    "false_lane_cost_relative_to_missed_lane": 3.0,
+    "boundary_samples_per_match": 50,
+    "boundary_units": "image pixels and fraction of image width"
+  }
+}

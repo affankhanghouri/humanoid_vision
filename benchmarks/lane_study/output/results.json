@@ -1,0 +1,182 @@
+{
+  "candidate": "LaneATT ResNet-18 CULane",
+  "input": {
+    "width": 640,
+    "height": 360,
+    "color": "BGR",
+    "scale": "1/255"
+  },
+  "checkpoint": "models/laneatt_r18_culane.pt",
+  "onnx": "models/laneatt_r18_culane.onnx",
+  "onnx_verification": {
+    "frames": [
+      {
+        "frame_id": 0,
+        "max_abs": 0.0001220703125,
+        "mean_abs": 4.353828899184009e-06,
+        "reference_max": 1494.8114013671875
+      },
+      {
+        "frame_id": 28,
+        "max_abs": 0.0001220703125,
+        "mean_abs": 3.541504383974825e-06,
+        "reference_max": 1494.811279296875
+      },
+      {
+        "frame_id": 57,
+        "max_abs": 0.0001220703125,
+        "mean_abs": 2.968829903693404e-06,
+        "reference_max": 1494.818115234375
+      }
+    ],
+    "max_abs_limit": 0.002
+  },
+  "benchmarks": {
+    "ort_1_thread": {
+      "samples": 70,
+      "preprocess_ms": {
+        "mean": 2.8525126857142857,
+        "median": 2.8484375,
+        "p95": 3.3794233499999997,
+        "p99": 3.5430757600000002
+      },
+      "inference_ms": {
+        "mean": 466.47623185714275,
+        "median": 460.636485,
+        "p95": 498.821567,
+        "p99": 527.49578626
+      },
+      "postprocess_ms": {
+        "mean": 0.4486625000000001,
+        "median": 0.3720405,
+        "p95": 0.78964695,
+        "p99": 1.0906160100000004
+      },
+      "total_ms": {
+        "mean": 469.777407042857,
+        "median": 463.94457250000005,
+        "p95": 502.73847109999997,
+        "p99": 531.0859487700001
+      },
+      "lane_count": {
+        "mean": 0.6571428571428571,
+        "median": 0.0,
+        "p95": 3.0,
+        "p99": 3.0
+      }
+    },
+    "ort_2_thread": {
+      "samples": 70,
+      "preprocess_ms": {
+        "mean": 3.1958635714285717,
+        "median": 3.036961,
+        "p95": 4.0135422499999995,
+        "p99": 5.09996241
+      },
+      "inference_ms": {
+        "mean": 336.8920993714286,
+        "median": 319.43887800000005,
+        "p95": 471.38846549999994,
+        "p99": 553.0424929400002
+      },
+      "postprocess_ms": {
+        "mean": 0.5163666857142856,
+        "median": 0.430889,
+        "p95": 0.8669543,
+        "p99": 1.8027660400000056
+      },
+      "total_ms": {
+        "mean": 340.60432962857146,
+        "median": 323.125811,
+        "p95": 477.39715749999993,
+        "p99": 557.8512376900002
+      },
+      "lane_count": {
+        "mean": 0.6571428571428571,
+        "median": 0.0,
+        "p95": 3.0,
+        "p99": 3.0
+      }
+    },
+    "openvino_1_thread": {
+      "samples": 70,
+      "preprocess_ms": {
+        "mean": 3.0191849142857143,
+        "median": 2.8732365,
+        "p95": 3.75137445,
+        "p99": 5.2507687200000035
+      },
+      "inference_ms": {
+        "mean": 424.6190261571429,
+        "median": 418.97940700000004,
+        "p95": 474.34298404999987,
+        "p99": 557.84884302
+      },
+      "postprocess_ms": {
+        "mean": 0.47208127142857137,
+        "median": 0.4431255,
+        "p95": 0.95557775,
+        "p99": 1.1320216200000002
+      },
+      "total_ms": {
+        "mean": 428.1102923428572,
+        "median": 422.46959400000003,
+        "p95": 477.3229189999999,
+        "p99": 561.4013309100001
+      },
+      "lane_count": {
+        "mean": 0.6571428571428571,
+        "median": 0.0,
+        "p95": 3.0,
+        "p99": 3.0
+      }
+    },
+    "openvino_2_thread": {
+      "samples": 70,
+      "preprocess_ms": {
+        "mean": 3.274835214285714,
+        "median": 3.2523039999999996,
+        "p95": 3.91010915,
+        "p99": 5.339682720000002
+      },
+      "inference_ms": {
+        "mean": 264.23429044285723,
+        "median": 256.61168399999997,
+        "p95": 297.60375455,
+        "p99": 385.15870900000033
+      },
+      "postprocess_ms": {
+        "mean": 0.5029899142857143,
+        "median": 0.4478225,
+        "p95": 0.9323651499999998,
+        "p99": 1.2547740200000006
+      },
+      "total_ms": {
+        "mean": 268.0121155714286,
+        "median": 260.17724,
+        "p95": 301.11506675,
+        "p99": 388.88992350000035
+      },
+      "lane_count": {
+        "mean": 0.6571428571428571,
+        "median": 0.0,
+        "p95": 3.0,
+        "p99": 3.0
+      }
+    }
+  },
+  "visuals": [
+    "benchmarks/lane_study/output/visuals/sample_01_frame_0000.jpg",
+    "benchmarks/lane_study/output/visuals/sample_02_frame_0173.jpg",
+    "benchmarks/lane_study/output/visuals/sample_03_frame_0347.jpg",
+    "benchmarks/lane_study/output/visuals/sample_04_frame_0521.jpg",
+    "benchmarks/lane_study/output/visuals/sample_05_frame_0724.jpg",
+    "benchmarks/lane_study/output/visuals/sample_06_frame_0898.jpg",
+    "benchmarks/lane_study/output/visuals/sample_07_frame_1071.jpg",
+    "benchmarks/lane_study/output/visuals/sample_08_frame_1245.jpg",
+    "benchmarks/lane_study/output/visuals/sample_09_frame_1448.jpg",
+    "benchmarks/lane_study/output/visuals/sample_10_frame_1622.jpg",
+    "benchmarks/lane_study/output/visuals/sample_11_frame_1796.jpg",
+    "benchmarks/lane_study/output/visuals/sample_12_frame_1999.jpg"
+  ]
+}

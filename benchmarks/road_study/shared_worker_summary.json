@@ -1,0 +1,638 @@
+{
+  "A1": {
+    "duration_seconds": 83.18249911800376,
+    "headless": true,
+    "onnx_threads": 2,
+    "displayed_frames": 1998,
+    "display_fps": 24.00745374537293,
+    "display_intervals": {
+      "count": 1997,
+      "average_ms": 41.65373015423323,
+      "median_ms": 41.51801899570273,
+      "p95_ms": 55.46231019834515,
+      "p99_ms": 67.28148140478878
+    },
+    "renderer": {
+      "count": 1998,
+      "average_ms": 12.673064605639826,
+      "median_ms": 10.745494499133201,
+      "p95_ms": 29.480955098915715,
+      "p99_ms": 41.57205078045076
+    },
+    "tracker": {
+      "count": 332,
+      "average_ms": 1.2564086506266992,
+      "median_ms": 0.9889285029203165,
+      "p95_ms": 3.336314397165551,
+      "p99_ms": 6.1045276891672975
+    },
+    "motion": {
+      "count": 499,
+      "average_ms": 7.1045438677987285,
+      "median_ms": 5.398820998379961,
+      "p95_ms": 17.19359299822827,
+      "p99_ms": 21.624244458362217
+    },
+    "detector_hz": 3.9792023984569056,
+    "pose_hz": 0.5049138995020847,
+    "detection": {
+      "count": 332,
+      "average_ms": 131.6835987050055,
+      "median_ms": 128.18424749639235,
+      "p95_ms": 177.63778809458017,
+      "p99_ms": 246.41479566191262
+    },
+    "pose": {
+      "count": 42,
+      "average_ms": 57.79161266573716,
+      "median_ms": 54.09082500409568,
+      "p95_ms": 76.21317169396205,
+      "p99_ms": 100.73338175170635
+    },
+    "capture_to_detection": {
+      "count": 332,
+      "average_ms": 156.29900569586766,
+      "median_ms": 153.13812049862463,
+      "p95_ms": 208.39202160204874,
+      "p99_ms": 278.04800149198854
+    },
+    "state_age": {
+      "count": 1994,
+      "average_ms": 278.4010681117309,
+      "median_ms": 291.27703300036956,
+      "p95_ms": 416.62656774933566,
+      "p99_ms": 460.021527122808
+    },
+    "fresh_frames": 1994,
+    "stale_frames": 0,
+    "missing_frames": 4,
+    "stale_percent": 0.0,
+    "skipped_display_frames": 2,
+    "unique_results_seen": 331,
+    "road_enabled": false,
+    "road_request_interval_seconds": 1.0,
+    "road_hz": 0.0,
+    "road_inference": {},
+    "road_source_age": {},
+    "road_wall_source_age": {},
+    "detector_wall_source_age": {
+      "count": 1994,
+      "average_ms": 279.3305997337216,
+      "median_ms": 291.990015997726,
+      "p95_ms": 417.27757300141093,
+      "p99_ms": 461.80975493429287
+    },
+    "road_missing_frames": 1998,
+    "road_capture_to_result": {},
+    "task_total": {
+      "detection": {
+        "count": 331,
+        "average_ms": 132.93770345041685,
+        "median_ms": 129.26710399915464,
+        "p95_ms": 179.1724520007847,
+        "p99_ms": 247.61191160141593
+      },
+      "road": {},
+      "pose": {
+        "count": 42,
+        "average_ms": 57.88182014259205,
+        "median_ms": 54.17554500309052,
+        "p95_ms": 76.24301849537004,
+        "p99_ms": 100.7587318922741
+      }
+    },
+    "scheduler": {
+      "submitted": 2493,
+      "executed": 374,
+      "replaced": 2111,
+      "dropped_stale": 2,
+      "by_type": {
+        "detection": {
+          "submitted": 2000,
+          "executed": 332,
+          "replaced": 1667,
+          "dropped_stale": 0,
+          "budget_deferred": 0,
+          "skipped": 0
+        },
+        "pose": {
+          "submitted": 493,
+          "executed": 42,
+          "replaced": 444,
+          "dropped_stale": 2,
+          "budget_deferred": 0,
+          "skipped": 5
+        }
+      }
+    },
+    "worker_utilization_percent": 55.905601024455805,
+    "process_cpu_one_core_percent": 143.0775925223923,
+    "process_cpu_machine_percent": 35.76939813059808,
+    "system_cpu_percent": 62.80858952572223,
+    "road_dispatch_input_age_max_ms": null,
+    "overlapping_heavy_intervals": 0
+  },
+  "B3_stages": {
+    "duration_seconds": 83.19477693700173,
+    "headless": true,
+    "onnx_threads": 2,
+    "displayed_frames": 1999,
+    "display_fps": 24.015930729797642,
+    "display_intervals": {
+      "count": 1998,
+      "average_ms": 41.639027495996864,
+      "median_ms": 41.621535492595285,
+      "p95_ms": 55.96123364739467,
+      "p99_ms": 67.85527802625435
+    },
+    "renderer": {
+      "count": 1999,
+      "average_ms": 12.625012359633836,
+      "median_ms": 10.643179004546255,
+      "p95_ms": 29.490005201660082,
+      "p99_ms": 46.03214142000069
+    },
+    "tracker": {
+      "count": 331,
+      "average_ms": 1.176057544060676,
+      "median_ms": 0.9396490058861673,
+      "p95_ms": 3.1424449989572167,
+      "p99_ms": 5.009381500713052
+    },
+    "motion": {
+      "count": 499,
+      "average_ms": 7.359218871979629,
+      "median_ms": 6.241565992240794,
+      "p95_ms": 17.209546007507004,
+      "p99_ms": 21.690136869146954
+    },
+    "detector_hz": 3.978615150932442,
+    "pose_hz": 0.4807994140099628,
+    "detection": {
+      "count": 331,
+      "average_ms": 124.3801282926637,
+      "median_ms": 118.82207200687844,
+      "p95_ms": 169.6544439982972,
+      "p99_ms": 190.56117689906384
+    },
+    "pose": {
+      "count": 40,
+      "average_ms": 56.358597624785034,
+      "median_ms": 51.87953200947959,
+      "p95_ms": 78.9275579038076,
+      "p99_ms": 95.68609775757066
+    },
+    "capture_to_detection": {
+      "count": 331,
+      "average_ms": 147.46114040223398,
+      "median_ms": 143.3655939908931,
+      "p95_ms": 200.26403850351926,
+      "p99_ms": 229.56253930169618
+    },
+    "state_age": {
+      "count": 1996,
+      "average_ms": 271.56394611846554,
+      "median_ms": 255.06747249892214,
+      "p95_ms": 381.289207496593,
+      "p99_ms": 420.0891062115261
+    },
+    "fresh_frames": 1996,
+    "stale_frames": 0,
+    "missing_frames": 3,
+    "stale_percent": 0.0,
+    "skipped_display_frames": 1,
+    "unique_results_seen": 331,
+    "road_enabled": true,
+    "road_request_interval_seconds": 1.0,
+    "road_hz": 0.9976587840706728,
+    "road_inference": {
+      "count": 83,
+      "average_ms": 43.50251672299949,
+      "median_ms": 37.29240800021216,
+      "p95_ms": 77.3248984041856,
+      "p99_ms": 135.49111590284136
+    },
+    "road_preprocessing": {
+      "count": 83,
+      "average_ms": 4.002408950985129,
+      "median_ms": 3.307767998194322,
+      "p95_ms": 7.136660690593997,
+      "p99_ms": 10.525130436872114
+    },
+    "road_postprocessing": {
+      "count": 83,
+      "average_ms": 0.5888494816173923,
+      "median_ms": 0.5248700035735965,
+      "p95_ms": 0.8612635094323189,
+      "p99_ms": 1.6550920990994116
+    },
+    "road_source_age": {
+      "count": 1995,
+      "average_ms": 571.3891746306338,
+      "median_ms": 582.3759979975875,
+      "p95_ms": 1041.6095822001807,
+      "p99_ms": 1083.6933978801244
+    },
+    "road_wall_source_age": {
+      "count": 1995,
+      "average_ms": 572.3650964260213,
+      "median_ms": 583.0597809981555,
+      "p95_ms": 1042.1817357986583,
+      "p99_ms": 1084.429543548904
+    },
+    "detector_wall_source_age": {
+      "count": 1996,
+      "average_ms": 272.536436421925,
+      "median_ms": 259.8827475012513,
+      "p95_ms": 387.55075599692645,
+      "p99_ms": 421.92983545610326
+    },
+    "road_missing_frames": 4,
+    "road_capture_to_result": {
+      "count": 83,
+      "average_ms": 69.9250429754036,
+      "median_ms": 63.764361999346875,
+      "p95_ms": 112.13566020160212,
+      "p99_ms": 165.291432945232
+    },
+    "task_total": {
+      "detection": {
+        "count": 331,
+        "average_ms": 125.62205849855145,
+        "median_ms": 120.40010800410528,
+        "p95_ms": 171.06796449661488,
+        "p99_ms": 191.6450780976447
+      },
+      "road": {
+        "count": 83,
+        "average_ms": 48.21490765046413,
+        "median_ms": 41.51796099904459,
+        "p95_ms": 82.0522715061088,
+        "p99_ms": 142.63767049269495
+      },
+      "pose": {
+        "count": 40,
+        "average_ms": 56.47223260093597,
+        "median_ms": 51.98624350305181,
+        "p95_ms": 79.43180324873536,
+        "p99_ms": 95.88729243914712
+      }
+    },
+    "scheduler": {
+      "submitted": 4477,
+      "executed": 454,
+      "replaced": 4015,
+      "dropped_stale": 3,
+      "by_type": {
+        "detection": {
+          "submitted": 2000,
+          "executed": 331,
+          "replaced": 1668,
+          "dropped_stale": 0,
+          "budget_deferred": 0,
+          "skipped": 0
+        },
+        "pose": {
+          "submitted": 477,
+          "executed": 40,
+          "replaced": 431,
+          "dropped_stale": 3,
+          "budget_deferred": 1,
+          "skipped": 3
+        },
+        "road": {
+          "submitted": 2000,
+          "executed": 83,
+          "replaced": 1916,
+          "dropped_stale": 0,
+          "budget_deferred": 1,
+          "skipped": 0
+        }
+      }
+    },
+    "worker_utilization_percent": 57.428261592942434,
+    "process_cpu_one_core_percent": 153.8396154062848,
+    "process_cpu_machine_percent": 38.4599038515712,
+    "system_cpu_percent": 57.27038839465608,
+    "road_dispatch_input_age_max_ms": 46.53996900015045,
+    "overlapping_heavy_intervals": 0
+  },
+  "B4_stages": {
+    "duration_seconds": 83.21065190900117,
+    "headless": true,
+    "onnx_threads": 2,
+    "displayed_frames": 1999,
+    "display_fps": 24.011348957883477,
+    "display_intervals": {
+      "count": 1998,
+      "average_ms": 41.64697292742802,
+      "median_ms": 41.508450005494524,
+      "p95_ms": 54.731266298040275,
+      "p99_ms": 64.13786156001152
+    },
+    "renderer": {
+      "count": 1999,
+      "average_ms": 12.432765076158214,
+      "median_ms": 10.916225000983104,
+      "p95_ms": 28.44216319354017,
+      "p99_ms": 38.044748786196564
+    },
+    "tracker": {
+      "count": 332,
+      "average_ms": 1.160158114511301,
+      "median_ms": 0.9468104981351644,
+      "p95_ms": 2.59854239920969,
+      "p99_ms": 5.897888776089529
+    },
+    "motion": {
+      "count": 499,
+      "average_ms": 7.445649613200767,
+      "median_ms": 6.064718007110059,
+      "p95_ms": 16.198791502392847,
+      "p99_ms": 23.113172096200277
+    },
+    "detector_hz": 3.977856108638354,
+    "pose_hz": 0.48070768684451404,
+    "detection": {
+      "count": 332,
+      "average_ms": 126.70233357507148,
+      "median_ms": 124.81423300050665,
+      "p95_ms": 168.93397949752398,
+      "p99_ms": 197.6430751949374
+    },
+    "pose": {
+      "count": 40,
+      "average_ms": 53.109311249500024,
+      "median_ms": 54.179316000954714,
+      "p95_ms": 62.71738393697888,
+      "p99_ms": 69.05345189908985
+    },
+    "capture_to_detection": {
+      "count": 332,
+      "average_ms": 149.68524827098184,
+      "median_ms": 147.65700700081652,
+      "p95_ms": 202.15591465239413,
+      "p99_ms": 226.22394497026107
+    },
+    "state_age": {
+      "count": 1996,
+      "average_ms": 273.4806084407389,
+      "median_ms": 289.9246849992778,
+      "p95_ms": 415.9904732441646,
+      "p99_ms": 419.9114194008871
+    },
+    "fresh_frames": 1996,
+    "stale_frames": 0,
+    "missing_frames": 3,
+    "stale_percent": 0.0,
+    "skipped_display_frames": 1,
+    "unique_results_seen": 331,
+    "road_enabled": true,
+    "road_request_interval_seconds": 1.0,
+    "road_hz": 0.9974684502023666,
+    "road_inference": {
+      "count": 83,
+      "average_ms": 40.49555984422486,
+      "median_ms": 35.865568002918735,
+      "p95_ms": 69.914412687649,
+      "p99_ms": 79.39554940734524
+    },
+    "road_preprocessing": {
+      "count": 83,
+      "average_ms": 3.8784135295027666,
+      "median_ms": 3.299233998404816,
+      "p95_ms": 6.747074102167969,
+      "p99_ms": 8.770320676849215
+    },
+    "road_postprocessing": {
+      "count": 83,
+      "average_ms": 0.7373396261996331,
+      "median_ms": 0.5749679985456169,
+      "p95_ms": 1.615643502736928,
+      "p99_ms": 3.280701118346768
+    },
+    "road_source_age": {
+      "count": 1995,
+      "average_ms": 568.4792481014376,
+      "median_ms": 582.1271869936027,
+      "p95_ms": 1019.3453169893461,
+      "p99_ms": 1049.1708772646941
+    },
+    "road_wall_source_age": {
+      "count": 1995,
+      "average_ms": 569.3896655788435,
+      "median_ms": 582.5315059919376,
+      "p95_ms": 1032.1450857940358,
+      "p99_ms": 1052.0542892816575
+    },
+    "detector_wall_source_age": {
+      "count": 1996,
+      "average_ms": 274.38757142893763,
+      "median_ms": 290.42520499933744,
+      "p95_ms": 416.4471007534303,
+      "p99_ms": 421.58074119943194
+    },
+    "road_missing_frames": 4,
+    "road_capture_to_result": {
+      "count": 83,
+      "average_ms": 66.5271927347317,
+      "median_ms": 61.5323390084086,
+      "p95_ms": 101.04047969361997,
+      "p99_ms": 120.19922669162021
+    },
+    "task_total": {
+      "detection": {
+        "count": 331,
+        "average_ms": 127.84478725992801,
+        "median_ms": 125.91814000916202,
+        "p95_ms": 170.35946650139522,
+        "p99_ms": 198.84913139394484
+      },
+      "road": {
+        "count": 83,
+        "average_ms": 45.23641575939241,
+        "median_ms": 40.19194399006665,
+        "p95_ms": 77.43028900003989,
+        "p99_ms": 87.54350860021076
+      },
+      "pose": {
+        "count": 40,
+        "average_ms": 53.199310726631666,
+        "median_ms": 54.22421299590496,
+        "p95_ms": 62.742516646540025,
+        "p99_ms": 69.27923812196241
+      }
+    },
+    "scheduler": {
+      "submitted": 4471,
+      "executed": 455,
+      "replaced": 4005,
+      "dropped_stale": 3,
+      "by_type": {
+        "detection": {
+          "submitted": 2000,
+          "executed": 332,
+          "replaced": 1667,
+          "dropped_stale": 0,
+          "budget_deferred": 0,
+          "skipped": 0
+        },
+        "pose": {
+          "submitted": 471,
+          "executed": 40,
+          "replaced": 422,
+          "dropped_stale": 3,
+          "budget_deferred": 0,
+          "skipped": 6
+        },
+        "road": {
+          "submitted": 2000,
+          "executed": 83,
+          "replaced": 1916,
+          "dropped_stale": 0,
+          "budget_deferred": 1,
+          "skipped": 0
+        }
+      }
+    },
+    "worker_utilization_percent": 57.975277981106586,
+    "process_cpu_one_core_percent": 155.04780043075698,
+    "process_cpu_machine_percent": 38.761950107689245,
+    "system_cpu_percent": 57.47183360158474,
+    "road_dispatch_input_age_max_ms": 56.16245200508274,
+    "overlapping_heavy_intervals": 0
+  },
+  "A2": {
+    "duration_seconds": 83.18276005100051,
+    "headless": true,
+    "onnx_threads": 2,
+    "displayed_frames": 1999,
+    "display_fps": 24.01940015905938,
+    "display_intervals": {
+      "count": 1998,
+      "average_ms": 41.6330130385388,
+      "median_ms": 41.343920998770045,
+      "p95_ms": 55.66599100311578,
+      "p99_ms": 63.84814331402594
+    },
+    "renderer": {
+      "count": 1999,
+      "average_ms": 12.92937289851114,
+      "median_ms": 10.818048998771701,
+      "p95_ms": 29.01828789981664,
+      "p99_ms": 37.06807122071041
+    },
+    "tracker": {
+      "count": 333,
+      "average_ms": 0.9880337269236291,
+      "median_ms": 0.8282140042865649,
+      "p95_ms": 2.1472376029123548,
+      "p99_ms": 5.242030921508569
+    },
+    "motion": {
+      "count": 499,
+      "average_ms": 7.338538084212757,
+      "median_ms": 6.1616949969902635,
+      "p95_ms": 14.513143599469911,
+      "p99_ms": 18.202925583755118
+    },
+    "detector_hz": 3.991211638041899,
+    "pose_hz": 0.49289059385457185,
+    "detection": {
+      "count": 333,
+      "average_ms": 135.13842178696547,
+      "median_ms": 142.20351800031494,
+      "p95_ms": 166.97050900111208,
+      "p99_ms": 176.5700703239418
+    },
+    "pose": {
+      "count": 41,
+      "average_ms": 45.56842356147926,
+      "median_ms": 43.42340800212696,
+      "p95_ms": 57.543147006072104,
+      "p99_ms": 82.06258240097674
+    },
+    "capture_to_detection": {
+      "count": 333,
+      "average_ms": 163.1102424804345,
+      "median_ms": 164.18554000119912,
+      "p95_ms": 199.7020318012801,
+      "p99_ms": 215.18126720096916
+    },
+    "state_age": {
+      "count": 1996,
+      "average_ms": 285.2767088406289,
+      "median_ms": 292.5303259980865,
+      "p95_ms": 416.5876112510887,
+      "p99_ms": 418.45675709919306
+    },
+    "fresh_frames": 1996,
+    "stale_frames": 0,
+    "missing_frames": 3,
+    "stale_percent": 0.0,
+    "skipped_display_frames": 1,
+    "unique_results_seen": 332,
+    "road_enabled": false,
+    "road_request_interval_seconds": 1.0,
+    "road_hz": 0.0,
+    "road_inference": {},
+    "road_source_age": {},
+    "road_wall_source_age": {},
+    "detector_wall_source_age": {
+      "count": 1996,
+      "average_ms": 286.0580995003367,
+      "median_ms": 293.40614800094045,
+      "p95_ms": 417.2918984986609,
+      "p99_ms": 419.7533223999926
+    },
+    "road_missing_frames": 1999,
+    "road_capture_to_result": {},
+    "task_total": {
+      "detection": {
+        "count": 332,
+        "average_ms": 136.1464140573811,
+        "median_ms": 143.17279800161486,
+        "p95_ms": 167.81721735023893,
+        "p99_ms": 177.88274003200058
+      },
+      "road": {},
+      "pose": {
+        "count": 41,
+        "average_ms": 45.64533082991214,
+        "median_ms": 43.4613100005663,
+        "p95_ms": 57.56405800639186,
+        "p99_ms": 82.09251460066304
+      }
+    },
+    "scheduler": {
+      "submitted": 2472,
+      "executed": 374,
+      "replaced": 2090,
+      "dropped_stale": 3,
+      "by_type": {
+        "detection": {
+          "submitted": 2000,
+          "executed": 333,
+          "replaced": 1666,
+          "dropped_stale": 0,
+          "budget_deferred": 0,
+          "skipped": 0
+        },
+        "pose": {
+          "submitted": 472,
+          "executed": 41,
+          "replaced": 424,
+          "dropped_stale": 3,
+          "budget_deferred": 0,
+          "skipped": 4
+        }
+      }
+    },
+    "worker_utilization_percent": 56.605364282464635,
+    "process_cpu_one_core_percent": 167.2478078242448,
+    "process_cpu_machine_percent": 41.8119519560612,
+    "system_cpu_percent": 50.915275200989484,
+    "road_dispatch_input_age_max_ms": null,
+    "overlapping_heavy_intervals": 0
+  }
+}

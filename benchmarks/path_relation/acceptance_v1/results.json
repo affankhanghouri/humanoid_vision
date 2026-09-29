@@ -1,0 +1,151 @@
+{
+  "items": 69,
+  "exact_accuracy": 0.391304347826087,
+  "distribution": {
+    "ON_DRIVABLE_OUTSIDE_CORRIDOR": 31,
+    "IN_CORRIDOR": 16,
+    "OFF_DRIVABLE": 6,
+    "ENTERING_CORRIDOR": 6,
+    "LEAVING_CORRIDOR": 4,
+    "CROSSING_CORRIDOR": 2,
+    "UNKNOWN": 4
+  },
+  "per_state": {
+    "CROSSING_CORRIDOR": {
+      "support": 2,
+      "predicted": 1,
+      "correct": 1,
+      "recall": 0.5,
+      "precision": 1.0
+    },
+    "ENTERING_CORRIDOR": {
+      "support": 6,
+      "predicted": 1,
+      "correct": 1,
+      "recall": 0.16666666666666666,
+      "precision": 1.0
+    },
+    "IN_CORRIDOR": {
+      "support": 16,
+      "predicted": 0,
+      "correct": 0,
+      "recall": 0.0,
+      "precision": null
+    },
+    "LEAVING_CORRIDOR": {
+      "support": 4,
+      "predicted": 1,
+      "correct": 1,
+      "recall": 0.25,
+      "precision": 1.0
+    },
+    "OFF_DRIVABLE": {
+      "support": 6,
+      "predicted": 37,
+      "correct": 5,
+      "recall": 0.8333333333333334,
+      "precision": 0.13513513513513514
+    },
+    "ON_DRIVABLE_OUTSIDE_CORRIDOR": {
+      "support": 31,
+      "predicted": 25,
+      "correct": 17,
+      "recall": 0.5483870967741935,
+      "precision": 0.68
+    },
+    "UNKNOWN": {
+      "support": 4,
+      "predicted": 4,
+      "correct": 2,
+      "recall": 0.5,
+      "precision": 0.5
+    }
+  },
+  "confusion": {
+    "CROSSING_CORRIDOR": {
+      "CROSSING_CORRIDOR": 1,
+      "UNKNOWN": 1
+    },
+    "ENTERING_CORRIDOR": {
+      "ON_DRIVABLE_OUTSIDE_CORRIDOR": 3,
+      "OFF_DRIVABLE": 2,
+      "ENTERING_CORRIDOR": 1
+    },
+    "IN_CORRIDOR": {
+      "OFF_DRIVABLE": 13,
+      "ON_DRIVABLE_OUTSIDE_CORRIDOR": 3
+    },
+    "LEAVING_CORRIDOR": {
+      "OFF_DRIVABLE": 2,
+      "ON_DRIVABLE_OUTSIDE_CORRIDOR": 1,
+      "LEAVING_CORRIDOR": 1
+    },
+    "OFF_DRIVABLE": {
+      "UNKNOWN": 1,
+      "OFF_DRIVABLE": 5
+    },
+    "ON_DRIVABLE_OUTSIDE_CORRIDOR": {
+      "ON_DRIVABLE_OUTSIDE_CORRIDOR": 17,
+      "OFF_DRIVABLE": 14
+    },
+    "UNKNOWN": {
+      "UNKNOWN": 2,
+      "ON_DRIVABLE_OUTSIDE_CORRIDOR": 1,
+      "OFF_DRIVABLE": 1
+    }
+  },
+  "events": {
+    "ENTERING_CORRIDOR": {
+      "reviewed_events": 2,
+      "detected": 1,
+      "missed": 1,
+      "false": 0,
+      "matches": [
+        {
+          "event_id": "car_11_crossing",
+          "first_clear_timestamp": 8.5,
+          "detected_timestamp": 9.5,
+          "delay_seconds": 1.0
+        }
+      ],
+      "missed_event_ids": [
+        "person_17_crossing"
+      ],
+      "false_events": []
+    },
+    "CROSSING_CORRIDOR": {
+      "reviewed_events": 2,
+      "detected": 1,
+      "missed": 1,
+      "false": 0,
+      "matches": [
+        {
+          "event_id": "person_17_crossing",
+          "first_clear_timestamp": 10.5,
+          "detected_timestamp": 10.5,
+          "delay_seconds": 0.0
+        }
+      ],
+      "missed_event_ids": [
+        "car_11_crossing"
+      ],
+      "false_events": []
+    }
+  },
+  "flicker": {
+    "tracks": 85,
+    "all_state_switches": 737,
+    "non_unknown_state_switches": 81,
+    "single_sample_non_unknown_runs": 85
+  },
+  "stale_road_abstention": {
+    "observations": 375,
+    "unknown": 375,
+    "rate": 1.0
+  },
+  "event_track_id_continuity": {
+    "continuous": 2,
+    "reviewed": 2,
+    "rate": 1.0
+  }
+}

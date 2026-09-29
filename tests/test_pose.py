@@ -133,6 +133,7 @@ class PoseTests(unittest.TestCase):
         for snapshot, expected in ((None, 1), (state(1, 9), 1), (state(1, 10, ()), 1), (state(1, 10), 2)):
             with self.subTest(snapshot=snapshot):
                 frames, store, scheduler = LatestFrameBuffer(), PerceptionStore(), Mock()
+                scheduler.has_task.return_value = False
                 if snapshot is not None:
                     store.publish_tracking(snapshot)
                 frames.publish(FramePacket(2, 10.3, np.zeros((5, 5, 3), np.uint8)))

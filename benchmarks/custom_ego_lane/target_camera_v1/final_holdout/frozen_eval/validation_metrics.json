@@ -1,0 +1,3232 @@
+{
+  "checkpoint": "target_camera_v1/candidate_a_active.pt",
+  "counts": {
+    "frames": 168,
+    "valid": 23,
+    "invalid": 145,
+    "detected_valid": 0,
+    "false_lane": 0,
+    "missed": 23,
+    "correct_abstain": 145
+  },
+  "metrics": {
+    "valid_lane_detection_rate": 0.0,
+    "false_lane_rate": 0.0,
+    "missed_lane_rate": 1.0,
+    "correct_abstain_rate": 1.0,
+    "valid_threshold": 0.9956316947937012,
+    "visibility_threshold": 0.7,
+    "left_boundary_detection_rate": 0.0,
+    "left_false_visibility_rate": 0.0,
+    "left_boundary_error": {
+      "matched_boundaries": 0,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 0,
+      "pixels": null,
+      "normalized_by_image_width": null
+    },
+    "right_boundary_detection_rate": 0.0,
+    "right_false_visibility_rate": 0.0,
+    "right_boundary_error": {
+      "matched_boundaries": 0,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 0,
+      "pixels": null,
+      "normalized_by_image_width": null
+    }
+  },
+  "predictions": [
+    {
+      "item_id": 0,
+      "clip_id": "final_holdout",
+      "timestamp": 0.0,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9497110843658447,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 1,
+      "clip_id": "final_holdout",
+      "timestamp": 0.5666666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.6214978098869324,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 2,
+      "clip_id": "final_holdout",
+      "timestamp": 1.15,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.7529300451278687,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 3,
+      "clip_id": "final_holdout",
+      "timestamp": 1.7333333333333334,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9058762788772583,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 4,
+      "clip_id": "final_holdout",
+      "timestamp": 2.316666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.8510684370994568,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 5,
+      "clip_id": "final_holdout",
+      "timestamp": 2.9,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.7993545532226562,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 6,
+      "clip_id": "final_holdout",
+      "timestamp": 3.466666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9242276549339294,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 7,
+      "clip_id": "final_holdout",
+      "timestamp": 4.05,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9139476418495178,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 8,
+      "clip_id": "final_holdout",
+      "timestamp": 4.633333333333334,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9205880165100098,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 9,
+      "clip_id": "final_holdout",
+      "timestamp": 5.216666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9525900483131409,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 10,
+      "clip_id": "final_holdout",
+      "timestamp": 5.8,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9506763219833374,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 11,
+      "clip_id": "final_holdout",
+      "timestamp": 6.383333333333334,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9814648032188416,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 12,
+      "clip_id": "final_holdout",
+      "timestamp": 6.95,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9645136594772339,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 13,
+      "clip_id": "final_holdout",
+      "timestamp": 7.533333333333333,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9897024631500244,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 14,
+      "clip_id": "final_holdout",
+      "timestamp": 8.116666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.99089515209198,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 15,
+      "clip_id": "final_holdout",
+      "timestamp": 8.7,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9699039459228516,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 16,
+      "clip_id": "final_holdout",
+      "timestamp": 9.283333333333333,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9881054162979126,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 17,
+      "clip_id": "final_holdout",
+      "timestamp": 9.866666666666667,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9712280035018921,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 18,
+      "clip_id": "final_holdout",
+      "timestamp": 10.433333333333334,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9914594888687134,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 19,
+      "clip_id": "final_holdout",
+      "timestamp": 11.016666666666667,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9820903539657593,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 20,
+      "clip_id": "final_holdout",
+      "timestamp": 11.6,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9742075800895691,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 21,
+      "clip_id": "final_holdout",
+      "timestamp": 12.183333333333334,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9830758571624756,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 22,
+      "clip_id": "final_holdout",
+      "timestamp": 12.766666666666667,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.935169517993927,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 23,
+      "clip_id": "final_holdout",
+      "timestamp": 13.35,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9872680306434631,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 24,
+      "clip_id": "final_holdout",
+      "timestamp": 13.916666666666666,
+      "truth": "valid",
+      "predicted": "invalid",
+      "valid_probability": 0.9735136032104492,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 25,
+      "clip_id": "final_holdout",
+      "timestamp": 14.5,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9614673256874084,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 26,
+      "clip_id": "final_holdout",
+      "timestamp": 15.083333333333334,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9387565851211548,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 27,
+      "clip_id": "final_holdout",
+      "timestamp": 15.666666666666666,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.8613319396972656,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 28,
+      "clip_id": "final_holdout",
+      "timestamp": 16.25,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9319491982460022,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 29,
+      "clip_id": "final_holdout",
+      "timestamp": 16.833333333333332,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9527457356452942,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 30,
+      "clip_id": "final_holdout",
+      "timestamp": 17.4,
+      "truth": "ambiguous",
+      "predicted": "invalid",
+      "valid_probability": 0.9353855848312378,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 31,
+      "clip_id": "final_holdout",
+      "timestamp": 17.983333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9660756587982178,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 32,
+      "clip_id": "final_holdout",
+      "timestamp": 18.566666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9714078307151794,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 33,
+      "clip_id": "final_holdout",
+      "timestamp": 19.15,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9628327488899231,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 34,
+      "clip_id": "final_holdout",
+      "timestamp": 19.733333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9656075239181519,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 35,
+      "clip_id": "final_holdout",
+      "timestamp": 20.316666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9637407660484314,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 36,
+      "clip_id": "final_holdout",
+      "timestamp": 20.883333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9732761979103088,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 37,
+      "clip_id": "final_holdout",
+      "timestamp": 21.466666666666665,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.963250994682312,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 38,
+      "clip_id": "final_holdout",
+      "timestamp": 22.05,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9603095054626465,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 39,
+      "clip_id": "final_holdout",
+      "timestamp": 22.633333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.962817370891571,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 40,
+      "clip_id": "final_holdout",
+      "timestamp": 23.216666666666665,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9740637540817261,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 41,
+      "clip_id": "final_holdout",
+      "timestamp": 23.8,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9762839078903198,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 42,
+      "clip_id": "final_holdout",
+      "timestamp": 24.366666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9652471542358398,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 43,
+      "clip_id": "final_holdout",
+      "timestamp": 24.95,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9584690928459167,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 44,
+      "clip_id": "final_holdout",
+      "timestamp": 25.533333333333335,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9563148021697998,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 45,
+      "clip_id": "final_holdout",
+      "timestamp": 26.116666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9643170833587646,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 46,
+      "clip_id": "final_holdout",
+      "timestamp": 26.7,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9678268432617188,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 47,
+      "clip_id": "final_holdout",
+      "timestamp": 27.283333333333335,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9507754445075989,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 48,
+      "clip_id": "final_holdout",
+      "timestamp": 27.85,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9660570025444031,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 49,
+      "clip_id": "final_holdout",
+      "timestamp": 28.433333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9725841283798218,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 50,
+      "clip_id": "final_holdout",
+      "timestamp": 29.016666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.959266185760498,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 51,
+      "clip_id": "final_holdout",
+      "timestamp": 29.6,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9791030287742615,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 52,
+      "clip_id": "final_holdout",
+      "timestamp": 30.183333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9733822345733643,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 53,
+      "clip_id": "final_holdout",
+      "timestamp": 30.766666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9725563526153564,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 54,
+      "clip_id": "final_holdout",
+      "timestamp": 31.333333333333332,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9714787006378174,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 55,
+      "clip_id": "final_holdout",
+      "timestamp": 31.916666666666668,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9704954028129578,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 56,
+      "clip_id": "final_holdout",
+      "timestamp": 32.5,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9629554152488708,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 57,
+      "clip_id": "final_holdout",
+      "timestamp": 33.083333333333336,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9725746512413025,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 58,
+      "clip_id": "final_holdout",
+      "timestamp": 33.666666666666664,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9578953981399536,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 59,
+      "clip_id": "final_holdout",
+      "timestamp": 34.25,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9713602662086487,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 60,
+      "clip_id": "final_holdout",
+      "timestamp": 34.81666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9674903750419617,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 61,
+      "clip_id": "final_holdout",
+      "timestamp": 35.4,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9626335501670837,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 62,
+      "clip_id": "final_holdout",
+      "timestamp": 35.983333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9544246196746826,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 63,
+      "clip_id": "final_holdout",
+      "timestamp": 36.56666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9562757611274719,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 64,
+      "clip_id": "final_holdout",
+      "timestamp": 37.15,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9307889342308044,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 65,
+      "clip_id": "final_holdout",
+      "timestamp": 37.733333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.926423192024231,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 66,
+      "clip_id": "final_holdout",
+      "timestamp": 38.3,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9160215258598328,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 67,
+      "clip_id": "final_holdout",
+      "timestamp": 38.88333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8965155482292175,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 68,
+      "clip_id": "final_holdout",
+      "timestamp": 39.46666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.928089439868927,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 69,
+      "clip_id": "final_holdout",
+      "timestamp": 40.05,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9478479623794556,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 70,
+      "clip_id": "final_holdout",
+      "timestamp": 40.63333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9244575500488281,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 71,
+      "clip_id": "final_holdout",
+      "timestamp": 41.21666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8783708214759827,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 72,
+      "clip_id": "final_holdout",
+      "timestamp": 41.78333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8733052015304565,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 73,
+      "clip_id": "final_holdout",
+      "timestamp": 42.36666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.7894939184188843,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 74,
+      "clip_id": "final_holdout",
+      "timestamp": 42.95,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8720846772193909,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 75,
+      "clip_id": "final_holdout",
+      "timestamp": 43.53333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8957631587982178,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 76,
+      "clip_id": "final_holdout",
+      "timestamp": 44.11666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.91895991563797,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 77,
+      "clip_id": "final_holdout",
+      "timestamp": 44.7,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.926314115524292,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 78,
+      "clip_id": "final_holdout",
+      "timestamp": 45.266666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9213742613792419,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 79,
+      "clip_id": "final_holdout",
+      "timestamp": 45.85,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9474416971206665,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 80,
+      "clip_id": "final_holdout",
+      "timestamp": 46.43333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8839408159255981,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 81,
+      "clip_id": "final_holdout",
+      "timestamp": 47.016666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9066113233566284,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 82,
+      "clip_id": "final_holdout",
+      "timestamp": 47.6,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9222074151039124,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 83,
+      "clip_id": "final_holdout",
+      "timestamp": 48.18333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9712048172950745,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 84,
+      "clip_id": "final_holdout",
+      "timestamp": 48.75,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9368635416030884,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 85,
+      "clip_id": "final_holdout",
+      "timestamp": 49.333333333333336,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9028845429420471,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 86,
+      "clip_id": "final_holdout",
+      "timestamp": 49.916666666666664,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9551871418952942,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 87,
+      "clip_id": "final_holdout",
+      "timestamp": 50.5,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8657657504081726,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 88,
+      "clip_id": "final_holdout",
+      "timestamp": 51.083333333333336,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8358103632926941,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 89,
+      "clip_id": "final_holdout",
+      "timestamp": 51.666666666666664,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.825717031955719,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 90,
+      "clip_id": "final_holdout",
+      "timestamp": 52.233333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.904829740524292,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 91,
+      "clip_id": "final_holdout",
+      "timestamp": 52.81666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9372154474258423,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 92,
+      "clip_id": "final_holdout",
+      "timestamp": 53.4,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9482990503311157,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 93,
+      "clip_id": "final_holdout",
+      "timestamp": 53.983333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9105674624443054,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 94,
+      "clip_id": "final_holdout",
+      "timestamp": 54.56666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9486808776855469,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 95,
+      "clip_id": "final_holdout",
+      "timestamp": 55.15,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9094010591506958,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 96,
+      "clip_id": "final_holdout",
+      "timestamp": 55.71666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8901684880256653,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 97,
+      "clip_id": "final_holdout",
+      "timestamp": 56.3,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8109775185585022,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 98,
+      "clip_id": "final_holdout",
+      "timestamp": 56.88333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9304354786872864,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 99,
+      "clip_id": "final_holdout",
+      "timestamp": 57.46666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9289352893829346,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 100,
+      "clip_id": "final_holdout",
+      "timestamp": 58.05,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.932000994682312,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 101,
+      "clip_id": "final_holdout",
+      "timestamp": 58.63333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9337649345397949,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 102,
+      "clip_id": "final_holdout",
+      "timestamp": 59.2,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9618315100669861,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 103,
+      "clip_id": "final_holdout",
+      "timestamp": 59.78333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9518947601318359,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 104,
+      "clip_id": "final_holdout",
+      "timestamp": 60.36666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9664376378059387,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 105,
+      "clip_id": "final_holdout",
+      "timestamp": 60.95,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9664585590362549,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 106,
+      "clip_id": "final_holdout",
+      "timestamp": 61.53333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9587003588676453,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 107,
+      "clip_id": "final_holdout",
+      "timestamp": 62.11666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9616310596466064,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 108,
+      "clip_id": "final_holdout",
+      "timestamp": 62.68333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.8909452557563782,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 109,
+      "clip_id": "final_holdout",
+      "timestamp": 63.266666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9345836639404297,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 110,
+      "clip_id": "final_holdout",
+      "timestamp": 63.85,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9541347026824951,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 111,
+      "clip_id": "final_holdout",
+      "timestamp": 64.43333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9449210166931152,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 112,
+      "clip_id": "final_holdout",
+      "timestamp": 65.01666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9475864768028259,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 113,
+      "clip_id": "final_holdout",
+      "timestamp": 65.6,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9327500462532043,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 114,
+      "clip_id": "final_holdout",
+      "timestamp": 66.16666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9615041017532349,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 115,
+      "clip_id": "final_holdout",
+      "timestamp": 66.75,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9699165225028992,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 116,
+      "clip_id": "final_holdout",
+      "timestamp": 67.33333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9456261396408081,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 117,
+      "clip_id": "final_holdout",
+      "timestamp": 67.91666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9013870358467102,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 118,
+      "clip_id": "final_holdout",
+      "timestamp": 68.5,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9475336074829102,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 119,
+      "clip_id": "final_holdout",
+      "timestamp": 69.08333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9508776068687439,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 120,
+      "clip_id": "final_holdout",
+      "timestamp": 69.65,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9549872279167175,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 121,
+      "clip_id": "final_holdout",
+      "timestamp": 70.23333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9558017253875732,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 122,
+      "clip_id": "final_holdout",
+      "timestamp": 70.81666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9758400321006775,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 123,
+      "clip_id": "final_holdout",
+      "timestamp": 71.4,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9656116366386414,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 124,
+      "clip_id": "final_holdout",
+      "timestamp": 71.98333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9604573845863342,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 125,
+      "clip_id": "final_holdout",
+      "timestamp": 72.56666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9682152271270752,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 126,
+      "clip_id": "final_holdout",
+      "timestamp": 73.13333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9569758176803589,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 127,
+      "clip_id": "final_holdout",
+      "timestamp": 73.71666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9579312801361084,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 128,
+      "clip_id": "final_holdout",
+      "timestamp": 74.3,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9627980589866638,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 129,
+      "clip_id": "final_holdout",
+      "timestamp": 74.88333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9565761089324951,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 130,
+      "clip_id": "final_holdout",
+      "timestamp": 75.46666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9647273421287537,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 131,
+      "clip_id": "final_holdout",
+      "timestamp": 76.05,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9668379426002502,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 132,
+      "clip_id": "final_holdout",
+      "timestamp": 76.61666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9679133892059326,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 133,
+      "clip_id": "final_holdout",
+      "timestamp": 77.2,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9600985050201416,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 134,
+      "clip_id": "final_holdout",
+      "timestamp": 77.78333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.958633303642273,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 135,
+      "clip_id": "final_holdout",
+      "timestamp": 78.36666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9749677777290344,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 136,
+      "clip_id": "final_holdout",
+      "timestamp": 78.95,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9747377634048462,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 137,
+      "clip_id": "final_holdout",
+      "timestamp": 79.53333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9731317758560181,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 138,
+      "clip_id": "final_holdout",
+      "timestamp": 80.1,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9688916802406311,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 139,
+      "clip_id": "final_holdout",
+      "timestamp": 80.68333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9643405079841614,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 140,
+      "clip_id": "final_holdout",
+      "timestamp": 81.26666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9557028412818909,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 141,
+      "clip_id": "final_holdout",
+      "timestamp": 81.85,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9499213099479675,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 142,
+      "clip_id": "final_holdout",
+      "timestamp": 82.43333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9601236581802368,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 143,
+      "clip_id": "final_holdout",
+      "timestamp": 83.01666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9604492783546448,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 144,
+      "clip_id": "final_holdout",
+      "timestamp": 83.58333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9541950225830078,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 145,
+      "clip_id": "final_holdout",
+      "timestamp": 84.16666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9624856114387512,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 146,
+      "clip_id": "final_holdout",
+      "timestamp": 84.75,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9492777585983276,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 147,
+      "clip_id": "final_holdout",
+      "timestamp": 85.33333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9766533970832825,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 148,
+      "clip_id": "final_holdout",
+      "timestamp": 85.91666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9611701965332031,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 149,
+      "clip_id": "final_holdout",
+      "timestamp": 86.5,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9552121162414551,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 150,
+      "clip_id": "final_holdout",
+      "timestamp": 87.06666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9574601650238037,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 151,
+      "clip_id": "final_holdout",
+      "timestamp": 87.65,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9539890289306641,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 152,
+      "clip_id": "final_holdout",
+      "timestamp": 88.23333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9542899131774902,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 153,
+      "clip_id": "final_holdout",
+      "timestamp": 88.81666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9314591288566589,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 154,
+      "clip_id": "final_holdout",
+      "timestamp": 89.4,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9572355151176453,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 155,
+      "clip_id": "final_holdout",
+      "timestamp": 89.98333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9651237726211548,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 156,
+      "clip_id": "final_holdout",
+      "timestamp": 90.55,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9670392274856567,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 157,
+      "clip_id": "final_holdout",
+      "timestamp": 91.13333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9471530914306641,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 158,
+      "clip_id": "final_holdout",
+      "timestamp": 91.71666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9451455473899841,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 159,
+      "clip_id": "final_holdout",
+      "timestamp": 92.3,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9655067920684814,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 160,
+      "clip_id": "final_holdout",
+      "timestamp": 92.88333333333334,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9651937484741211,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 161,
+      "clip_id": "final_holdout",
+      "timestamp": 93.46666666666667,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9606241583824158,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 162,
+      "clip_id": "final_holdout",
+      "timestamp": 94.03333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9550600051879883,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 163,
+      "clip_id": "final_holdout",
+      "timestamp": 94.61666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9414162635803223,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 164,
+      "clip_id": "final_holdout",
+      "timestamp": 95.2,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9536604285240173,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 165,
+      "clip_id": "final_holdout",
+      "timestamp": 95.78333333333333,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9650448560714722,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 166,
+      "clip_id": "final_holdout",
+      "timestamp": 96.36666666666666,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.9588376879692078,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    },
+    {
+      "item_id": 167,
+      "clip_id": "final_holdout",
+      "timestamp": 96.95,
+      "truth": "invalid",
+      "predicted": "invalid",
+      "valid_probability": 0.963366687297821,
+      "mean_boundary_error_px": null,
+      "boundaries": {
+        "left": {
+          "status": "not_visible",
+          "points": []
+        },
+        "right": {
+          "status": "not_visible",
+          "points": []
+        }
+      }
+    }
+  ]
+}

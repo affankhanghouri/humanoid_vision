@@ -1,4 +1,5 @@
 """Read and pace the source, replacing the latest frame at source FPS."""
+import logging
 import math
 import time
 from threading import Event
@@ -7,6 +8,9 @@ from config import VisionConfig
 from core.latest_frame import LatestFrameBuffer
 from core.types import FramePacket
 from tracking.motion import BoxMotionHistory
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def capture_worker(config: VisionConfig, frame_buffer: LatestFrameBuffer,
@@ -18,7 +22,7 @@ def capture_worker(config: VisionConfig, frame_buffer: LatestFrameBuffer,
         source_fps = cap.get(cv2.CAP_PROP_FPS)
         if not math.isfinite(source_fps) or source_fps <= 0:
             source_fps = config.fallback_source_fps
-        print(f"Source FPS: {source_fps:.2f}")
+        LOGGER.info("Source opened | fps=%.2f", source_fps)
         frame_period = 1.0 / source_fps
         frame_id = 0
         motion = BoxMotionHistory(config)

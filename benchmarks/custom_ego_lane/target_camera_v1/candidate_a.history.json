@@ -1,0 +1,91 @@
+{
+  "stopped_early": true,
+  "patience": 4,
+  "best_epoch": 2,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.1882535934448242,
+      "safety_score": 0.8111932992836485,
+      "valid_threshold": 0.9908736944198608,
+      "valid_lane_detection_rate": 0.41237113402061853,
+      "false_lane_rate": 0.058823529411764705,
+      "missed_lane_rate": 0.5876288659793815,
+      "correct_abstain_rate": 0.9411764705882353,
+      "classification_safety_score": 0.7640994542146756,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.047093845068972816,
+      "right_boundary_error_width_fraction_mean": null
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6367561727762222,
+      "safety_score": 0.7641506356434473,
+      "valid_threshold": 0.9964549541473389,
+      "valid_lane_detection_rate": 0.3711340206185567,
+      "false_lane_rate": 0.029411764705882353,
+      "missed_lane_rate": 0.6288659793814433,
+      "correct_abstain_rate": 0.9705882352941176,
+      "classification_safety_score": 0.7171012734990904,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.04704936214435696,
+      "right_boundary_error_width_fraction_mean": null
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5661670356988907,
+      "safety_score": 0.7648617032197308,
+      "valid_threshold": 0.9951905012130737,
+      "valid_lane_detection_rate": 0.3711340206185567,
+      "false_lane_rate": 0.029411764705882353,
+      "missed_lane_rate": 0.6288659793814433,
+      "correct_abstain_rate": 0.9705882352941176,
+      "classification_safety_score": 0.7171012734990904,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.04776042972064047,
+      "right_boundary_error_width_fraction_mean": null
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.43054203540086744,
+      "safety_score": 0.8631595322238881,
+      "valid_threshold": 0.9864758849143982,
+      "valid_lane_detection_rate": 0.36082474226804123,
+      "false_lane_rate": 0.058823529411764705,
+      "missed_lane_rate": 0.6391752577319587,
+      "correct_abstain_rate": 0.9411764705882353,
+      "classification_safety_score": 0.8156458459672529,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.047513686256635206,
+      "right_boundary_error_width_fraction_mean": null
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.369426865875721,
+      "safety_score": 0.873193008167194,
+      "valid_threshold": 0.9878366589546204,
+      "valid_lane_detection_rate": 0.35051546391752575,
+      "false_lane_rate": 0.058823529411764705,
+      "missed_lane_rate": 0.6494845360824743,
+      "correct_abstain_rate": 0.9411764705882353,
+      "classification_safety_score": 0.8259551243177684,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.04723788384942567,
+      "right_boundary_error_width_fraction_mean": null
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.38121519461274145,
+      "safety_score": 0.8628574835538622,
+      "valid_threshold": 0.982856810092926,
+      "valid_lane_detection_rate": 0.36082474226804123,
+      "false_lane_rate": 0.058823529411764705,
+      "missed_lane_rate": 0.6391752577319587,
+      "correct_abstain_rate": 0.9411764705882353,
+      "classification_safety_score": 0.8156458459672529,
+      "records": 165,
+      "left_boundary_error_width_fraction_mean": 0.04721163758660931,
+      "right_boundary_error_width_fraction_mean": null
+    }
+  ]
+}

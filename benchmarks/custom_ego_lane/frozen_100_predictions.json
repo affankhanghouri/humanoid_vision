@@ -1,0 +1,1410 @@
+{
+  "model": {
+    "name": "custom_ego_lane_mobilenetv3_small_v3",
+    "path": "benchmarks/custom_ego_lane/tiny_ego_lane_trained_v3.onnx"
+  },
+  "valid_threshold": 0.9734095335006714,
+  "visibility_threshold": 0.5,
+  "predictions": [
+    {
+      "frame_id": 0,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 20,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 40,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 60,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 80,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 100,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 120,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 140,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 160,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 180,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 200,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 220,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 240,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 260,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 270,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 290,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 310,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 330,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 350,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 370,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 390,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 410,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 430,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 450,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 460,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 480,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 500,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 520,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 540,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 550,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 570,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 590,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 610,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 630,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 640,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 650,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 660,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 680,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 700,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 710,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 720,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 740,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 760,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 770,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 780,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 800,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 820,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 830,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 840,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 860,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 880,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 890,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 900,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 920,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 940,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 970,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1010,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1050,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1090,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1130,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1170,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1210,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1250,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1310,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1370,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1410,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1430,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1450,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1470,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1490,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1510,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1530,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1550,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1570,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1590,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1610,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1630,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1650,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1670,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1690,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1700,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1720,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1740,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1760,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1780,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1800,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1820,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1840,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1860,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1870,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1880,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1890,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1900,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1910,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1920,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1940,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1950,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1960,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1980,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    },
+    {
+      "frame_id": 1990,
+      "ego_lane_status": "invalid",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": [],
+        "confidence": 1.0
+      }
+    }
+  ]
+}

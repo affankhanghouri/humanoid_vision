@@ -1,4 +1,5 @@
-"""Run detection and pose serially through one heavy-compute lane."""
+"""Run detection, pose and opt-in road through one serial compute worker."""
+import logging
 import time
 from dataclasses import replace
 from threading import Event
@@ -13,6 +14,9 @@ from scheduling.scheduler import ComputeScheduler
 from tracking.tracker import MultiObjectTracker
 
 
+LOGGER = logging.getLogger(__name__)
+
+
 def compute_worker(
     config: VisionConfig,
     scheduler: ComputeScheduler,
@@ -21,6 +25,7 @@ def compute_worker(
     tracker: MultiObjectTracker,
     perception_store: PerceptionStore,
     stop_event: Event,
+    road_estimator=None,
 ) -> None:
     detection_count = pose_count = 0
     started = time.perf_counter()
@@ -54,12 +59,25 @@ def compute_worker(
             perception_store.publish_tracking(state)
             scheduler.mark_executed(task.task_type, finished-inference_start, task.source_timestamp)
             metrics = scheduler.metrics()
-            print(f'DET frame={task.source_frame_id} inference={inference_ms:.1f}ms '
-                  f'pipeline={state.processing_latency_ms:.1f}ms '
-                  f'avg={state.average_ms:.1f}ms p95={state.p95_ms:.1f}ms '
-                  f'hz={hz:.2f} detections={len(detections)} entities={len(entities)} '
-                  f'sched_sub={metrics.submitted} sched_exec={metrics.executed} '
-                  f'replaced={metrics.replaced} stale={metrics.dropped_stale}')
+            LOGGER.debug(
+                'DET frame=%d inference=%.1fms pipeline=%.1fms avg=%.1fms '
+                'p95=%.1fms hz=%.2f detections=%d entities=%d sched_sub=%d '
+                'sched_exec=%d replaced=%d stale=%d',
+                task.source_frame_id, inference_ms, state.processing_latency_ms,
+                state.average_ms, state.p95_ms, hz, len(detections), len(entities),
+                metrics.submitted, metrics.executed, metrics.replaced,
+                metrics.dropped_stale,
+            )
+            continue
+
+        if task.task_type == 'road':
+            if road_estimator is None:
+                scheduler.mark_skipped('road')
+                continue
+            start = time.perf_counter()
+            observation = road_estimator.observe(packet.frame, task.source_frame_id, task.source_timestamp)
+            perception_store.publish_road(observation)
+            scheduler.mark_executed('road', time.perf_counter()-start, task.source_timestamp)
             continue
 
         if task.task_type == 'pose':
@@ -67,6 +85,7 @@ def compute_worker(
             # A pending pose task can outlive the person that triggered it.
             if not has_fresh_person(state, task.source_frame_id, task.source_timestamp,
                                     config.max_render_age):
+                scheduler.mark_skipped("pose")
                 continue
             inference_start = time.perf_counter()
             if pose_started is None:
@@ -84,9 +103,12 @@ def compute_worker(
             perception_store.publish_pose(matched, meta, inference_ms, hz,
                                           pose_latency.average, pose_latency.p95)
             scheduler.mark_executed(task.task_type, finished-inference_start, task.source_timestamp)
-            print(f'POSE frame={task.source_frame_id} inference={inference_ms:.1f}ms '
-                  f'pipeline={meta.processing_latency_ms:.1f}ms hz={hz:.2f} '
-                  f'people={len(people)} matched={len(matched)}')
+            LOGGER.debug(
+                'POSE frame=%d inference=%.1fms pipeline=%.1fms hz=%.2f '
+                'people=%d matched=%d',
+                task.source_frame_id, inference_ms, meta.processing_latency_ms,
+                hz, len(people), len(matched),
+            )
             continue
 
-        print(f'Warning: unknown compute task {task.task_type}')
+        LOGGER.warning('Unknown compute task: %s', task.task_type)

@@ -41,6 +41,13 @@ from rendering.entity_history import (
 )
 
 
+from rendering.priority_map import (
+    fresh_road_mask,
+    render_priority_overlay,
+    render_road_overlay,
+)
+
+
 from rendering.overlays import (
     dark_panel,
     draw_corner_box,
@@ -209,10 +216,6 @@ class DemoRenderer:
         self,
         config: VisionConfig,
     ):
-
-        print(
-            ">>> DEMO RENDERER INITIALIZED <<<"
-        )
 
         self.config = config
         self.motion = BoxMotionHistory(config)
@@ -1266,6 +1269,51 @@ class DemoRenderer:
         )
 
     # ==================================================
+    # DEMO-ONLY PERCEPTION PRIORITY STATUS
+    # ==================================================
+
+    def draw_priority_status(self, frame, packet, state, tracking_valid,
+                             views, road_mask, scored):
+        if not self.config.risk_heatmap_enabled:
+            return
+        height, width = frame.shape[:2]
+        panel_width = min(470, max(330, width - 720))
+        panel_height = 70
+        x = max(300, (width - panel_width) // 2)
+        if x + panel_width > width - 350:
+            x = max(300, width - 350 - panel_width)
+        y = 14
+        dark_panel(frame, x, y, panel_width, panel_height, alpha=.78,
+                   border_color=(0, 205, 255), background=(7, 12, 15))
+        cv2.putText(frame, "PERCEPTION PRIORITY MAP", (x + 12, y + 21),
+                    cv2.FONT_HERSHEY_SIMPLEX, .47, (0, 220, 255), 1, cv2.LINE_AA)
+        object_status = "LIVE" if tracking_valid else "WAIT"
+        pose_status = "LIVE" if any(view.pose_ready for view in views) else "WAIT"
+        road_status = ("OFF" if not self.config.road_demo_enabled else
+                       "LIVE" if road_mask is not None else "WAIT")
+        status = (f"OBJECTS: {object_status}   TRACKING: {object_status}   "
+                  f"POSE: {pose_status}   ROAD: {road_status}")
+        cv2.putText(frame, status, (x + 12, y + 42), cv2.FONT_HERSHEY_SIMPLEX,
+                    .32, (205, 230, 220), 1, cv2.LINE_AA)
+        road = state.road if state is not None else None
+        if road_mask is not None and road is not None:
+            detail = (f"ROAD AGE {road.age_at(packet.timestamp) * 1000:.0f} ms   "
+                      f"ROAD AI {road.inference_ms:.0f} ms   "
+                      f"ACTIVE PRIORITIES {len(scored)}")
+        else:
+            detail = f"REAL TRACK SIGNALS   ACTIVE PRIORITIES {len(scored)}"
+        cv2.putText(frame, detail, (x + 12, y + 61), cv2.FONT_HERSHEY_SIMPLEX,
+                    .30, (165, 205, 195), 1, cv2.LINE_AA)
+        # Compact green -> yellow -> red legend; colors encode relative priority.
+        legend_x = x + panel_width - 82
+        for offset in range(66):
+            t = offset / 65
+            color = ((int(45 * (1-t)), int(190 + 45*t), int(35 + 220*t))
+                     if t <= .55 else (0, int(235 * (1-(t-.55)/.45)), 255))
+            cv2.line(frame, (legend_x + offset, y + 10),
+                     (legend_x + offset, y + 15), color, 1)
+
+    # ==================================================
     # MAIN RENDER
     # ==================================================
 
@@ -1285,8 +1333,21 @@ class DemoRenderer:
         valid = state is not None and state.is_valid_for(
             packet.frame_id, packet.timestamp, self.config.max_render_age)
         views = []
+        road_mask = None
+        scored = []
+        if self.config.risk_heatmap_enabled:
+            road = state.road if state is not None else None
+            road_mask = fresh_road_mask(
+                road, packet.frame_id, packet.timestamp,
+                (frame.shape[1], frame.shape[0]), self.config.road_max_age)
+            render_road_overlay(frame, road_mask, self.config.road_overlay_alpha)
         if valid:
             views = self.build_views(frame, packet, state, state_age)
+            if self.config.risk_heatmap_enabled:
+                scored = render_priority_overlay(
+                    frame, views, road_mask, self.config.risk_heatmap_alpha,
+                    self.config.risk_heatmap_scale)
+            # Boxes, IDs, pose, trails and motion arrows remain above the map.
             self.draw_entities(frame, packet, views)
         else:
             self.box_smoother.keep_only(())
@@ -1325,6 +1386,10 @@ class DemoRenderer:
         self.draw_status_bar(
             frame,
             display_state,
+        )
+
+        self.draw_priority_status(
+            frame, packet, state, valid, views, road_mask, scored,
         )
 
         return frame

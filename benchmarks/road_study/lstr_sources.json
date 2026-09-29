@@ -1,0 +1,14 @@
+{
+  "repository": "liuruijin17/LSTR",
+  "revision": "c8fe59a1d8e1c456c982c9e954ee660ae9116b49",
+  "files": {
+    "config.py": "1123ff2c44d7e98df9dfb3cb6da6ebe54809ae76bcf194878b22edb201c69d83",
+    "config/LSTR.json": "73ecae0749ac83434bfe6da92e1aeeb13cab5ca20a6182f940022a39f6b0abe2",
+    "models/LSTR.py": "fd957b173203d2749dc703cd6aec27c88228c2a4603fd12d20156fed7f0a40b2",
+    "models/py_utils/kp.py": "516e9ba0fe3fb3ba201beef4a2a14c3981b90be41aeed1cbffd2da30b1889943",
+    "models/py_utils/transformer.py": "d5799965043c06b0da3d9cfaff1b9be52fa1c31f04a26ea4abc930d9396eb825",
+    "models/py_utils/position_encoding.py": "f07ec3d264f17e3520a6c7002343775fcc3bccd119c4573310057eb39c8c77ef",
+    "LICENSE": "a0a61215c190d8dae7723e254eb21cdec26af3ee7f1373eb415c9deaf227b209",
+    "cache/nnet/LSTR/LSTR_500000.pkl": "8167977ba4ad96151f25a519149b59dd58d70c3ae8df57869169f88c44a25a41"
+  }
+}

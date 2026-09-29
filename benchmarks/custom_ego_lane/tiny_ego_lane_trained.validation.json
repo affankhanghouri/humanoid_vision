@@ -1,0 +1,110 @@
+{
+  "selection_rule": "minimize 3*false_lane_rate + missed_lane_rate; ties prefer fewer false lanes then higher recall",
+  "selected": {
+    "threshold": 0.7696993350982666,
+    "records": 90,
+    "valid_records": 70,
+    "invalid_records": 20,
+    "valid_lane_detection_rate": 0.7428571428571429,
+    "false_lane_rate": 0.0,
+    "missed_lane_rate": 0.2571428571428571,
+    "correct_abstain_rate": 1.0,
+    "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+    "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+    "safety_score": 0.2571428571428571
+  },
+  "probability_summary": {
+    "valid_ground_truth": {
+      "min": 0.3763604164123535,
+      "median": 0.8899725675582886,
+      "p95": 0.9505636096000671,
+      "max": 0.9608650207519531
+    },
+    "invalid_ground_truth": {
+      "min": 0.1284913271665573,
+      "median": 0.34868744015693665,
+      "p95": 0.5900442600250244,
+      "max": 0.7682860493659973
+    }
+  },
+  "representative_thresholds": [
+    {
+      "threshold": 0.5,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.9285714285714286,
+      "false_lane_rate": 0.2,
+      "missed_lane_rate": 0.07142857142857142,
+      "correct_abstain_rate": 0.8,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.6714285714285714
+    },
+    {
+      "threshold": 0.6,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.8571428571428571,
+      "false_lane_rate": 0.05,
+      "missed_lane_rate": 0.14285714285714285,
+      "correct_abstain_rate": 0.95,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.2928571428571428
+    },
+    {
+      "threshold": 0.7,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.7857142857142857,
+      "false_lane_rate": 0.05,
+      "missed_lane_rate": 0.21428571428571427,
+      "correct_abstain_rate": 0.95,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.36428571428571427
+    },
+    {
+      "threshold": 0.8,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.6857142857142857,
+      "false_lane_rate": 0.0,
+      "missed_lane_rate": 0.3142857142857143,
+      "correct_abstain_rate": 1.0,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.3142857142857143
+    },
+    {
+      "threshold": 0.9,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.4714285714285714,
+      "false_lane_rate": 0.0,
+      "missed_lane_rate": 0.5285714285714286,
+      "correct_abstain_rate": 1.0,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.5285714285714286
+    },
+    {
+      "threshold": 0.7696993350982666,
+      "records": 90,
+      "valid_records": 70,
+      "invalid_records": 20,
+      "valid_lane_detection_rate": 0.7428571428571429,
+      "false_lane_rate": 0.0,
+      "missed_lane_rate": 0.2571428571428571,
+      "correct_abstain_rate": 1.0,
+      "left_boundary_error_width_fraction_mean": 0.10122245371912085,
+      "right_boundary_error_width_fraction_mean": 0.1517932996708734,
+      "safety_score": 0.2571428571428571
+    }
+  ]
+}

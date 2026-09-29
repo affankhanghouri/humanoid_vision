@@ -106,3 +106,15 @@ saved_model/
 /outputs/
 /pipeline_measurement.json
 *.log
+
+# Local datasets and generated research artifacts
+/training_data/
+/benchmarks/**/cache_*/
+/benchmarks/path_relation/output/
+/benchmarks/**/*.[jp][pn]g
+!/benchmarks/lane_study/output/visuals/contact_sheet.jpg
+!/benchmarks/custom_ego_lane/frozen_100_report/missed_valid_examples.jpg
+!/benchmarks/custom_ego_lane/target_camera_v1/final_holdout/frozen_eval/final_missed_valid_examples.jpg
+!/benchmarks/custom_ego_lane/target_camera_v1/final_holdout/frozen_eval/final_correct_abstention_examples.jpg
+!/benchmarks/path_relation/acceptance_v1/visual_examples.jpg
+!/benchmarks/risk_demo/preview.jpg

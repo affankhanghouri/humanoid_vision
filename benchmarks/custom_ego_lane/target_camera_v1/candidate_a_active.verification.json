@@ -1,0 +1,37 @@
+{
+  "trained": true,
+  "checkpoint": "target_camera_v1/candidate_a_active.pt",
+  "parameters": 993799,
+  "input": [
+    1,
+    3,
+    192,
+    320
+  ],
+  "onnx_checker": "passed",
+  "valid_threshold": 0.9956316947937012,
+  "visibility_threshold": 0.5,
+  "numerical": [
+    {
+      "output": "coordinates",
+      "samples": 11,
+      "max_abs_error": 6.556510925292969e-07,
+      "mean_max_abs_error": 3.9555809714577417e-07,
+      "allclose": true
+    },
+    {
+      "output": "visibility_logits",
+      "samples": 11,
+      "max_abs_error": 1.0281801223754883e-05,
+      "mean_max_abs_error": 6.328929554332387e-06,
+      "allclose": true
+    },
+    {
+      "output": "state_logits",
+      "samples": 11,
+      "max_abs_error": 4.5299530029296875e-06,
+      "mean_max_abs_error": 2.2541392933238638e-06,
+      "allclose": true
+    }
+  ]
+}

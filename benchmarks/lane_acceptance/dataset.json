@@ -1,0 +1,3266 @@
+{
+  "schema_version": 1,
+  "name": "humanoid_vision_lane_acceptance_v1",
+  "video": {
+    "path": "test_data/test_video.mp4",
+    "fps": 24.0,
+    "width": 1152,
+    "height": 720,
+    "reported_frame_count": 2002,
+    "last_selected_frame_id": 1990
+  },
+  "selection": {
+    "method": "manual contact-sheet review with near-duplicate rejection",
+    "minimum_gap_frames": 10,
+    "minimum_gap_seconds": 0.4166666666666667,
+    "primary_stratum_distribution": {
+      "clear_normal_lane": 20,
+      "crosswalk_stop_line": 10,
+      "faded_lane": 10,
+      "intersection": 15,
+      "occlusion": 10,
+      "parked_cars_curb": 15,
+      "turning_curved_road": 10,
+      "unmarked_road": 10
+    }
+  },
+  "annotation_policy": {
+    "human_review_required": true,
+    "automatic_model_annotation_allowed": false,
+    "point_order": "click order; bottom-to-top is recommended",
+    "invalid_marker": "NO_VALID_EGO_LANE"
+  },
+  "progress": {
+    "last_frame_id": 1990,
+    "completed": 100
+  },
+  "annotations": [
+    {
+      "frame_id": 0,
+      "timestamp": 0.0,
+      "image": "frames/frame_0000.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            320,
+            701
+          ],
+          [
+            359,
+            649
+          ],
+          [
+            426,
+            553
+          ],
+          [
+            473,
+            464
+          ],
+          [
+            494,
+            444
+          ],
+          [
+            514,
+            406
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 20,
+      "timestamp": 0.833333,
+      "image": "frames/frame_0020.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            299,
+            716
+          ],
+          [
+            361,
+            634
+          ],
+          [
+            429,
+            530
+          ],
+          [
+            463,
+            477
+          ],
+          [
+            500,
+            426
+          ],
+          [
+            509,
+            416
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 40,
+      "timestamp": 1.666667,
+      "image": "frames/frame_0040.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            396,
+            710
+          ],
+          [
+            427,
+            616
+          ],
+          [
+            459,
+            526
+          ],
+          [
+            476,
+            464
+          ],
+          [
+            497,
+            424
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 60,
+      "timestamp": 2.5,
+      "image": "frames/frame_0060.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 80,
+      "timestamp": 3.333333,
+      "image": "frames/frame_0080.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 100,
+      "timestamp": 4.166667,
+      "image": "frames/frame_0100.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 120,
+      "timestamp": 5.0,
+      "image": "frames/frame_0120.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 140,
+      "timestamp": 5.833333,
+      "image": "frames/frame_0140.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 160,
+      "timestamp": 6.666667,
+      "image": "frames/frame_0160.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "ambiguous",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 180,
+      "timestamp": 7.5,
+      "image": "frames/frame_0180.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 200,
+      "timestamp": 8.333333,
+      "image": "frames/frame_0200.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 220,
+      "timestamp": 9.166667,
+      "image": "frames/frame_0220.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 240,
+      "timestamp": 10.0,
+      "image": "frames/frame_0240.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 260,
+      "timestamp": 10.833333,
+      "image": "frames/frame_0260.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 270,
+      "timestamp": 11.25,
+      "image": "frames/frame_0270.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 290,
+      "timestamp": 12.083333,
+      "image": "frames/frame_0290.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 310,
+      "timestamp": 12.916667,
+      "image": "frames/frame_0310.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 330,
+      "timestamp": 13.75,
+      "image": "frames/frame_0330.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 350,
+      "timestamp": 14.583333,
+      "image": "frames/frame_0350.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 370,
+      "timestamp": 15.416667,
+      "image": "frames/frame_0370.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 390,
+      "timestamp": 16.25,
+      "image": "frames/frame_0390.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 410,
+      "timestamp": 17.083333,
+      "image": "frames/frame_0410.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 430,
+      "timestamp": 17.916667,
+      "image": "frames/frame_0430.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 450,
+      "timestamp": 18.75,
+      "image": "frames/frame_0450.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 460,
+      "timestamp": 19.166667,
+      "image": "frames/frame_0460.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 480,
+      "timestamp": 20.0,
+      "image": "frames/frame_0480.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            291,
+            711
+          ],
+          [
+            434,
+            537
+          ],
+          [
+            511,
+            441
+          ],
+          [
+            540,
+            401
+          ],
+          [
+            554,
+            383
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            841,
+            631
+          ],
+          [
+            930,
+            710
+          ],
+          [
+            783,
+            561
+          ],
+          [
+            741,
+            521
+          ],
+          [
+            663,
+            447
+          ],
+          [
+            619,
+            393
+          ],
+          [
+            607,
+            379
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 500,
+      "timestamp": 20.833333,
+      "image": "frames/frame_0500.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            307,
+            701
+          ],
+          [
+            389,
+            593
+          ],
+          [
+            420,
+            547
+          ],
+          [
+            456,
+            506
+          ],
+          [
+            509,
+            444
+          ],
+          [
+            527,
+            417
+          ],
+          [
+            539,
+            397
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            979,
+            706
+          ],
+          [
+            846,
+            597
+          ],
+          [
+            737,
+            506
+          ],
+          [
+            707,
+            474
+          ],
+          [
+            673,
+            439
+          ],
+          [
+            654,
+            424
+          ],
+          [
+            621,
+            390
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 520,
+      "timestamp": 21.666667,
+      "image": "frames/frame_0520.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            279,
+            711
+          ],
+          [
+            349,
+            640
+          ],
+          [
+            403,
+            564
+          ],
+          [
+            447,
+            509
+          ],
+          [
+            480,
+            463
+          ],
+          [
+            507,
+            426
+          ],
+          [
+            531,
+            401
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            950,
+            699
+          ],
+          [
+            919,
+            670
+          ],
+          [
+            870,
+            619
+          ],
+          [
+            794,
+            561
+          ],
+          [
+            757,
+            520
+          ],
+          [
+            727,
+            479
+          ],
+          [
+            713,
+            467
+          ],
+          [
+            663,
+            429
+          ],
+          [
+            636,
+            406
+          ],
+          [
+            620,
+            390
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 540,
+      "timestamp": 22.5,
+      "image": "frames/frame_0540.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            289,
+            706
+          ],
+          [
+            344,
+            624
+          ],
+          [
+            380,
+            570
+          ],
+          [
+            424,
+            520
+          ],
+          [
+            461,
+            473
+          ],
+          [
+            489,
+            439
+          ],
+          [
+            513,
+            404
+          ],
+          [
+            526,
+            381
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            973,
+            707
+          ],
+          [
+            910,
+            630
+          ],
+          [
+            861,
+            586
+          ],
+          [
+            809,
+            533
+          ],
+          [
+            756,
+            501
+          ],
+          [
+            726,
+            474
+          ],
+          [
+            681,
+            439
+          ],
+          [
+            661,
+            421
+          ],
+          [
+            634,
+            403
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 550,
+      "timestamp": 22.916667,
+      "image": "frames/frame_0550.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            259,
+            711
+          ],
+          [
+            401,
+            547
+          ],
+          [
+            477,
+            459
+          ],
+          [
+            514,
+            413
+          ],
+          [
+            536,
+            387
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            1066,
+            714
+          ],
+          [
+            880,
+            587
+          ],
+          [
+            751,
+            499
+          ],
+          [
+            679,
+            437
+          ],
+          [
+            641,
+            401
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 570,
+      "timestamp": 23.75,
+      "image": "frames/frame_0570.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            1030,
+            716
+          ],
+          [
+            829,
+            561
+          ],
+          [
+            689,
+            471
+          ],
+          [
+            623,
+            406
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 590,
+      "timestamp": 24.583333,
+      "image": "frames/frame_0590.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "parked_cars_curb",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 610,
+      "timestamp": 25.416667,
+      "image": "frames/frame_0610.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "parked_cars_curb",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            347,
+            686
+          ],
+          [
+            414,
+            559
+          ],
+          [
+            470,
+            469
+          ],
+          [
+            510,
+            414
+          ],
+          [
+            531,
+            376
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 630,
+      "timestamp": 26.25,
+      "image": "frames/frame_0630.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            249,
+            714
+          ],
+          [
+            444,
+            487
+          ],
+          [
+            527,
+            406
+          ],
+          [
+            547,
+            380
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            951,
+            709
+          ],
+          [
+            699,
+            476
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 640,
+      "timestamp": 26.666667,
+      "image": "frames/frame_0640.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            263,
+            693
+          ],
+          [
+            419,
+            529
+          ],
+          [
+            503,
+            434
+          ],
+          [
+            546,
+            389
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            1003,
+            707
+          ],
+          [
+            809,
+            564
+          ],
+          [
+            756,
+            520
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 650,
+      "timestamp": 27.083333,
+      "image": "frames/frame_0650.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            249,
+            701
+          ],
+          [
+            449,
+            503
+          ],
+          [
+            514,
+            441
+          ],
+          [
+            541,
+            403
+          ],
+          [
+            554,
+            389
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 660,
+      "timestamp": 27.5,
+      "image": "frames/frame_0660.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            367,
+            689
+          ],
+          [
+            439,
+            566
+          ],
+          [
+            500,
+            486
+          ],
+          [
+            533,
+            433
+          ],
+          [
+            557,
+            404
+          ],
+          [
+            577,
+            381
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 680,
+      "timestamp": 28.333333,
+      "image": "frames/frame_0680.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            409,
+            699
+          ],
+          [
+            483,
+            580
+          ],
+          [
+            527,
+            500
+          ],
+          [
+            573,
+            436
+          ],
+          [
+            597,
+            403
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 700,
+      "timestamp": 29.166667,
+      "image": "frames/frame_0700.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            481,
+            709
+          ],
+          [
+            524,
+            604
+          ],
+          [
+            561,
+            484
+          ],
+          [
+            583,
+            426
+          ],
+          [
+            600,
+            396
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 710,
+      "timestamp": 29.583333,
+      "image": "frames/frame_0710.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            491,
+            696
+          ],
+          [
+            531,
+            533
+          ],
+          [
+            559,
+            440
+          ],
+          [
+            570,
+            409
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 720,
+      "timestamp": 30.0,
+      "image": "frames/frame_0720.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            443,
+            710
+          ],
+          [
+            504,
+            549
+          ],
+          [
+            544,
+            453
+          ],
+          [
+            557,
+            400
+          ],
+          [
+            561,
+            381
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 740,
+      "timestamp": 30.833333,
+      "image": "frames/frame_0740.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            410,
+            689
+          ],
+          [
+            469,
+            500
+          ],
+          [
+            506,
+            424
+          ],
+          [
+            520,
+            381
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 760,
+      "timestamp": 31.666667,
+      "image": "frames/frame_0760.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            310,
+            707
+          ],
+          [
+            434,
+            507
+          ],
+          [
+            484,
+            423
+          ],
+          [
+            513,
+            386
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 770,
+      "timestamp": 32.083333,
+      "image": "frames/frame_0770.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            297,
+            707
+          ],
+          [
+            383,
+            571
+          ],
+          [
+            449,
+            479
+          ],
+          [
+            494,
+            420
+          ],
+          [
+            511,
+            396
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 780,
+      "timestamp": 32.5,
+      "image": "frames/frame_0780.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            329,
+            691
+          ],
+          [
+            413,
+            556
+          ],
+          [
+            467,
+            464
+          ],
+          [
+            520,
+            399
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 800,
+      "timestamp": 33.333333,
+      "image": "frames/frame_0800.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            257,
+            701
+          ],
+          [
+            434,
+            500
+          ],
+          [
+            489,
+            444
+          ],
+          [
+            526,
+            394
+          ],
+          [
+            540,
+            381
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 820,
+      "timestamp": 34.166667,
+      "image": "frames/frame_0820.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            284,
+            714
+          ],
+          [
+            376,
+            569
+          ],
+          [
+            439,
+            500
+          ],
+          [
+            476,
+            449
+          ],
+          [
+            509,
+            414
+          ],
+          [
+            536,
+            387
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 830,
+      "timestamp": 34.583333,
+      "image": "frames/frame_0830.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            236,
+            714
+          ],
+          [
+            379,
+            566
+          ],
+          [
+            479,
+            449
+          ],
+          [
+            513,
+            417
+          ],
+          [
+            540,
+            389
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 840,
+      "timestamp": 35.0,
+      "image": "frames/frame_0840.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            236,
+            701
+          ],
+          [
+            433,
+            496
+          ],
+          [
+            500,
+            433
+          ],
+          [
+            529,
+            399
+          ],
+          [
+            543,
+            387
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 860,
+      "timestamp": 35.833333,
+      "image": "frames/frame_0860.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            256,
+            709
+          ],
+          [
+            404,
+            546
+          ],
+          [
+            499,
+            437
+          ],
+          [
+            540,
+            389
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 880,
+      "timestamp": 36.666667,
+      "image": "frames/frame_0880.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            310,
+            680
+          ],
+          [
+            406,
+            547
+          ],
+          [
+            474,
+            456
+          ],
+          [
+            514,
+            411
+          ],
+          [
+            539,
+            384
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 890,
+      "timestamp": 37.083333,
+      "image": "frames/frame_0890.jpg",
+      "selection_stratum": "parked_cars_curb",
+      "scene_type": [
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            266,
+            701
+          ],
+          [
+            431,
+            499
+          ],
+          [
+            496,
+            427
+          ],
+          [
+            531,
+            400
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 900,
+      "timestamp": 37.5,
+      "image": "frames/frame_0900.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            223,
+            711
+          ],
+          [
+            384,
+            550
+          ],
+          [
+            460,
+            461
+          ],
+          [
+            507,
+            417
+          ],
+          [
+            527,
+            394
+          ],
+          [
+            527,
+            394
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 920,
+      "timestamp": 38.333333,
+      "image": "frames/frame_0920.jpg",
+      "selection_stratum": "clear_normal_lane",
+      "scene_type": [
+        "clear_normal_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            297,
+            706
+          ],
+          [
+            401,
+            551
+          ],
+          [
+            447,
+            489
+          ],
+          [
+            497,
+            427
+          ],
+          [
+            531,
+            391
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 940,
+      "timestamp": 39.166667,
+      "image": "frames/frame_0940.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection",
+        "parked_cars_curb"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            324,
+            707
+          ],
+          [
+            459,
+            529
+          ],
+          [
+            519,
+            447
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 970,
+      "timestamp": 40.416667,
+      "image": "frames/frame_0970.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            291,
+            709
+          ],
+          [
+            401,
+            590
+          ],
+          [
+            473,
+            486
+          ],
+          [
+            500,
+            457
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1010,
+      "timestamp": 42.083333,
+      "image": "frames/frame_1010.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            351,
+            697
+          ],
+          [
+            429,
+            560
+          ],
+          [
+            480,
+            481
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1050,
+      "timestamp": 43.75,
+      "image": "frames/frame_1050.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            373,
+            686
+          ],
+          [
+            443,
+            564
+          ],
+          [
+            476,
+            487
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1090,
+      "timestamp": 45.416667,
+      "image": "frames/frame_1090.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            351,
+            703
+          ],
+          [
+            436,
+            557
+          ],
+          [
+            471,
+            489
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1130,
+      "timestamp": 47.083333,
+      "image": "frames/frame_1130.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            343,
+            684
+          ],
+          [
+            429,
+            546
+          ],
+          [
+            481,
+            471
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1170,
+      "timestamp": 48.75,
+      "image": "frames/frame_1170.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            327,
+            701
+          ],
+          [
+            427,
+            549
+          ],
+          [
+            490,
+            467
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1210,
+      "timestamp": 50.416667,
+      "image": "frames/frame_1210.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            344,
+            690
+          ],
+          [
+            457,
+            499
+          ],
+          [
+            489,
+            443
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1250,
+      "timestamp": 52.083333,
+      "image": "frames/frame_1250.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            341,
+            703
+          ],
+          [
+            411,
+            563
+          ],
+          [
+            469,
+            480
+          ],
+          [
+            514,
+            431
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1310,
+      "timestamp": 54.583333,
+      "image": "frames/frame_1310.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            326,
+            700
+          ],
+          [
+            413,
+            561
+          ],
+          [
+            476,
+            496
+          ],
+          [
+            510,
+            451
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1370,
+      "timestamp": 57.083333,
+      "image": "frames/frame_1370.jpg",
+      "selection_stratum": "occlusion",
+      "scene_type": [
+        "parked_cars_curb",
+        "occlusion"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            270,
+            710
+          ],
+          [
+            366,
+            610
+          ],
+          [
+            460,
+            503
+          ],
+          [
+            509,
+            459
+          ]
+        ]
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1410,
+      "timestamp": 58.75,
+      "image": "frames/frame_1410.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            1023,
+            669
+          ],
+          [
+            849,
+            557
+          ],
+          [
+            660,
+            463
+          ],
+          [
+            580,
+            426
+          ],
+          [
+            520,
+            387
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1430,
+      "timestamp": 59.583333,
+      "image": "frames/frame_1430.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "ambiguous",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            966,
+            689
+          ],
+          [
+            701,
+            524
+          ],
+          [
+            606,
+            476
+          ],
+          [
+            534,
+            427
+          ],
+          [
+            491,
+            400
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1450,
+      "timestamp": 60.416667,
+      "image": "frames/frame_1450.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "valid",
+      "annotation_flag": null,
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "visible",
+        "points": [
+          [
+            863,
+            701
+          ],
+          [
+            669,
+            523
+          ],
+          [
+            570,
+            430
+          ],
+          [
+            520,
+            380
+          ]
+        ]
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1470,
+      "timestamp": 61.25,
+      "image": "frames/frame_1470.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1490,
+      "timestamp": 62.083333,
+      "image": "frames/frame_1490.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1510,
+      "timestamp": 62.916667,
+      "image": "frames/frame_1510.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1530,
+      "timestamp": 63.75,
+      "image": "frames/frame_1530.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1550,
+      "timestamp": 64.583333,
+      "image": "frames/frame_1550.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1570,
+      "timestamp": 65.416667,
+      "image": "frames/frame_1570.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1590,
+      "timestamp": 66.25,
+      "image": "frames/frame_1590.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1610,
+      "timestamp": 67.083333,
+      "image": "frames/frame_1610.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1630,
+      "timestamp": 67.916667,
+      "image": "frames/frame_1630.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1650,
+      "timestamp": 68.75,
+      "image": "frames/frame_1650.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1670,
+      "timestamp": 69.583333,
+      "image": "frames/frame_1670.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1690,
+      "timestamp": 70.416667,
+      "image": "frames/frame_1690.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1700,
+      "timestamp": 70.833333,
+      "image": "frames/frame_1700.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1720,
+      "timestamp": 71.666667,
+      "image": "frames/frame_1720.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1740,
+      "timestamp": 72.5,
+      "image": "frames/frame_1740.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1760,
+      "timestamp": 73.333333,
+      "image": "frames/frame_1760.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1780,
+      "timestamp": 74.166667,
+      "image": "frames/frame_1780.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1800,
+      "timestamp": 75.0,
+      "image": "frames/frame_1800.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1820,
+      "timestamp": 75.833333,
+      "image": "frames/frame_1820.jpg",
+      "selection_stratum": "unmarked_road",
+      "scene_type": [
+        "unmarked_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1840,
+      "timestamp": 76.666667,
+      "image": "frames/frame_1840.jpg",
+      "selection_stratum": "faded_lane",
+      "scene_type": [
+        "faded_lane"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1860,
+      "timestamp": 77.5,
+      "image": "frames/frame_1860.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1870,
+      "timestamp": 77.916667,
+      "image": "frames/frame_1870.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1880,
+      "timestamp": 78.333333,
+      "image": "frames/frame_1880.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1890,
+      "timestamp": 78.75,
+      "image": "frames/frame_1890.jpg",
+      "selection_stratum": "crosswalk_stop_line",
+      "scene_type": [
+        "intersection",
+        "crosswalk_stop_line"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1900,
+      "timestamp": 79.166667,
+      "image": "frames/frame_1900.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1910,
+      "timestamp": 79.583333,
+      "image": "frames/frame_1910.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1920,
+      "timestamp": 80.0,
+      "image": "frames/frame_1920.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1940,
+      "timestamp": 80.833333,
+      "image": "frames/frame_1940.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1950,
+      "timestamp": 81.25,
+      "image": "frames/frame_1950.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1960,
+      "timestamp": 81.666667,
+      "image": "frames/frame_1960.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1980,
+      "timestamp": 82.5,
+      "image": "frames/frame_1980.jpg",
+      "selection_stratum": "turning_curved_road",
+      "scene_type": [
+        "intersection",
+        "unmarked_road",
+        "turning_curved_road"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    },
+    {
+      "frame_id": 1990,
+      "timestamp": 82.916667,
+      "image": "frames/frame_1990.jpg",
+      "selection_stratum": "intersection",
+      "scene_type": [
+        "intersection"
+      ],
+      "review_status": "complete",
+      "ego_lane_status": "invalid",
+      "annotation_flag": "NO_VALID_EGO_LANE",
+      "left_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "right_boundary": {
+        "status": "not_visible",
+        "points": []
+      },
+      "notes": ""
+    }
+  ]
+}

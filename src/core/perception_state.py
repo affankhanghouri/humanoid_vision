@@ -1,5 +1,6 @@
-"""Immutable tracking and pose snapshots with independent source timestamps."""
-from dataclasses import dataclass
+"""Immutable tracking, pose and road snapshots with independent source timestamps."""
+from dataclasses import dataclass, field
+import numpy as np
 
 
 @dataclass(frozen=True)
@@ -17,6 +18,25 @@ class ObservationMeta:
 
     def is_valid_for(self, frame_id: int, timestamp: float, max_age: float) -> bool:
         return self.source_frame_id <= frame_id and 0 <= self.age_at(timestamp) <= max_age
+
+
+@dataclass(frozen=True)
+class RoadSegObservation(ObservationMeta):
+    inference_ms: float
+    drivable_mask: np.ndarray = field(repr=False, compare=False)
+    # Content rectangle within the padded native mask: left, top, width, height.
+    content_rect: tuple[int, int, int, int]
+    source_size: tuple[int, int]
+    preprocessing_ms: float = 0.0
+    postprocessing_ms: float = 0.0
+
+    def __post_init__(self):
+        mask = np.asarray(self.drivable_mask)
+        if mask.ndim != 2 or mask.dtype != np.uint8:
+            raise ValueError('Road mask must be a 2D uint8 array')
+        # Bytes-backed storage cannot be made writable by a renderer/consumer.
+        immutable = np.frombuffer(mask.tobytes(), dtype=np.uint8).reshape(mask.shape)
+        object.__setattr__(self, 'drivable_mask', immutable)
 
 
 @dataclass(frozen=True)
@@ -70,6 +90,7 @@ class PerceptionState:
     pose_hz: float = 0.0
     pose_average_ms: float = 0.0
     pose_p95_ms: float = 0.0
+    road: RoadSegObservation | None = None
 
     @property
     def tracking_meta(self) -> ObservationMeta:

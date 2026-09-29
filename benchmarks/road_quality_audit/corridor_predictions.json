@@ -1,0 +1,562 @@
+[
+  {
+    "item_id": 0,
+    "frame_id": 0,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7294970100308642
+  },
+  {
+    "item_id": 1,
+    "frame_id": 24,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7398823302469135
+  },
+  {
+    "item_id": 2,
+    "frame_id": 48,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7582015174897119
+  },
+  {
+    "item_id": 3,
+    "frame_id": 72,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 4,
+    "frame_id": 96,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 5,
+    "frame_id": 120,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 6,
+    "frame_id": 144,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 7,
+    "frame_id": 168,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.748875546553498
+  },
+  {
+    "item_id": 8,
+    "frame_id": 192,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 9,
+    "frame_id": 216,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 10,
+    "frame_id": 240,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7531796553497943
+  },
+  {
+    "item_id": 11,
+    "frame_id": 264,
+    "human_possible": false,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 12,
+    "frame_id": 288,
+    "human_possible": false,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 13,
+    "frame_id": 312,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7394354423868313
+  },
+  {
+    "item_id": 14,
+    "frame_id": 336,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.758009420010288
+  },
+  {
+    "item_id": 15,
+    "frame_id": 360,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7307026427469137
+  },
+  {
+    "item_id": 16,
+    "frame_id": 384,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7311213991769547
+  },
+  {
+    "item_id": 17,
+    "frame_id": 408,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7477985146604939
+  },
+  {
+    "item_id": 18,
+    "frame_id": 432,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7772633744855968
+  },
+  {
+    "item_id": 19,
+    "frame_id": 456,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7805772569444445
+  },
+  {
+    "item_id": 20,
+    "frame_id": 480,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7348202803497942
+  },
+  {
+    "item_id": 21,
+    "frame_id": 504,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7632024819958848
+  },
+  {
+    "item_id": 22,
+    "frame_id": 528,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 23,
+    "frame_id": 552,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7741552533436215
+  },
+  {
+    "item_id": 24,
+    "frame_id": 576,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.79375
+  },
+  {
+    "item_id": 25,
+    "frame_id": 600,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 26,
+    "frame_id": 624,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 27,
+    "frame_id": 648,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7506140689300411
+  },
+  {
+    "item_id": 28,
+    "frame_id": 672,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7446357381687243
+  },
+  {
+    "item_id": 29,
+    "frame_id": 696,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7906675990226337
+  },
+  {
+    "item_id": 30,
+    "frame_id": 720,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7937258873456791
+  },
+  {
+    "item_id": 31,
+    "frame_id": 744,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 32,
+    "frame_id": 768,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7094312628600824
+  },
+  {
+    "item_id": 33,
+    "frame_id": 792,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7304816100823045
+  },
+  {
+    "item_id": 34,
+    "frame_id": 816,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 35,
+    "frame_id": 840,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7515536586934156
+  },
+  {
+    "item_id": 36,
+    "frame_id": 864,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 37,
+    "frame_id": 888,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7765102559156379
+  },
+  {
+    "item_id": 38,
+    "frame_id": 912,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7910212512860083
+  },
+  {
+    "item_id": 39,
+    "frame_id": 936,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.7593749999999999
+  },
+  {
+    "item_id": 40,
+    "frame_id": 960,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6958992412551441
+  },
+  {
+    "item_id": 41,
+    "frame_id": 984,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.681761992026749
+  },
+  {
+    "item_id": 42,
+    "frame_id": 1008,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 43,
+    "frame_id": 1032,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 44,
+    "frame_id": 1056,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 45,
+    "frame_id": 1080,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 46,
+    "frame_id": 1104,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 47,
+    "frame_id": 1128,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 48,
+    "frame_id": 1152,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 49,
+    "frame_id": 1176,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 50,
+    "frame_id": 1200,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 51,
+    "frame_id": 1224,
+    "human_possible": true,
+    "available": false,
+    "confidence": null
+  },
+  {
+    "item_id": 52,
+    "frame_id": 1248,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6670757780349794
+  },
+  {
+    "item_id": 53,
+    "frame_id": 1272,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6674744405864198
+  },
+  {
+    "item_id": 54,
+    "frame_id": 1296,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6630248521090536
+  },
+  {
+    "item_id": 55,
+    "frame_id": 1320,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6620515046296297
+  },
+  {
+    "item_id": 56,
+    "frame_id": 1344,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6694364068930041
+  },
+  {
+    "item_id": 57,
+    "frame_id": 1368,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6769700038580247
+  },
+  {
+    "item_id": 58,
+    "frame_id": 1392,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.6811318479938272
+  },
+  {
+    "item_id": 59,
+    "frame_id": 1416,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 60,
+    "frame_id": 1440,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 61,
+    "frame_id": 1464,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 62,
+    "frame_id": 1488,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 63,
+    "frame_id": 1512,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 64,
+    "frame_id": 1536,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 65,
+    "frame_id": 1560,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 66,
+    "frame_id": 1584,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 67,
+    "frame_id": 1608,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 68,
+    "frame_id": 1632,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 69,
+    "frame_id": 1656,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 70,
+    "frame_id": 1680,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.79375
+  },
+  {
+    "item_id": 71,
+    "frame_id": 1704,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 72,
+    "frame_id": 1728,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 73,
+    "frame_id": 1752,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 74,
+    "frame_id": 1776,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 75,
+    "frame_id": 1800,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 76,
+    "frame_id": 1824,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 77,
+    "frame_id": 1848,
+    "human_possible": true,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 78,
+    "frame_id": 1872,
+    "human_possible": false,
+    "available": true,
+    "confidence": 0.828125
+  },
+  {
+    "item_id": 79,
+    "frame_id": 1896,
+    "human_possible": false,
+    "available": true,
+    "confidence": 0.828125
+  }
+]

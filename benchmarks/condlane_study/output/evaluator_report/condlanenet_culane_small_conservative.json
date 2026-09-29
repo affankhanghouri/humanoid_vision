@@ -1,0 +1,99 @@
+{
+  "model": {
+    "name": "condlanenet_culane_small_conservative",
+    "version": "official-culane-small-threshold-0.5",
+    "backend": "openvino_fp32_2_threads",
+    "adapter": "two-sided center-bracketing; questionable/partial lanes abstain"
+  },
+  "dataset": "humanoid_vision_lane_acceptance_v1",
+  "counts": {
+    "frames": 100,
+    "ground_truth_valid": 36,
+    "ground_truth_no_valid_lane": 64,
+    "valid_lane_detected": 5,
+    "false_lane": 1,
+    "missed_lane": 31,
+    "abstained": 94,
+    "correct_abstain": 63,
+    "missing_predictions": 0
+  },
+  "metrics": {
+    "valid_ego_lane_detection_rate": 0.1388888888888889,
+    "false_ego_lane_rate": 0.015625,
+    "missed_ego_lane_rate": 0.8611111111111112,
+    "abstain_rate": 0.94,
+    "correct_abstain_rate": 0.984375,
+    "safety_weighted_error_rate": 0.14912280701754385,
+    "false_lane_cost_weight": 3.0,
+    "left_boundary_detection_rate": 0.9024390243902439,
+    "left_boundary_error": {
+      "matched_boundaries": 37,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 1850,
+      "pixels": {
+        "mean": 107.95684829527367,
+        "median": 105.94084065888427,
+        "p95": 138.32074968944102,
+        "p99": 323.17435050377566,
+        "max": 440.157125319693
+      },
+      "normalized_by_image_width": {
+        "mean": 0.09371254192298062,
+        "median": 0.09196253529417037,
+        "p95": 0.12007009521652866,
+        "p99": 0.2805332903678608,
+        "max": 0.3820808379511224
+      }
+    },
+    "right_boundary_detection_rate": 0.45454545454545453,
+    "right_boundary_error": {
+      "matched_boundaries": 5,
+      "no_y_overlap_boundaries": 0,
+      "sample_count": 250,
+      "pixels": {
+        "mean": 198.67776503168332,
+        "median": 192.29492413032222,
+        "p95": 292.9931175730692,
+        "p99": 328.91321572107086,
+        "max": 340.2792608695652
+      },
+      "normalized_by_image_width": {
+        "mean": 0.172463337701114,
+        "median": 0.16692267719646026,
+        "p95": 0.2543343034488448,
+        "p99": 0.28551494420231843,
+        "max": 0.2953813028381642
+      }
+    }
+  },
+  "scene_false_positive_rates": {
+    "intersection": {
+      "eligible_no_valid_lane": 27,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "unmarked_road": {
+      "eligible_no_valid_lane": 22,
+      "false_lane": 1,
+      "false_positive_rate": 0.045454545454545456
+    },
+    "crosswalk_stop_line": {
+      "eligible_no_valid_lane": 16,
+      "false_lane": 0,
+      "false_positive_rate": 0.0
+    },
+    "parked_cars_curb": {
+      "eligible_no_valid_lane": 14,
+      "false_lane": 1,
+      "false_positive_rate": 0.07142857142857142
+    }
+  },
+  "extra_prediction_frame_ids": [],
+  "policy": {
+    "ambiguous_ground_truth_requires_abstention": true,
+    "predicted_invalid_or_ambiguous_counts_as_abstention": true,
+    "false_lane_cost_relative_to_missed_lane": 3.0,
+    "boundary_samples_per_match": 50,
+    "boundary_units": "image pixels and fraction of image width"
+  }
+}

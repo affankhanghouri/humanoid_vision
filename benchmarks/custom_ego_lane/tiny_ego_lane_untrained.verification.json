@@ -1,0 +1,28 @@
+{
+  "trained": false,
+  "parameters": 992071,
+  "input": [
+    1,
+    3,
+    192,
+    320
+  ],
+  "onnx_checker": "passed",
+  "numerical": [
+    {
+      "output": "coordinates",
+      "max_abs_error": 0.0,
+      "allclose": true
+    },
+    {
+      "output": "visibility_logits",
+      "max_abs_error": 0.0,
+      "allclose": true
+    },
+    {
+      "output": "state_logits",
+      "max_abs_error": 1.862645149230957e-09,
+      "allclose": true
+    }
+  ]
+}

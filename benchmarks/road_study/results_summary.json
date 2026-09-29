@@ -1,0 +1,1004 @@
+{
+  "hardware": "Intel i5-6300U, 2 physical cores / 4 threads, CPU only",
+  "date": "2026-09-27",
+  "runs": {
+    "baseline": {
+      "model": "models/twinlitenetplus_nano.onnx",
+      "sha256": "875f83ba2c1779e5b8265acf0945fa599b03582be1f0308993cd44c84424b60a",
+      "model_bytes": 172341,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area",
+        "lane_line"
+      ],
+      "setup_ms": 79.2508920058026,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.389164442845088,
+          "median": 5.867277999641374,
+          "p95": 15.358782298062579,
+          "p99": 16.41758849495091
+        },
+        "infer": {
+          "mean": 104.44963778593645,
+          "median": 98.54589099995792,
+          "p95": 135.0174702518416,
+          "p99": 169.18602916150124
+        },
+        "post": {
+          "mean": 1.0106295856530778,
+          "median": 0.8732299975235946,
+          "p95": 1.3221895500464595,
+          "p99": 3.3456096603913608
+        },
+        "total": {
+          "mean": 112.84943181443461,
+          "median": 106.5631215024041,
+          "p95": 149.37594495131634,
+          "p99": 178.11898602129082
+        }
+      },
+      "raw_results": "validation/road_study/baseline/results.json"
+    },
+    "road640_t1": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 53.211268001177814,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.994703356962418,
+          "median": 7.347235499764793,
+          "p95": 14.155021046826725,
+          "p99": 18.651635726273526
+        },
+        "infer": {
+          "mean": 76.11868902864184,
+          "median": 71.24628200108418,
+          "p95": 123.85968574744759,
+          "p99": 165.13113547938707
+        },
+        "post": {
+          "mean": 0.9682794851999331,
+          "median": 0.8479220014123712,
+          "p95": 1.329174200509442,
+          "p99": 2.5776274890813564
+        },
+        "total": {
+          "mean": 85.08167187080419,
+          "median": 79.5065069978591,
+          "p95": 135.89233605161996,
+          "p99": 177.07865490614503
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_t1/results.json"
+    },
+    "road640_t2": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 34.729191997030284,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 8.647328986054552,
+          "median": 7.635284498974215,
+          "p95": 17.875576352889762,
+          "p99": 25.02745836929536
+        },
+        "infer": {
+          "mean": 67.26929470013212,
+          "median": 62.705391999770654,
+          "p95": 98.98473419634678,
+          "p99": 127.79265826058692
+        },
+        "post": {
+          "mean": 0.9861167710498974,
+          "median": 0.990955999441212,
+          "p95": 1.3054745948466004,
+          "p99": 1.4417924603185386
+        },
+        "total": {
+          "mean": 76.90274045723656,
+          "median": 72.21901349839754,
+          "p95": 109.50261580001096,
+          "p99": 149.25760423946485
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_t2/results.json"
+    },
+    "road640_ov1": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "openvino",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 949.5402120010112,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.277826156912072,
+          "median": 6.270927999139531,
+          "p95": 12.635276699802489,
+          "p99": 24.233929529364133
+        },
+        "infer": {
+          "mean": 52.72093202885507,
+          "median": 51.01854749955237,
+          "p95": 70.16520534707524,
+          "p99": 77.33839924097994
+        },
+        "post": {
+          "mean": 0.8798243282529127,
+          "median": 0.8622459972684737,
+          "p95": 1.140725749428384,
+          "p99": 1.2368187184620183
+        },
+        "total": {
+          "mean": 60.878582514020046,
+          "median": 58.656696495745564,
+          "p95": 88.5150916485145,
+          "p99": 95.51229008851809
+        }
+      },
+      "openvino": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_ov1/results.json"
+    },
+    "road640_ov2": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "openvino",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 537.1503760034102,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 5.768515785894124,
+          "median": 4.498585498367902,
+          "p95": 11.725187100091716,
+          "p99": 13.245402869215471
+        },
+        "infer": {
+          "mean": 41.06976078567511,
+          "median": 41.31727749700076,
+          "p95": 52.58869199824403,
+          "p99": 58.812431208134534
+        },
+        "post": {
+          "mean": 1.027797814250724,
+          "median": 1.0224440011370461,
+          "p95": 1.212406449849368,
+          "p99": 1.9178336282493553
+        },
+        "total": {
+          "mean": 47.86607438581996,
+          "median": 46.778387997619575,
+          "p95": 59.49013189892866,
+          "p99": 65.83654607304199
+        }
+      },
+      "openvino": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_ov2/results.json"
+    },
+    "road320_t1": {
+      "model": "models/road_nano_320.onnx",
+      "sha256": "01a8af9b737f2c28c3e936e01547a2f4100d9ce6d35884e06a97da0d2d525abf",
+      "model_bytes": 167504,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          192,
+          320
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 49.1954769968288,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 1.3845254856278189,
+          "median": 1.2126700021326542,
+          "p95": 3.1560313502268382,
+          "p99": 3.8095670956681733
+        },
+        "infer": {
+          "mean": 22.41394257091867,
+          "median": 20.776524503162364,
+          "p95": 31.932670750393296,
+          "p99": 35.78588806078187
+        },
+        "post": {
+          "mean": 0.3732532579825992,
+          "median": 0.33665800219750963,
+          "p95": 0.4464162018848583,
+          "p99": 1.3758807906560855
+        },
+        "total": {
+          "mean": 24.17172131452909,
+          "median": 22.61731649923604,
+          "p95": 33.601353850826854,
+          "p99": 37.62337757405476
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 0.8145823448362718,
+        "min": 0.3687808532555619
+      },
+      "raw_results": "validation/road_study/road320_t1/results.json"
+    },
+    "road320_t2": {
+      "model": "models/road_nano_320.onnx",
+      "sha256": "01a8af9b737f2c28c3e936e01547a2f4100d9ce6d35884e06a97da0d2d525abf",
+      "model_bytes": 167504,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          192,
+          320
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 53.01830999815138,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 1.3573789712349285,
+          "median": 1.2233720008225646,
+          "p95": 2.3897360984847174,
+          "p99": 3.5232474718213793
+        },
+        "infer": {
+          "mean": 18.712094771347306,
+          "median": 18.271434997586766,
+          "p95": 23.890673551431973,
+          "p99": 27.537137591280057
+        },
+        "post": {
+          "mean": 0.333071500686596,
+          "median": 0.316423498588847,
+          "p95": 0.44639920015470125,
+          "p99": 0.4794048522308004
+        },
+        "total": {
+          "mean": 20.402545243268833,
+          "median": 19.91214450026746,
+          "p95": 25.711284951103153,
+          "p99": 29.186248456826448
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 0.8145823448362718,
+        "min": 0.3687808532555619
+      },
+      "raw_results": "validation/road_study/road320_t2/results.json"
+    },
+    "road640_noopt": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "off",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 19.518519002303947,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.787585486117417,
+          "median": 6.236080502276309,
+          "p95": 13.566461249138225,
+          "p99": 29.57067364121031
+        },
+        "infer": {
+          "mean": 74.07015307097546,
+          "median": 72.15509299931,
+          "p95": 87.38909015301033,
+          "p99": 109.05861107596141
+        },
+        "post": {
+          "mean": 0.9117130859522149,
+          "median": 0.8425590058322996,
+          "p95": 1.1627602001681223,
+          "p99": 1.9442788157903148
+        },
+        "total": {
+          "mean": 82.76945164304509,
+          "median": 80.93879949956317,
+          "p95": 98.17299330170498,
+          "p99": 123.7999084218609
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_noopt/results.json"
+    },
+    "lane640_t1": {
+      "model": "models/lstr_640.onnx",
+      "sha256": "bf8ce3c090c0a373b192cc13d04ae0aea25d96a2e3df12ebb20be131a3b71f93",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          360,
+          640
+        ],
+        [
+          1,
+          1,
+          360,
+          640
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 125.10590799502097,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 13.087393257592339,
+          "median": 12.12620899968897,
+          "p95": 19.515419947128976,
+          "p99": 27.25862456958569
+        },
+        "infer": {
+          "mean": 29.831283414595028,
+          "median": 27.195087997824885,
+          "p95": 40.468340449297095,
+          "p99": 71.35437056400418
+        },
+        "post": {
+          "mean": 1.2889943997184414,
+          "median": 1.1383140008547343,
+          "p95": 2.1904190987697802,
+          "p99": 3.7864229559636455
+        },
+        "total": {
+          "mean": 44.20767107190581,
+          "median": 39.7223700019822,
+          "p95": 57.94637484686972,
+          "p99": 97.95141002287
+        }
+      },
+      "ego_valid": 21,
+      "raw_results": "validation/road_study/lane640_t1/results.json"
+    },
+    "lane640_t2": {
+      "model": "models/lstr_640.onnx",
+      "sha256": "bf8ce3c090c0a373b192cc13d04ae0aea25d96a2e3df12ebb20be131a3b71f93",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "ort",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          360,
+          640
+        ],
+        [
+          1,
+          1,
+          360,
+          640
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 125.42219800525345,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 12.043463714508107,
+          "median": 11.853082000016002,
+          "p95": 18.296827955055047,
+          "p99": 20.401075380432307
+        },
+        "infer": {
+          "mean": 21.437428957246343,
+          "median": 21.381040001870133,
+          "p95": 30.14150890339806,
+          "p99": 35.68485097945086
+        },
+        "post": {
+          "mean": 1.3747419857411711,
+          "median": 1.350041500700172,
+          "p95": 2.2062160507630324,
+          "p99": 2.799606919070357
+        },
+        "total": {
+          "mean": 34.85563465749562,
+          "median": 33.24310250172857,
+          "p95": 47.932960951584384,
+          "p99": 55.501982602290816
+        }
+      },
+      "ego_valid": 21,
+      "raw_results": "validation/road_study/lane640_t2/results.json"
+    },
+    "lane320_t1": {
+      "model": "models/lstr_320.onnx",
+      "sha256": "dce3b4e8606ec3fdc2188ffd80f10ce37efa81dcbe5c2bc68310e0d3e74ca339",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          180,
+          320
+        ],
+        [
+          1,
+          1,
+          180,
+          320
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 114.45995399844833,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 3.159091914338725,
+          "median": 2.785286498692585,
+          "p95": 4.926420648553175,
+          "p99": 11.277032588041045
+        },
+        "infer": {
+          "mean": 8.629050457238918,
+          "median": 7.851587499317247,
+          "p95": 11.640224353322989,
+          "p99": 19.830825640019658
+        },
+        "post": {
+          "mean": 0.9624542569716661,
+          "median": 0.8303499998874031,
+          "p95": 1.683762996617588,
+          "p99": 1.8898585092392755
+        },
+        "total": {
+          "mean": 12.750596628549308,
+          "median": 11.40687899896875,
+          "p95": 16.63864199981617,
+          "p99": 32.052167954680094
+        }
+      },
+      "ego_valid": 0,
+      "raw_results": "validation/road_study/lane320_t1/results.json"
+    },
+    "lane320_t2": {
+      "model": "models/lstr_320.onnx",
+      "sha256": "dce3b4e8606ec3fdc2188ffd80f10ce37efa81dcbe5c2bc68310e0d3e74ca339",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "ort",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          180,
+          320
+        ],
+        [
+          1,
+          1,
+          180,
+          320
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 119.51793300249847,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 2.7142930281115696,
+          "median": 2.6175070015597157,
+          "p95": 4.151602399360854,
+          "p99": 4.645219039666699
+        },
+        "infer": {
+          "mean": 7.031776328429779,
+          "median": 6.785262998164399,
+          "p95": 9.66934135358315,
+          "p99": 13.68257210146112
+        },
+        "post": {
+          "mean": 1.0854970718875327,
+          "median": 1.003779994789511,
+          "p95": 1.6571540007134897,
+          "p99": 2.7646098821423974
+        },
+        "total": {
+          "mean": 10.831566428428882,
+          "median": 10.60055400012061,
+          "p95": 14.752291299373608,
+          "p99": 18.67674838809762
+        }
+      },
+      "ego_valid": 0,
+      "raw_results": "validation/road_study/lane320_t2/results.json"
+    },
+    "lane640_ov1": {
+      "model": "models/lstr_640.onnx",
+      "sha256": "bf8ce3c090c0a373b192cc13d04ae0aea25d96a2e3df12ebb20be131a3b71f93",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "openvino",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          360,
+          640
+        ],
+        [
+          1,
+          1,
+          360,
+          640
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 798.5247489996254,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 12.343052385715835,
+          "median": 11.26272549663554,
+          "p95": 23.18777109940128,
+          "p99": 31.422689851096962
+        },
+        "infer": {
+          "mean": 30.205826043259417,
+          "median": 27.141653998114634,
+          "p95": 44.92396665227715,
+          "p99": 71.20412414151365
+        },
+        "post": {
+          "mean": 1.1849869713062486,
+          "median": 1.115797000238672,
+          "p95": 2.076552898142836,
+          "p99": 2.598097811205664
+        },
+        "total": {
+          "mean": 43.7338654002815,
+          "median": 39.55066650087247,
+          "p95": 67.58404539978069,
+          "p99": 100.81189588054265
+        }
+      },
+      "openvino": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+      "ego_valid": 21,
+      "raw_results": "validation/road_study/lane640_ov1/results.json"
+    },
+    "lane640_ov2": {
+      "model": "models/lstr_640.onnx",
+      "sha256": "bf8ce3c090c0a373b192cc13d04ae0aea25d96a2e3df12ebb20be131a3b71f93",
+      "model_bytes": 3203298,
+      "kind": "lane",
+      "backend": "openvino",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          360,
+          640
+        ],
+        [
+          1,
+          1,
+          360,
+          640
+        ]
+      ],
+      "outputs": [
+        "pred_logits",
+        "pred_curves"
+      ],
+      "setup_ms": 770.2375219960231,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 13.498253957160548,
+          "median": 13.072884001303464,
+          "p95": 19.848562552579093,
+          "p99": 23.207807003273057
+        },
+        "infer": {
+          "mean": 28.223217128626338,
+          "median": 24.154936498234747,
+          "p95": 61.327126644755396,
+          "p99": 90.20916484900226
+        },
+        "post": {
+          "mean": 1.5739588139695115,
+          "median": 1.3358295000216458,
+          "p95": 2.963559101408462,
+          "p99": 5.17814074890339
+        },
+        "total": {
+          "mean": 43.2954298997564,
+          "median": 37.35236850116053,
+          "p95": 80.51144140408718,
+          "p99": 110.29904366456323
+        }
+      },
+      "openvino": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+      "ego_valid": 21,
+      "raw_results": "validation/road_study/lane640_ov2/results.json"
+    },
+    "baseline_repeat": {
+      "model": "models/twinlitenetplus_nano.onnx",
+      "sha256": "875f83ba2c1779e5b8265acf0945fa599b03582be1f0308993cd44c84424b60a",
+      "model_bytes": 172341,
+      "kind": "road",
+      "backend": "ort",
+      "threads": 1,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area",
+        "lane_line"
+      ],
+      "setup_ms": 49.27276200032793,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.6537617434431535,
+          "median": 6.657691999862436,
+          "p95": 11.62754539909656,
+          "p99": 19.796730120069704
+        },
+        "infer": {
+          "mean": 102.4637447283437,
+          "median": 93.86728450408555,
+          "p95": 153.0623303475295,
+          "p99": 209.57905566654532
+        },
+        "post": {
+          "mean": 0.8845149282673707,
+          "median": 0.8196189992304426,
+          "p95": 1.2065630518918622,
+          "p99": 1.2738699381588958
+        },
+        "total": {
+          "mean": 111.00202140005422,
+          "median": 102.59141650021775,
+          "p95": 163.62805224889598,
+          "p99": 222.19121929068947
+        }
+      },
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/baseline_repeat/results.json"
+    },
+    "road640_ov2_repeat": {
+      "model": "models/road_nano_640.onnx",
+      "sha256": "d7d07a49f9de8dbf33077dada1e6f4e1916ef0ce061f90dc7df196c3b7df377b",
+      "model_bytes": 167570,
+      "kind": "road",
+      "backend": "openvino",
+      "threads": 2,
+      "optimization": "all",
+      "input_shapes": [
+        [
+          1,
+          3,
+          384,
+          640
+        ]
+      ],
+      "outputs": [
+        "drivable_area"
+      ],
+      "setup_ms": 501.5346000000136,
+      "samples": 70,
+      "warmup": 5,
+      "video": "test_data/test_video.mp4",
+      "video_fps": 24.0,
+      "python": "3.12.3",
+      "ort": "1.30.0",
+      "opencv": "5.0.0",
+      "timing_ms": {
+        "pre": {
+          "mean": 7.556502271888478,
+          "median": 7.303364502149634,
+          "p95": 14.44182214909233,
+          "p99": 17.037215749369356
+        },
+        "infer": {
+          "mean": 44.890883642386015,
+          "median": 40.4428484980599,
+          "p95": 65.33775795032848,
+          "p99": 119.95257438778961
+        },
+        "post": {
+          "mean": 1.0758918288047425,
+          "median": 0.996296999801416,
+          "p95": 1.1908775526535464,
+          "p99": 4.137486059116786
+        },
+        "total": {
+          "mean": 53.523277743079234,
+          "median": 49.097875500592636,
+          "p95": 77.5129585497779,
+          "p99": 138.48645191683343
+        }
+      },
+      "openvino": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+      "mask_agreement_iou": {
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "raw_results": "validation/road_study/road640_ov2_repeat/results.json"
+    }
+  },
+  "export_validation": {
+    "checkpoint_sha256": "8167977ba4ad96151f25a519149b59dd58d70c3ae8df57869169f88c44a25a41",
+    "source_hashes": {
+      "config.py": "1123ff2c44d7e98df9dfb3cb6da6ebe54809ae76bcf194878b22edb201c69d83",
+      "config/LSTR.json": "73ecae0749ac83434bfe6da92e1aeeb13cab5ca20a6182f940022a39f6b0abe2",
+      "models/LSTR.py": "fd957b173203d2749dc703cd6aec27c88228c2a4603fd12d20156fed7f0a40b2",
+      "models/py_utils/kp.py": "516e9ba0fe3fb3ba201beef4a2a14c3981b90be41aeed1cbffd2da30b1889943",
+      "models/py_utils/transformer.py": "d5799965043c06b0da3d9cfaff1b9be52fa1c31f04a26ea4abc930d9396eb825",
+      "models/py_utils/position_encoding.py": "f07ec3d264f17e3520a6c7002343775fcc3bccd119c4573310057eb39c8c77ef",
+      "LICENSE": "a0a61215c190d8dae7723e254eb21cdec26af3ee7f1373eb415c9deaf227b209"
+    },
+    "parameters": 765754,
+    "exports": [
+      {
+        "path": "models/lstr_640.onnx",
+        "bytes": 3203298,
+        "sha256": "bf8ce3c090c0a373b192cc13d04ae0aea25d96a2e3df12ebb20be131a3b71f93",
+        "max_abs_error": 1.0728836059570312e-05
+      },
+      {
+        "path": "models/lstr_320.onnx",
+        "bytes": 3203298,
+        "sha256": "dce3b4e8606ec3fdc2188ffd80f10ce37efa81dcbe5c2bc68310e0d3e74ca339",
+        "max_abs_error": 7.450580596923828e-06
+      }
+    ]
+  }
+}

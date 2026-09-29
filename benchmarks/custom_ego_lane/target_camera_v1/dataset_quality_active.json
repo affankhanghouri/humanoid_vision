@@ -1,0 +1,170 @@
+{
+  "train": {
+    "total": 1068,
+    "reviewed_total": 840,
+    "valid": 449,
+    "invalid": 243,
+    "ambiguous": 148,
+    "left_visible_only": 187,
+    "right_visible_only": 43,
+    "both_visible": 219,
+    "neither_visible": 391,
+    "human_reviewed": 840,
+    "high_confidence_automatic": 0,
+    "low_confidence_unreviewed": 0,
+    "temporal_reviewed": 0,
+    "rejected": 228,
+    "scene_types_all": {
+      "clear_normal_lane": 605,
+      "turning_curved_road": 422,
+      "intersection": 83,
+      "crosswalk_stop_line": 83,
+      "occlusion": 499,
+      "unmarked_road": 160,
+      "parked_cars_curb": 366,
+      "faded_lane": 366
+    },
+    "scene_types_reviewed": {
+      "clear_normal_lane": 377,
+      "turning_curved_road": 346,
+      "intersection": 83,
+      "crosswalk_stop_line": 83,
+      "occlusion": 354,
+      "unmarked_road": 160,
+      "parked_cars_curb": 221,
+      "faded_lane": 221
+    }
+  },
+  "validation": {
+    "total": 168,
+    "reviewed_total": 165,
+    "valid": 97,
+    "invalid": 68,
+    "ambiguous": 0,
+    "left_visible_only": 97,
+    "right_visible_only": 0,
+    "both_visible": 0,
+    "neither_visible": 68,
+    "human_reviewed": 165,
+    "high_confidence_automatic": 0,
+    "low_confidence_unreviewed": 0,
+    "temporal_reviewed": 0,
+    "rejected": 3,
+    "scene_types_all": {
+      "intersection": 40,
+      "crosswalk_stop_line": 40,
+      "occlusion": 88,
+      "clear_normal_lane": 100,
+      "parked_cars_curb": 128,
+      "faded_lane": 28,
+      "turning_curved_road": 60
+    },
+    "scene_types_reviewed": {
+      "intersection": 40,
+      "crosswalk_stop_line": 40,
+      "occlusion": 88,
+      "clear_normal_lane": 97,
+      "parked_cars_curb": 125,
+      "faded_lane": 28,
+      "turning_curved_road": 59
+    }
+  },
+  "by_source": {
+    "target_train": {
+      "total": 848,
+      "reviewed_total": 620,
+      "valid": 377,
+      "invalid": 243,
+      "ambiguous": 0,
+      "left_visible_only": 149,
+      "right_visible_only": 18,
+      "both_visible": 210,
+      "neither_visible": 243,
+      "human_reviewed": 620,
+      "high_confidence_automatic": 0,
+      "low_confidence_unreviewed": 0,
+      "temporal_reviewed": 0,
+      "rejected": 228,
+      "scene_types_all": {
+        "clear_normal_lane": 605,
+        "turning_curved_road": 422,
+        "intersection": 83,
+        "crosswalk_stop_line": 83,
+        "occlusion": 279,
+        "unmarked_road": 160,
+        "parked_cars_curb": 146,
+        "faded_lane": 146
+      },
+      "scene_types_reviewed": {
+        "clear_normal_lane": 377,
+        "turning_curved_road": 346,
+        "intersection": 83,
+        "crosswalk_stop_line": 83,
+        "occlusion": 134,
+        "unmarked_road": 160,
+        "parked_cars_curb": 1,
+        "faded_lane": 1
+      }
+    },
+    "target_train_focus": {
+      "total": 220,
+      "reviewed_total": 220,
+      "valid": 72,
+      "invalid": 0,
+      "ambiguous": 148,
+      "left_visible_only": 38,
+      "right_visible_only": 25,
+      "both_visible": 9,
+      "neither_visible": 148,
+      "human_reviewed": 220,
+      "high_confidence_automatic": 0,
+      "low_confidence_unreviewed": 0,
+      "temporal_reviewed": 0,
+      "rejected": 0,
+      "scene_types_all": {
+        "faded_lane": 220,
+        "parked_cars_curb": 220,
+        "occlusion": 220
+      },
+      "scene_types_reviewed": {
+        "faded_lane": 220,
+        "parked_cars_curb": 220,
+        "occlusion": 220
+      }
+    },
+    "target_validation": {
+      "total": 168,
+      "reviewed_total": 165,
+      "valid": 97,
+      "invalid": 68,
+      "ambiguous": 0,
+      "left_visible_only": 97,
+      "right_visible_only": 0,
+      "both_visible": 0,
+      "neither_visible": 68,
+      "human_reviewed": 165,
+      "high_confidence_automatic": 0,
+      "low_confidence_unreviewed": 0,
+      "temporal_reviewed": 0,
+      "rejected": 3,
+      "scene_types_all": {
+        "intersection": 40,
+        "crosswalk_stop_line": 40,
+        "occlusion": 88,
+        "clear_normal_lane": 100,
+        "parked_cars_curb": 128,
+        "faded_lane": 28,
+        "turning_curved_road": 60
+      },
+      "scene_types_reviewed": {
+        "intersection": 40,
+        "crosswalk_stop_line": 40,
+        "occlusion": 88,
+        "clear_normal_lane": 97,
+        "parked_cars_curb": 125,
+        "faded_lane": 28,
+        "turning_curved_road": 59
+      }
+    }
+  }
+}

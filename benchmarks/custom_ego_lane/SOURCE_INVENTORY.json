@@ -1,0 +1,12 @@
+{
+  "decision": "validation diversity gate passed; final trained checkpoint rejected by frozen acceptance test",
+  "training": [
+    {"file":"driving.mp4","duration_seconds":59.426,"resolution":[1280,720],"fps":29.97003,"use":"urban positives, intersections, parked cars, crosswalks, later no-lane negatives"},
+    {"file":"project_video.mp4","duration_seconds":50.4,"resolution":[1280,720],"fps":25.0,"use":"clean highway positive geometry and partial-boundary examples"},
+    {"file":"sample_video.mp4","duration_seconds":109.367,"resolution":[1280,720],"fps":30.0,"use":"unmarked residential negatives, turns, snow, parked cars, pedestrians"}
+  ],
+  "validation": [
+    {"file":"challenge_video.mp4","duration_seconds":16.149,"resolution":[1280,720],"fps":29.97003,"use":"independent highway positives, shadows, merges, curves"},
+    {"file":"validatoion_video.mp4","duration_seconds":99.032,"resolution":[640,360],"fps":29.97003,"use":"independent urban invalid/no-lane validation, intersections, unmarked roads, parked cars, curbs, turns and occlusion"}
+  ]
+}
